@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data and models — never commit these
+data/raw/
+*.parquet
+*.joblib
+*.pt
+
+# Environment
+.env
+
+# OS
+.DS_Store

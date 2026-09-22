@@ -1,0 +1,20 @@
+# Track 1 lessons 01-11 need none of this — plain Python is enough.
+# Install these when you reach Basic-Python/libraries/.
+
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+requests>=2.31
+
+# Data engineering
+pyarrow>=15.0
+sqlalchemy>=2.0
+
+# AI engineering
+torch>=2.2
+transformers>=4.40
+
+# Notebooks
+jupyter>=1.0
