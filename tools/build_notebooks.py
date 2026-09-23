@@ -30,6 +30,7 @@ LESSON_DIRS = [
     REPO_ROOT / "Python" / "Basic-Python" / "libraries",
     REPO_ROOT / "Python" / "Advanced-Python" / "lessons",
     REPO_ROOT / "Machine-Learning" / "lessons",
+    REPO_ROOT / "Deep-Learning" / "lessons",
 ]
 
 HEADER = (
