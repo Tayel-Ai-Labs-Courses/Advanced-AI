@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """Build .ipynb notebooks from the markdown lessons.
 
-The markdown is the single source of truth. Every lesson `.md` under the
-course becomes a notebook next to it:
+The markdown is the single source of truth. Every lesson `.md` in every course
+becomes a notebook next to it:
 
     prose            -> markdown cells
     ```python blocks -> runnable code cells
     ```text blocks   -> dropped (they are the expected output; run the cell)
 
 Usage:
-    python3 tools/build_notebooks.py            # build everything
+    python3 tools/build_notebooks.py            # build every course
     python3 tools/build_notebooks.py --check    # fail if anything is stale
 
 Standard library only, so it runs anywhere the lessons do.
@@ -22,13 +22,14 @@ import json
 import sys
 from pathlib import Path
 
-COURSE_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
-# Directories whose markdown files become notebooks.
+# Directories whose markdown files become notebooks, per course.
 LESSON_DIRS = [
-    COURSE_ROOT / "Basic-Python" / "lessons",
-    COURSE_ROOT / "Basic-Python" / "libraries",
-    COURSE_ROOT / "Advanced-Python" / "lessons",
+    REPO_ROOT / "Python" / "Basic-Python" / "lessons",
+    REPO_ROOT / "Python" / "Basic-Python" / "libraries",
+    REPO_ROOT / "Python" / "Advanced-Python" / "lessons",
+    REPO_ROOT / "Machine-Learning" / "lessons",
 ]
 
 HEADER = (
@@ -139,12 +140,12 @@ def main() -> int:
             if args.check:
                 current = nb_path.read_text(encoding="utf-8") if nb_path.exists() else ""
                 if current != text:
-                    stale.append(nb_path.relative_to(COURSE_ROOT))
+                    stale.append(nb_path.relative_to(REPO_ROOT))
                 continue
 
             nb_path.write_text(text, encoding="utf-8")
             code_cells = sum(1 for c in notebook["cells"] if c["cell_type"] == "code")
-            print(f"{nb_path.relative_to(COURSE_ROOT)}  ({code_cells} code cells)")
+            print(f"{nb_path.relative_to(REPO_ROOT)}  ({code_cells} code cells)")
             written += 1
 
     if args.check:

@@ -1,0 +1,19 @@
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+
+# Lesson 09 — gradient boosting
+# scikit-learn's HistGradientBoosting covers the lesson; these are the
+# libraries you will meet in industry.
+xgboost>=2.0
+lightgbm>=4.3
+
+# Lesson 13 — serving
+joblib>=1.3
+fastapi>=0.110
+uvicorn>=0.29
+
+# Notebooks
+jupyter>=1.0

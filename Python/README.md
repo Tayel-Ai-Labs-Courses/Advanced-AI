@@ -38,7 +38,6 @@ flowchart TD
 | [`Basic-Python/Project-1/`](Basic-Python/Project-1/) | First project — a full data analysis, end to end |
 | [`Advanced-Python/lessons/`](Advanced-Python/lessons/) | Advanced functions, Big-O, searching, sorting, data structures |
 | [`Advanced-Python/Project-2/`](Advanced-Python/Project-2/) | Second project — build a retrieval engine from scratch |
-| [`tools/`](tools/) | The script that builds the notebooks from the markdown |
 
 ---
 
@@ -75,8 +74,9 @@ section onward.
 Edit the markdown, never the notebook. Then:
 
 ```bash
-python3 tools/build_notebooks.py
+python3 ../tools/build_notebooks.py
 ```
 
 Every `.md` lesson is rewritten into a `.ipynb` next to it: prose becomes
-markdown cells, each `python` block becomes a runnable code cell.
+markdown cells, each `python` block becomes a runnable code cell. The builder
+lives at the repository root and covers every course.

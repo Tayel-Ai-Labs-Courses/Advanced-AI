@@ -7,13 +7,16 @@ Course material for the Advanced AI track.
 | Folder | Course |
 |---|---|
 | [`Python/`](Python/) | Python for AI — basic track, advanced track, and two projects |
+| [`Machine-Learning/`](Machine-Learning/) | Machine learning from first principles, and a third project |
 
 ## Working on this repository
 
 Lessons are written in markdown. The notebooks are generated from them:
 
 ```bash
-python3 Python/tools/build_notebooks.py
+python3 tools/build_notebooks.py
 ```
 
 Edit the `.md`, never the `.ipynb` — a rebuild overwrites the notebook.
+One builder covers every course; `--check` reports stale notebooks without
+writing, which is what CI should run.
