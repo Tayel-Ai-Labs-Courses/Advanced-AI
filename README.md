@@ -9,6 +9,7 @@ Course material for the Advanced AI track.
 | [`Python/`](Python/) | Python for AI — basic track, advanced track, and two projects |
 | [`Machine-Learning/`](Machine-Learning/) | Machine learning from first principles, and a third project |
 | [`Deep-Learning/`](Deep-Learning/) | Neural networks in PyTorch, vision and text, and a fourth project |
+| [`Optimization/`](Optimization/) | Making models faster, smaller and cheaper, and a fifth project |
 
 ## Working on this repository
 

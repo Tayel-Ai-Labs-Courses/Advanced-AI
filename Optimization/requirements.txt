@@ -1,0 +1,20 @@
+torch>=2.2
+torchvision>=0.17
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.8
+scikit-learn>=1.4
+
+# Lesson 05 — hyperparameter search
+optuna>=3.6
+
+# Lesson 07 — parameter-efficient fine-tuning
+transformers>=4.40
+peft>=0.10
+
+# Lesson 11 — export
+onnx>=1.16
+onnxruntime>=1.18
+
+# Notebooks
+jupyter>=1.0
