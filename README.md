@@ -10,6 +10,7 @@ Course material for the Advanced AI track.
 | [`Machine-Learning/`](Machine-Learning/) | Machine learning from first principles, and a third project |
 | [`Deep-Learning/`](Deep-Learning/) | Neural networks in PyTorch, vision and text, and a fourth project |
 | [`Optimization/`](Optimization/) | Making models faster, smaller and cheaper, and a fifth project |
+| [`NLP/`](NLP/) | Text from TF-IDF to transformers, including Arabic, and a sixth project |
 
 ## Working on this repository
 
