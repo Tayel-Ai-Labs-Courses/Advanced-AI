@@ -33,6 +33,7 @@ LESSON_DIRS = [
     REPO_ROOT / "Deep-Learning" / "lessons",
     REPO_ROOT / "Optimization" / "lessons",
     REPO_ROOT / "NLP" / "lessons",
+    REPO_ROOT / "Computer-Vision" / "lessons",
 ]
 
 HEADER = (

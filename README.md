@@ -11,6 +11,7 @@ Course material for the Advanced AI track.
 | [`Deep-Learning/`](Deep-Learning/) | Neural networks in PyTorch, vision and text, and a fourth project |
 | [`Optimization/`](Optimization/) | Making models faster, smaller and cheaper, and a fifth project |
 | [`NLP/`](NLP/) | Text from TF-IDF to transformers, including Arabic, and a sixth project |
+| [`Computer-Vision/`](Computer-Vision/) | Images: classical CV, CNNs, detection, segmentation, and a seventh project |
 
 ## Working on this repository
 
