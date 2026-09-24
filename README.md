@@ -12,6 +12,7 @@ Course material for the Advanced AI track.
 | [`Optimization/`](Optimization/) | Making models faster, smaller and cheaper, and a fifth project |
 | [`NLP/`](NLP/) | Text from TF-IDF to transformers, including Arabic, and a sixth project |
 | [`Computer-Vision/`](Computer-Vision/) | Images: classical CV, CNNs, detection, segmentation, and a seventh project |
+| [`Data-Engineering/`](Data-Engineering/) | Pipelines, storage, quality, orchestration, and an eighth project |
 
 ## Working on this repository
 
