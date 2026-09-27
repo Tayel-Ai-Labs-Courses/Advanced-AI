@@ -1,0 +1,5 @@
+numpy>=1.26
+pandas>=2.2
+
+# Nothing else. Diagrams are text; the arithmetic is standard library.
+jupyter>=1.0

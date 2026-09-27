@@ -1,6 +1,6 @@
 # Advanced AI — Tayel AI Labs
 
-Sixteen courses and fifteen projects, from `print("hello")` to a deployed,
+Seventeen courses and sixteen projects, from `print("hello")` to a deployed,
 monitored, explainable AI system. Every lesson is markdown with a generated
 notebook beside it, **every printed output is a real run**, and nothing needs a
 GPU or a paid API.
@@ -45,6 +45,7 @@ flowchart TD
     end
     subgraph P8["DELIVERING IT - do this alongside everything"]
         O["<b>15. Communication and Documentation</b><br/>8 lessons - Project 15"]
+        Q["<b>16. AI System Design</b><br/>8 lessons - Project 16"]
     end
 
     A --> B --> C --> D
@@ -65,6 +66,8 @@ flowchart TD
     M --> N
     I --> O
     H --> O
+    I --> Q
+    O --> Q
 ```
 
 **The short version.** Do 1-2-3 in order. Then do 7 and 8 — most people skip
@@ -75,9 +78,11 @@ about *choosing* rather than predicting.
 
 ---
 
-**New here?** [`LEVELS.md`](LEVELS.md) says where to start as a beginner,
-an intermediate or a senior, what to skip, and which skills this track does not
-yet cover.
+**Start here:**
+[`CURRICULUM.md`](CURRICULUM.md) — everything in order, including where the
+later lessons slot in, and what is still missing.
+[`LEVELS.md`](LEVELS.md) — where to begin as a beginner, an intermediate or a
+senior, and what to skip.
 
 ## The courses
 
@@ -97,7 +102,8 @@ yet cover.
 | 12 | [`LLM-and-GenAI/`](LLM-and-GenAI/) | 10 | 12 | Build, evaluate and ship an LLM feature that pays for itself |
 | 13 | [`AI-Agents/`](AI-Agents/) | 10 | 13 | Build an agent whose guarantees do not depend on the model |
 | 14 | [`Data-Security-for-AI/`](Data-Security-for-AI/) | 8 | 14 | Attack a model, measure what leaks, and fix it |
-| 15 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | 15 | Make the other fourteen courses' work readable, runnable and actionable |
+| 15 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | 15 | Make the other courses' work readable, runnable and actionable |
+| 16 | [`AI-System-Design/`](AI-System-Design/) | 8 | 16 | Draw the system, write the contract, and prove the latency before building |
 
 ---
 
