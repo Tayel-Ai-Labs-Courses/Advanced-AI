@@ -1,0 +1,34 @@
+{
+  "artifact_schema_version": "1.0",
+  "hash_algorithm": "sha256",
+  "files": {
+    "risk_model.joblib": {
+      "bytes": 4666,
+      "sha256": "d817c13828d84c0a5a0f8f3d7ec6cdc468578b42298174b7b1148acc44b9387a"
+    },
+    "temperature_scaler.joblib": {
+      "bytes": 90,
+      "sha256": "b297a2e39a6476afa74c2ea9c75338c8e04f95521ce965347b7f231469afbeaf"
+    },
+    "anomaly_model.joblib": {
+      "bytes": 3557766,
+      "sha256": "fe4130ee17cb8374d200f2523de79b82c53d0d9428202884759c626e33949e97"
+    },
+    "reference_medians.joblib": {
+      "bytes": 2088,
+      "sha256": "fcab7ab6369d6d0a0e5849a3120137964fbd1e4fce49eb97fed2494aad46abb3"
+    },
+    "metadata.json": {
+      "bytes": 1467,
+      "sha256": "07c5a4c2a0a0a1eadb36d23826d0aa8d22e0d57eb889831a69c0ca0960df2610"
+    },
+    "model_comparison.csv": {
+      "bytes": 208,
+      "sha256": "8e7d97c937da8193b7a6718dc0a4f8079e9a40d1e18a5a755add81d6df825480"
+    },
+    "threshold_analysis.csv": {
+      "bytes": 548,
+      "sha256": "eff1b1202fac8858b21da0c26c30cf65b06333a1d3dc0b0d62a586712fd688bb"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+selected_model_name,selected_macro_f1,selection_rule,excluded_candidate,excluded_reason,train_years,calibration_year,test_year
+logistic,0.6357,"highest legitimate macro_f1, then lowest log_loss",advanced_leaky,"uses future_loss_index (post-outcome proxy, unavailable at prediction time)",2019-2023,2024,2025

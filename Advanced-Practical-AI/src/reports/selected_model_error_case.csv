@@ -1,0 +1,2 @@
+temperature_c,rainfall_mm,humidity_pct,soil_moisture,soil_ph,vegetation_index,disease_cases,pest_reports,irrigation_capacity,vulnerability_index,drought_index,heat_stress,disease_pressure,water_balance,season_sin,season_cos,holdout_row,actual_class,predicted_class,predicted_confidence
+23.8,13.4,25.4,0.2068,6.97,0.4641,62.4,24.6,0.6734,0.352,0.8834782608695653,0.0,0.542608695652174,0.3332382608695652,0.8660254037844387,-0.4999999999999998,4,MEDIUM,LOW,0.6140082059078109

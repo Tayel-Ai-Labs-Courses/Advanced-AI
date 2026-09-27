@@ -1,0 +1,11 @@
+region_id,region_name,irrigation_capacity,vulnerability_index,climate_band
+R01,Delta,0.6734,0.352,arid
+R02,Nile Valley,0.4931,0.469,semi_arid
+R03,Coastal,0.3383,0.587,mediterranean
+R04,Upper Egypt,0.426,0.322,arid
+R05,Sinai,0.3927,0.4344,arid
+R06,Western Desert,0.3743,0.672,hyper_arid
+R07,Eastern Desert,0.8558,0.6217,arid
+R08,Fayoum,0.3083,0.6659,semi_arid
+R09,Red Sea,0.6611,0.7911,arid
+R10,Matrouh,0.8685,0.3592,mediterranean

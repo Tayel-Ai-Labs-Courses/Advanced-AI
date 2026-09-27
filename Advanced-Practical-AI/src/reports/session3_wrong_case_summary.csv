@@ -1,0 +1,2 @@
+case_position,region_id,year,month,actual_class,predicted_class,raw_confidence,top_occlusion_factor,top_shap_factor
+4,R01,2025,5,MEDIUM,LOW,0.6237921727824154,vulnerability_index,humidity_pct

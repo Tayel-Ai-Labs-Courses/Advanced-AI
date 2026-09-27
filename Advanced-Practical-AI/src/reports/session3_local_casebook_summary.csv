@@ -1,0 +1,4 @@
+case_position,region_id,year,month,actual_class,predicted_class,raw_confidence,top_positive_factor,top_negative_factor
+0,R01,2025,1,LOW,LOW,0.9987094336583271,rainfall_mm,humidity_pct
+5,R01,2025,6,MEDIUM,MEDIUM,0.5416836619572193,rainfall_mm,vulnerability_index
+30,R03,2025,7,MEDIUM,HIGH,0.5045868675413269,drought_index,heat_stress

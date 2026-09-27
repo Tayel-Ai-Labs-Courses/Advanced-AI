@@ -1,0 +1,60 @@
+{
+  "artifact_schema_version": "1.0",
+  "policy_version": "reliability_policy_v2",
+  "selected_model_name": "logistic",
+  "selected_model_class": "sklearn.linear_model._logistic.LogisticRegression",
+  "selected_test_metrics": {
+    "accuracy": 0.7417,
+    "balanced_accuracy": 0.7418,
+    "macro_f1": 0.6357,
+    "log_loss": 0.57
+  },
+  "model_features": [
+    "temperature_c",
+    "rainfall_mm",
+    "humidity_pct",
+    "soil_moisture",
+    "soil_ph",
+    "vegetation_index",
+    "disease_cases",
+    "pest_reports",
+    "irrigation_capacity",
+    "vulnerability_index",
+    "drought_index",
+    "heat_stress",
+    "disease_pressure",
+    "water_balance",
+    "season_sin",
+    "season_cos"
+  ],
+  "monitor_features": [
+    "temperature_c",
+    "rainfall_mm",
+    "humidity_pct",
+    "soil_moisture",
+    "soil_ph",
+    "vegetation_index",
+    "disease_cases",
+    "pest_reports",
+    "irrigation_capacity",
+    "vulnerability_index"
+  ],
+  "class_names": [
+    "LOW",
+    "MEDIUM",
+    "HIGH"
+  ],
+  "temperature": 1.088330815400062,
+  "review_threshold": 0.65,
+  "anomaly_threshold": -0.04039784609454056,
+  "training_end_year": 2023,
+  "calibration_year": 2024,
+  "test_year": 2025,
+  "random_state": 42,
+  "selection_rule": "highest legitimate macro_f1, then lowest log_loss",
+  "review_policy": {
+    "target_selective_accuracy": 0.82,
+    "minimum_coverage": 0.25,
+    "maximum_review_rate": 0.3
+  }
+}

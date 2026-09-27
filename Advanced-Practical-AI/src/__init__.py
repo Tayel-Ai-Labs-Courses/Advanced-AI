@@ -1,0 +1,1 @@
+"""Course source package marker."""

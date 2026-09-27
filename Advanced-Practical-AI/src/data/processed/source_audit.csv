@@ -1,0 +1,6 @@
+Source,Rows,Missing cells,Duplicate composite keys
+weather,841,1,1
+soil,840,1,0
+disease,841,1,1
+regions,10,0,0
+outcomes,840,0,0

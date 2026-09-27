@@ -1,0 +1,17 @@
+{
+  "data_rows": 840,
+  "model_features": 16,
+  "selected_model": "logistic",
+  "future_2025_macro_f1": 0.6357,
+  "temperature": 1.0883,
+  "review_threshold": 0.65,
+  "anomaly_threshold": -0.040398,
+  "coverage_2025": 0.7083,
+  "review_rate_2025": 0.2917,
+  "selective_accuracy_2025": 0.8,
+  "artifact_contract": "PASSED",
+  "four_routes": "PASSED",
+  "cold_start": "PASSED",
+  "regression_tests": "PASSED",
+  "deployment_smoke": "PASSED"
+}

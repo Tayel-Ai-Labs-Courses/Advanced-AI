@@ -1,0 +1,17 @@
+feature,value,shap_effect,abs_effect
+temperature_c,23.6,-2.400083,2.400083
+rainfall_mm,72.4,0.926124,0.926124
+disease_cases,41.3,-0.713357,0.713357
+vulnerability_index,0.352,0.2348,0.2348
+water_balance,0.5493997826086957,0.229844,0.229844
+season_sin,0.0,0.125084,0.125084
+soil_ph,6.48,-0.08239,0.08239
+soil_moisture,0.4599,-0.070937,0.070937
+humidity_pct,68.5,-0.065888,0.065888
+heat_stress,0.0,0.063071,0.063071
+pest_reports,28.8,-0.052515,0.052515
+season_cos,1.0,-0.0498,0.0498
+vegetation_index,0.8958,0.047414,0.047414
+drought_index,0.37043478260869556,-0.036752,0.036752
+disease_pressure,0.3591304347826087,-0.035888,0.035888
+irrigation_capacity,0.6734,0.034626,0.034626

@@ -1,0 +1,19 @@
+feature,model_role,prediction_time_availability,eligibility,reason
+temperature_c,approved,available,eligible,current measurement
+rainfall_mm,approved,available,eligible,current measurement
+humidity_pct,approved,available,eligible,current measurement
+soil_moisture,approved,available,eligible,current measurement
+soil_ph,approved,available,eligible,current measurement
+vegetation_index,approved,available,eligible,current measurement
+disease_cases,approved,available,eligible,current measurement
+pest_reports,approved,available,eligible,current measurement
+irrigation_capacity,approved,available,eligible,current measurement
+vulnerability_index,approved,available,eligible,current measurement
+drought_index,approved,available,eligible,current measurement
+heat_stress,approved,available,eligible,current measurement
+disease_pressure,approved,available,eligible,current measurement
+water_balance,approved,available,eligible,current measurement
+season_sin,approved,available,eligible,current measurement
+season_cos,approved,available,eligible,current measurement
+future_loss_index,prohibited,post_outcome_only,prohibited,future_loss_index is not available at prediction time
+response_action_code,prohibited,post_response,prohibited,response_action_code is not available at prediction time

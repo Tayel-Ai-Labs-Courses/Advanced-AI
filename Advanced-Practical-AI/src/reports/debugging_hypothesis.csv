@@ -1,0 +1,2 @@
+case_identifier,actual_class,predicted_class,hypothesis,evidence_summary,next_test
+test_row_4,MEDIUM,LOW,The model may be underrepresenting interaction between drought_index and water_balance near the MEDIUM/HIGH boundary,"drought_index=0.8835, water_balance=0.3332",Add one interaction candidate and compare future-test macro F1 without changing the 2025 split
