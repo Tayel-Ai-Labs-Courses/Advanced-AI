@@ -75,6 +75,10 @@ about *choosing* rather than predicting.
 
 ---
 
+**New here?** [`LEVELS.md`](LEVELS.md) says where to start as a beginner,
+an intermediate or a senior, what to skip, and which skills this track does not
+yet cover.
+
 ## The courses
 
 | # | Course | Lessons | Project | You can, afterwards |
