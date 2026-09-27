@@ -303,3 +303,7 @@ do the arithmetic for your scale rather than inheriting someone else's.
 3. Compute the KV cache size for a model you use at your real context length.
 4. Fill in the cost table with your actual latencies and cloud prices. What is
    the cheapest configuration that meets the budget?
+
+---
+
+**Next:** [Lesson 13 — Swarm and Population Optimisation](13-swarm-and-population.md)

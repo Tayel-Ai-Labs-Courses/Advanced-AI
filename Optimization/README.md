@@ -8,6 +8,8 @@ Two halves:
 
 - **Lessons 03–07 — training side.** Optimisers, schedules, hyperparameter
   search, memory and speed, parameter-efficient fine-tuning.
+- **Lesson 13 — no gradient at all.** Particle swarms and differential
+  evolution, for objectives that are integer, combinatorial or black-box.
 - **Lessons 08–12 — inference side.** Quantisation, pruning, distillation,
   compilation and export, serving and cost.
 
@@ -25,6 +27,7 @@ flowchart TD
     B --> C["6-7 Training efficiency<br/>memory, speed, LoRA"]
     C --> D["8-10 Model compression<br/>quantise, prune, distil"]
     D --> E["11-12 Deployment<br/>compile, export, serve, cost"]
+    E --> F["13 Derivative-free<br/>PSO, DE, random search"]
     E --> F["Project 5"]
 ```
 
@@ -46,6 +49,7 @@ flowchart TD
 | 10 | [Knowledge Distillation](lessons/10-knowledge-distillation.md) | Train a small model from a big one |
 | 11 | [Compilation and Export](lessons/11-compilation-and-export.md) | Use `torch.compile`, TorchScript, ONNX |
 | 12 | [Serving and Cost](lessons/12-serving-and-cost.md) | Do the arithmetic before the invoice |
+| 13 | [Swarm and Population Optimisation](lessons/13-swarm-and-population.md) | Optimise what gradients cannot reach |
 
 ## Then
 
