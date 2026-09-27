@@ -99,6 +99,13 @@ pytest -q
 python app.py
 ```
 
+The four `.joblib` artifacts in `src/model/` are **not in git** — the
+repository's `.gitignore` excludes binary model files. `train_model.py`
+regenerates all of them, which is why it comes before `pytest` and `app.py` in
+the order above. The small artifacts that *are* committed (`metadata.json`,
+`model_comparison.csv`, `threshold_analysis.csv`, `artifact_manifest.json`) are
+the evidence record, and they are text so you can diff them.
+
 `app.py` needs `gradio`, which the requirements file installs. `shap` is
 optional: session 3 prints its own permutation-importance and occlusion
 analysis either way, and skips the Tree SHAP demonstration if the package is
