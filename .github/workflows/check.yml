@@ -1,0 +1,21 @@
+name: check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  markdown-and-notebooks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Both checks are standard library only, so there is nothing to install.
+      - name: notebooks match their markdown source
+        run: python3 tools/build_notebooks.py --check
+
+      - name: no broken relative links
+        run: python3 tools/check_links.py

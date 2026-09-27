@@ -25,5 +25,14 @@ python3 tools/build_notebooks.py
 ```
 
 Edit the `.md`, never the `.ipynb` — a rebuild overwrites the notebook.
-One builder covers every course; `--check` reports stale notebooks without
-writing, which is what CI should run.
+One builder covers every course.
+
+Two checks run on every push, via [`.github/workflows/check.yml`](.github/workflows/check.yml):
+
+```bash
+python3 tools/build_notebooks.py --check   # notebooks match their markdown
+python3 tools/check_links.py               # no broken relative links
+```
+
+Both are standard library only. If the first one fails, you edited a `.md`
+without rebuilding — run the builder and push again.
