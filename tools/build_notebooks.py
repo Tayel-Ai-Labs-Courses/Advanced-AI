@@ -40,6 +40,7 @@ LESSON_DIRS = [
     REPO_ROOT / "Data-Science" / "lessons",
     REPO_ROOT / "Reinforcement-Learning" / "lessons",
     REPO_ROOT / "LLM-and-GenAI" / "lessons",
+    REPO_ROOT / "AI-Agents" / "lessons",
 ]
 
 HEADER = (

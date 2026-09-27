@@ -1,6 +1,6 @@
 # Advanced AI — Tayel AI Labs
 
-Thirteen courses and twelve projects, from `print("hello")` to a deployed,
+Fourteen courses and thirteen projects, from `print("hello")` to a deployed,
 monitored, explainable AI system. Every lesson is markdown with a generated
 notebook beside it, **every printed output is a real run**, and nothing needs a
 GPU or a paid API.
@@ -38,6 +38,7 @@ flowchart TD
     end
     subgraph P6["GENERATIVE"]
         L["<b>12. LLMs and Generative AI</b><br/>10 lessons - Project 12"]
+        M["<b>13. AI Agents and Automation</b><br/>10 lessons - Project 13"]
     end
 
     A --> B --> C --> D
@@ -53,6 +54,7 @@ flowchart TD
     I --> K
     E --> L
     I --> L
+    L --> M
 ```
 
 **The short version.** Do 1-2-3 in order. Then do 7 and 8 — most people skip
@@ -79,6 +81,7 @@ about *choosing* rather than predicting.
 | 10 | [`Advanced-Practical-AI/`](Advanced-Practical-AI/) | 5 sessions | the system | Build one reliable, explainable system end to end |
 | 11 | [`Reinforcement-Learning/`](Reinforcement-Learning/) | 10 | 11 | Decide under uncertainty, and know when not to |
 | 12 | [`LLM-and-GenAI/`](LLM-and-GenAI/) | 10 | 12 | Build, evaluate and ship an LLM feature that pays for itself |
+| 13 | [`AI-Agents/`](AI-Agents/) | 10 | 13 | Build an agent whose guarantees do not depend on the model |
 
 ---
 
