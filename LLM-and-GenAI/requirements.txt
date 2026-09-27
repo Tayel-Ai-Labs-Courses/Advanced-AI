@@ -1,0 +1,10 @@
+torch>=2.2
+transformers>=4.40
+tiktoken>=0.6
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+faiss-cpu>=1.8
+jsonschema>=4.0
+
+jupyter>=1.0
