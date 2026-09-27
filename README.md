@@ -14,6 +14,7 @@ Course material for the Advanced AI track.
 | [`Computer-Vision/`](Computer-Vision/) | Images: classical CV, CNNs, detection, segmentation, and a seventh project |
 | [`Data-Engineering/`](Data-Engineering/) | Pipelines, storage, quality, orchestration, and an eighth project |
 | [`Data-Analysis/`](Data-Analysis/) | Basic and advanced analysis tracks, and a ninth project |
+| [`Data-Science/`](Data-Science/) | Problem to decision: leakage, thresholds, shipping, drift, and a tenth project |
 
 ## Working on this repository
 

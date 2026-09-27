@@ -37,6 +37,7 @@ LESSON_DIRS = [
     REPO_ROOT / "Data-Engineering" / "lessons",
     REPO_ROOT / "Data-Analysis" / "Basic" / "lessons",
     REPO_ROOT / "Data-Analysis" / "Advanced" / "lessons",
+    REPO_ROOT / "Data-Science" / "lessons",
 ]
 
 HEADER = (
