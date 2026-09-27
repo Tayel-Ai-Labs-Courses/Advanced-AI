@@ -1,0 +1,8 @@
+numpy>=1.26
+matplotlib>=3.8
+pandas>=2.2
+
+# Lessons 07-08 only — function approximation and policy gradients
+torch>=2.2
+
+jupyter>=1.0
