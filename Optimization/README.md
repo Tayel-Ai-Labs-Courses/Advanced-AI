@@ -8,6 +8,9 @@ Two halves:
 
 - **Lessons 03–07 — training side.** Optimisers, schedules, hyperparameter
   search, memory and speed, parameter-efficient fine-tuning.
+- **Lessons 14-15 — somebody else's hardware.** Running a model on your own
+  machine or inside a phone, where memory, power and an app download are the
+  budget.
 - **Lesson 13 — no gradient at all.** Particle swarms and differential
   evolution, for objectives that are integer, combinatorial or black-box.
 - **Lessons 08–12 — inference side.** Quantisation, pruning, distillation,
@@ -28,6 +31,7 @@ flowchart TD
     C --> D["8-10 Model compression<br/>quantise, prune, distil"]
     D --> E["11-12 Deployment<br/>compile, export, serve, cost"]
     E --> F["13 Derivative-free<br/>PSO, DE, random search"]
+    E --> G["14-15 Local and edge<br/>Ollama, on-device, budgets"]
     E --> F["Project 5"]
 ```
 
@@ -50,6 +54,8 @@ flowchart TD
 | 11 | [Compilation and Export](lessons/11-compilation-and-export.md) | Use `torch.compile`, TorchScript, ONNX |
 | 12 | [Serving and Cost](lessons/12-serving-and-cost.md) | Do the arithmetic before the invoice |
 | 13 | [Swarm and Population Optimisation](lessons/13-swarm-and-population.md) | Optimise what gradients cannot reach |
+| 14 | [Running Models Locally](lessons/14-running-models-locally.md) | An 8B model on your laptop, and the volume where that stops being cheaper |
+| 15 | [Edge and On-Device](lessons/15-edge-and-on-device.md) | Parameter count is not latency |
 
 ## Then
 

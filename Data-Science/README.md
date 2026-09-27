@@ -24,6 +24,9 @@ flowchart TD
     M --> E["6. evaluation<br/>against the decision"]
     E --> R["7. reproducibility<br/>tracking experiments"]
     R --> S["8. shipping<br/>batch, API, contract"]
+    R --> T["11. tracking<br/>MLflow, registry"]
+    E --> PR["12. prototype<br/>CSV, Gradio, then API"]
+    PR --> S
     S --> MO["9. monitoring<br/>drift and retraining"]
     MO --> L["10. limits<br/>fairness, the model card"]
     MO -.->|"it degraded"| D
@@ -44,6 +47,8 @@ flowchart TD
 | 08 | [Shipping the Model](lessons/08-shipping-the-model.md) | Batch, API, and the contract at the boundary |
 | 09 | [Monitoring and Drift](lessons/09-monitoring-and-drift.md) | How you find out it broke before the business does |
 | 10 | [Limits, Fairness and the Model Card](lessons/10-limits-and-fairness.md) | Who does this model fail, and did you write it down? |
+| 11 | [Experiment Tracking and the Registry](lessons/11-experiment-tracking.md) | *Read after 07.* MLflow, and the trap a tracking UI makes easier |
+| 12 | [Prototypes That Get a Decision](lessons/12-prototypes.md) | *Read before 08.* A stakeholder-facing page in 18 lines |
 
 ## Then
 
@@ -61,7 +66,12 @@ pip install -r requirements.txt
 ```
 
 Lessons 01-07 need nothing beyond pandas, NumPy and scikit-learn. Lesson 08
-adds FastAPI, and is the only lesson that starts a server.
+adds FastAPI, lesson 11 adds MLflow and lesson 12 adds Gradio; those three are
+the only ones that start a server.
+
+**Reading order.** Lessons 01-10 are the spine, in order. Lessons 11 and 12 were
+added later and slot in where their headers say: **11 after 07**, **12 before
+08**. Numbering stayed sequential so existing links keep working.
 
 ---
 

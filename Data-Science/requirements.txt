@@ -9,4 +9,10 @@ joblib>=1.3
 fastapi>=0.110
 uvicorn>=0.29
 
+# Lesson 11 only — experiment tracking
+mlflow>=2.12
+
+# Lesson 12 only — prototypes
+gradio>=4.0
+
 jupyter>=1.0
