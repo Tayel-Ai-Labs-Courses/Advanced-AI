@@ -91,6 +91,8 @@ about *choosing* rather than predicting.
 later lessons slot in, and what is still missing.
 [`LEVELS.md`](LEVELS.md) — where to begin as a beginner, an intermediate or a
 senior, and what to skip.
+[`DATASETS.md`](DATASETS.md) — the two datasets shared across six courses, and
+the threads that connect them.
 
 ## The courses
 
@@ -114,6 +116,19 @@ senior, and what to skip.
 | 16 | [`AI-System-Design/`](AI-System-Design/) | 8 | 16 | Draw the system, write the contract, and prove the latency before building |
 | 17 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | 17 | Fit the model, rent the right GPU, and predict the bill before it arrives |
 | 18 | [`Research-and-Review/`](Research-and-Review/) | 8 | 18 | Read papers sceptically, reproduce a result, write a review that says something |
+
+---
+
+## After the courses
+
+**[`Final-Projects/`](Final-Projects/)** — three capstones, each pulling from
+ten or more courses. Do one:
+
+| Capstone | For | Pulls from |
+|---|---|---|
+| [A — The Decision System](Final-Projects/A-decision-system.md) | Applied ML at a company | 12 courses |
+| [B — The Assistant](Final-Projects/B-the-assistant.md) | Building with LLMs | 11 courses |
+| [C — The Efficient Model](Final-Projects/C-efficient-model.md) | Cost, latency, devices | 10 courses |
 
 ---
 

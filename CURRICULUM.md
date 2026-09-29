@@ -166,6 +166,30 @@ worth less without it.
 
 ---
 
+## After everything — the capstones
+
+**[`Final-Projects/`](Final-Projects/)**. Three alternatives; do one. Each pulls
+from ten or more courses and is graded on scope-cutting, contact with real
+people, and a verdict where "do not ship" is available.
+
+| Capstone | Hard part | Pulls from |
+|---|---|---|
+| [A — The Decision System](Final-Projects/A-decision-system.md) | Deciding correctly on business data | 12 courses |
+| [B — The Assistant](Final-Projects/B-the-assistant.md) | Reliable text generation and retrieval | 11 courses |
+| [C — The Efficient Model](Final-Projects/C-efficient-model.md) | Cost, latency, devices | 10 courses |
+
+---
+
+## Shared datasets
+
+Six courses deliberately reuse the same two datasets — see
+[`DATASETS.md`](DATASETS.md). The `subscribers` thread is the most useful:
+Data-Science leaks it, thresholds it, monitors it and audits it for fairness;
+Data-Security then attacks the same model; AI-Agents gives an agent tools over
+the same customers.
+
+---
+
 ## Project numbering
 
 | # | Course | # | Course |
