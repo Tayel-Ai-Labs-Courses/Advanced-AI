@@ -1,6 +1,6 @@
 # Advanced AI — Tayel AI Labs
 
-Eighteen courses and seventeen projects, from `print("hello")` to a deployed,
+Nineteen courses and eighteen projects, from `print("hello")` to a deployed,
 monitored, explainable AI system. Every lesson is markdown with a generated
 notebook beside it, **every printed output is a real run**, and nothing needs a
 GPU or a paid API.
@@ -49,6 +49,7 @@ flowchart TD
     subgraph P8["DELIVERING IT - do this alongside everything"]
         O["<b>15. Communication and Documentation</b><br/>8 lessons - Project 15"]
         Q["<b>16. AI System Design</b><br/>8 lessons - Project 16"]
+        S["<b>18. Research and Review</b><br/>8 lessons - Project 18"]
     end
 
     A --> B --> C --> D
@@ -73,6 +74,8 @@ flowchart TD
     O --> Q
     C --> R
     D --> R
+    I --> S
+    O --> S
 ```
 
 **The short version.** Do 1-2-3 in order. Then do 7 and 8 — most people skip
@@ -110,6 +113,7 @@ senior, and what to skip.
 | 15 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | 15 | Make the other courses' work readable, runnable and actionable |
 | 16 | [`AI-System-Design/`](AI-System-Design/) | 8 | 16 | Draw the system, write the contract, and prove the latency before building |
 | 17 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | 17 | Fit the model, rent the right GPU, and predict the bill before it arrives |
+| 18 | [`Research-and-Review/`](Research-and-Review/) | 8 | 18 | Read papers sceptically, reproduce a result, write a review that says something |
 
 ---
 

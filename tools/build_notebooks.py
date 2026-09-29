@@ -45,6 +45,7 @@ LESSON_DIRS = [
     REPO_ROOT / "Communication-and-Documentation" / "lessons",
     REPO_ROOT / "AI-System-Design" / "lessons",
     REPO_ROOT / "HPC-and-Cloud" / "lessons",
+    REPO_ROOT / "Research-and-Review" / "lessons",
 ]
 
 HEADER = (
