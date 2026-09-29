@@ -1,6 +1,6 @@
 # The Curriculum — Everything, in Order
 
-Seventeen courses, sixteen projects, 190 notebooks. This page is the single
+Eighteen courses, seventeen projects, 190 notebooks. This page is the single
 ordering: what comes after what, where the later additions slot in, and what is
 still missing.
 
@@ -127,6 +127,7 @@ those three lessons are how you hand it over.
 | [`Optimization`](Optimization) | 15 | Project 5 | Cost, latency, size, local and edge |
 | [`Data-Security-for-AI`](Data-Security-for-AI) | 8 | Project 14 | Privacy, poisoning, extraction |
 | [`AI-System-Design`](AI-System-Design) | 8 | Project 16 | The map, the contract, the budget |
+| [`HPC-and-Cloud`](HPC-and-Cloud) | 8 | Project 17 | Fitting a model, renting a GPU, predicting the bill |
 
 ### Optimization reading order
 
@@ -176,6 +177,7 @@ worth less without it.
 | 6 | NLP | 14 | Data Security for AI |
 | 7 | Computer Vision | 15 | Communication and Documentation |
 | 8 | Data Engineering | 16 | AI System Design |
+| | | 17 | HPC and Cloud |
 
 Numbers follow the order the courses were written, not the order to do them in.
 **This page is the order to do them in.**
@@ -190,6 +192,7 @@ Numbers follow the order the courses were written, not the order to do them in.
 | **Experiment tracking, model registry** | [Data-Science 11](Data-Science/lessons/11-experiment-tracking.md) | Extends lesson 07's run records to a tool |
 | **Prototyping: Gradio, Streamlit, FastAPI** | [Data-Science 12](Data-Science/lessons/12-prototypes.md) + [08](Data-Science/lessons/08-shipping-the-model.md) | 12 is the demo; 08 is the service |
 | **Local execution, Ollama** | [Optimization 14](Optimization/lessons/14-running-models-locally.md) | It is a cost and latency decision |
+| **GPU memory, distributed training, spot, cloud cost** | [`HPC-and-Cloud`](HPC-and-Cloud) | Its own course; do it when a model outgrows one machine |
 | **Edge and on-device** | [Optimization 15](Optimization/lessons/15-edge-and-on-device.md) | Same block: fitting a budget |
 | **Swarm and derivative-free search** | [Optimization 13](Optimization/lessons/13-swarm-and-population.md) | Optimising what has no gradient |
 | **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see the table in Block 5 |
@@ -203,7 +206,6 @@ Four gaps, stated honestly, with the interim workaround until each course exists
 | Gap | Matters to | Until then |
 |---|---|---|
 | **Maths foundations** — linear algebra, calculus, probability | Beginners | 3Blue1Brown's linear algebra series alongside Deep-Learning |
-| **HPC and cloud training** — multi-GPU, distributed, spot instances | Intermediate, when models outgrow one machine | Optimization 06, 12, 14; rent one GPU hour and measure |
 | **Research and review papers** | Senior, and anyone going past applied work | One paper a week, read with Data-Science 05's comparison checklist |
 | **SQL and warehouse modelling** | Everyone, immediately | Data-Engineering 02-03, then any SQL exercise site |
 

@@ -1,0 +1,6 @@
+numpy>=1.26
+torch>=2.2
+
+# Nothing cloud-specific. The arithmetic is standard library; the measurements
+# run on a CPU. You supply your own provider when you get to lesson 08.
+jupyter>=1.0

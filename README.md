@@ -1,6 +1,6 @@
 # Advanced AI — Tayel AI Labs
 
-Seventeen courses and sixteen projects, from `print("hello")` to a deployed,
+Eighteen courses and seventeen projects, from `print("hello")` to a deployed,
 monitored, explainable AI system. Every lesson is markdown with a generated
 notebook beside it, **every printed output is a real run**, and nothing needs a
 GPU or a paid API.
@@ -43,6 +43,9 @@ flowchart TD
     subgraph P7["PROTECTING IT"]
         N["<b>14. Data Security for AI</b><br/>8 lessons - Project 14"]
     end
+    subgraph P7b["SCALING IT"]
+        R["<b>17. HPC and Cloud</b><br/>8 lessons - Project 17"]
+    end
     subgraph P8["DELIVERING IT - do this alongside everything"]
         O["<b>15. Communication and Documentation</b><br/>8 lessons - Project 15"]
         Q["<b>16. AI System Design</b><br/>8 lessons - Project 16"]
@@ -68,6 +71,8 @@ flowchart TD
     H --> O
     I --> Q
     O --> Q
+    C --> R
+    D --> R
 ```
 
 **The short version.** Do 1-2-3 in order. Then do 7 and 8 — most people skip
@@ -104,6 +109,7 @@ senior, and what to skip.
 | 14 | [`Data-Security-for-AI/`](Data-Security-for-AI/) | 8 | 14 | Attack a model, measure what leaks, and fix it |
 | 15 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | 15 | Make the other courses' work readable, runnable and actionable |
 | 16 | [`AI-System-Design/`](AI-System-Design/) | 8 | 16 | Draw the system, write the contract, and prove the latency before building |
+| 17 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | 17 | Fit the model, rent the right GPU, and predict the bill before it arrives |
 
 ---
 
