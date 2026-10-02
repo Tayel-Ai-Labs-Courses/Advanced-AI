@@ -1,45 +1,59 @@
 # The Curriculum — Everything, in Order
 
-Nineteen courses, eighteen projects, 190 notebooks. This page is the single
-ordering: what comes after what, where the later additions slot in, and what is
-still missing.
+**Twenty-one courses, twenty projects, three capstones, 222 notebooks.**
 
-- **New here?** [`LEVELS.md`](LEVELS.md) — where to start by experience level.
-- **Just want the list?** The table in [`README.md`](README.md).
-- **This page** is the definitive order, including the lessons that were added
-  after their course was written.
+This page is the single ordering: what comes after what, where the later
+additions slot in, where the specialisations live, and what is still missing.
+
+- **New here?** [`README.md`](README.md) — the landing page
+- **Which level am I?** [`LEVELS.md`](LEVELS.md)
+- **Shared data?** [`DATASETS.md`](DATASETS.md)
+- **This page** is the definitive order, including the lessons added after their
+  course was written.
 
 ---
 
-## The eight blocks
+## The nine blocks
 
 ```mermaid
 flowchart TD
-    B0["<b>0 · FOUNDATION</b><br/>Python"] --> B1["<b>1 · LEARNING FROM DATA</b><br/>Machine Learning → Deep Learning"]
+    B0["<b>0 · FOUNDATIONS</b><br/>Foundations (maths) · Python · Databases &amp; SQL"] --> B1["<b>1 · LEARNING FROM DATA</b><br/>Machine Learning → Deep Learning"]
     B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision<br/><i>take what you need</i>"]
     B0 --> B3["<b>3 · REAL DATA</b><br/>Data Engineering · Data Analysis"]
     B1 --> B4["<b>4 · DECIDING &amp; SHIPPING</b><br/>Data Science → Advanced Practical AI"]
     B3 --> B4
     B4 --> B5["<b>5 · GENERATIVE</b><br/>LLMs → AI Agents"]
-    B4 --> B6["<b>6 · MAKING IT LAST</b><br/>Optimization · Security · System Design"]
+    B4 --> B6["<b>6 · MAKING IT LAST</b><br/>Optimization · Security · System Design · HPC"]
     B5 --> B6
-    B6 --> B7["<b>7 · RL</b><br/>when the problem is sequential"]
-    C["<b>ALONGSIDE EVERYTHING</b><br/>Communication and Documentation"] -.-> B0
-    C -.-> B4
-    C -.-> B6
-    style C fill:#eef
+    B4 --> B7["<b>7 · UNCERTAINTY</b><br/>Reinforcement Learning"]
+    B6 --> CAP["<b>FINAL PROJECTS</b><br/>three capstones"]
+    B7 --> CAP
+    B8["<b>8 · PROFESSIONAL PRACTICE</b><br/>Communication · Research<br/><i>alongside everything</i>"] -.-> B0
+    B8 -.-> B4
+    B8 -.-> CAP
+    CAP --> SP["<b>SPECIALISATIONS</b><br/>separate repositories<br/>AI in UI/UX · AI in Frontend · Frontend"]
+    B4 -.->|"after Data-Science<br/>you may branch early"| SP
+    style B0 fill:#f0f4ff
+    style B4 fill:#fff4e6
+    style B8 fill:#f3f0ff
+    style CAP fill:#ecfdf5
+    style SP fill:#fff1f2
 ```
 
 ---
 
-## Block 0 — Foundation
+## Block 0 — Foundations
 
-| Order | Course | Lessons | Project |
-|---|---|---|---|
-| 1 | [`Python/Basic-Python`](Python/Basic-Python) | 10 + 5 libraries | Project 1 |
-| 2 | [`Python/Advanced-Python`](Python/Advanced-Python) | 7 | Project 2 |
+| Order | Course | Lessons | Project | Note |
+|---|---|---|---|---|
+| 1a | [`Foundations`](Foundations) | 8 | 19 | **Optional-but-recommended.** Four maths ideas. Can be done alongside later courses, one lesson per symptom |
+| 1b | [`Python/Basic-Python`](Python/Basic-Python) | 10 + 5 libraries | 1 | No shortcuts. Everything assumes it |
+| 1c | [`Python/Advanced-Python`](Python/Advanced-Python) | 7 | 2 | |
+| 1d | [`Databases-and-SQL`](Databases-and-SQL) | 8 | 20 | **Before Data-Engineering.** Every dataset came out of a database |
 
-No shortcuts here. Everything later assumes it.
+**Two valid routes through Foundations:** all eight lessons first, or one lesson
+at a time when a symptom appears. Its [lesson 01](Foundations/lessons/01-what-you-need.md)
+has the symptom table; the second route is the honest recommendation.
 
 ---
 
@@ -47,8 +61,8 @@ No shortcuts here. Everything later assumes it.
 
 | Order | Course | Lessons | Project |
 |---|---|---|---|
-| 3 | [`Machine-Learning`](Machine-Learning) | 13 | Project 3 |
-| 4 | [`Deep-Learning`](Deep-Learning) | 13 | Project 4 |
+| 2 | [`Machine-Learning`](Machine-Learning) | 13 | 3 |
+| 3 | [`Deep-Learning`](Deep-Learning) | 13 | 4 |
 
 Deep Learning is optional until a project needs it. Machine Learning is not.
 
@@ -58,8 +72,8 @@ Deep Learning is optional until a project needs it. Machine Learning is not.
 
 | Course | Lessons | Project | Take it when |
 |---|---|---|---|
-| [`NLP`](NLP) | 12 | Project 6 | The data is text |
-| [`Computer-Vision`](Computer-Vision) | 12 | Project 7 | The data is images |
+| [`NLP`](NLP) | 12 | 6 | The data is text |
+| [`Computer-Vision`](Computer-Vision) | 12 | 7 | The data is images |
 
 ---
 
@@ -67,11 +81,11 @@ Deep Learning is optional until a project needs it. Machine Learning is not.
 
 | Order | Course | Lessons | Project |
 |---|---|---|---|
-| 5 | [`Data-Engineering`](Data-Engineering) | 12 | Project 8 |
-| 6 | [`Data-Analysis`](Data-Analysis) | 8 Basic + 8 Advanced | Project 9 |
+| 4 | [`Data-Engineering`](Data-Engineering) | 12 | 8 |
+| 5 | [`Data-Analysis`](Data-Analysis) | 8 Basic + 8 Advanced | 9 |
 
 **The two most-skipped courses in the track**, and the reason most models never
-leave a notebook.
+leave a notebook. Do [`Databases-and-SQL`](Databases-and-SQL) first.
 
 ---
 
@@ -79,8 +93,8 @@ leave a notebook.
 
 | Order | Course | Lessons | Project |
 |---|---|---|---|
-| 7 | [`Data-Science`](Data-Science) | 12 | Project 10 |
-| 8 | [`Advanced-Practical-AI`](Advanced-Practical-AI) | 5 sessions | the system |
+| 6 | [`Data-Science`](Data-Science) | 12 | 10 |
+| 7 | [`Advanced-Practical-AI`](Advanced-Practical-AI) | 5 sessions | the system |
 
 ### Data-Science reading order
 
@@ -104,19 +118,19 @@ those three lessons are how you hand it over.
 
 | Order | Course | Lessons | Project |
 |---|---|---|---|
-| 9 | [`LLM-and-GenAI`](LLM-and-GenAI) | 10 | Project 12 |
-| 10 | [`AI-Agents`](AI-Agents) | 10 | Project 13 |
+| 8 | [`LLM-and-GenAI`](LLM-and-GenAI) | 10 | 12 |
+| 9 | [`AI-Agents`](AI-Agents) | 10 | 13 |
 
 **LLM evaluation and guardrails live here**, not in a separate course:
 
 | Topic | Where |
 |---|---|
-| Evaluating LLM output, metric failure modes | [LLM lesson 07](LLM-and-GenAI/lessons/07-evaluation.md) |
-| Hallucination control through grounding | [LLM lesson 06](LLM-and-GenAI/lessons/06-rag.md) |
-| Structured output, schemas, retries | [LLM lesson 09](LLM-and-GenAI/lessons/09-structured-output.md) |
-| Refusal paths and "not in context" | [LLM lessons 06, 07](LLM-and-GenAI/lessons/06-rag.md) |
-| Prompt injection and permissions | [AI-Agents lesson 05](AI-Agents/lessons/05-security.md) |
-| Business-rule guardrails beyond the schema | [AI-Agents lesson 02](AI-Agents/lessons/02-tools.md) |
+| Evaluating LLM output, metric failure modes | [LLM 07](LLM-and-GenAI/lessons/07-evaluation.md) |
+| Hallucination control through grounding | [LLM 06](LLM-and-GenAI/lessons/06-rag.md) |
+| Structured output, schemas, retries | [LLM 09](LLM-and-GenAI/lessons/09-structured-output.md) |
+| Refusal paths and "not in context" | [LLM 06](LLM-and-GenAI/lessons/06-rag.md), [07](LLM-and-GenAI/lessons/07-evaluation.md) |
+| Prompt injection and permissions | [AI-Agents 05](AI-Agents/lessons/05-security.md) |
+| Business-rule guardrails beyond the schema | [AI-Agents 02](AI-Agents/lessons/02-tools.md) |
 
 ---
 
@@ -124,11 +138,10 @@ those three lessons are how you hand it over.
 
 | Course | Lessons | Project | For |
 |---|---|---|---|
-| [`Optimization`](Optimization) | 15 | Project 5 | Cost, latency, size, local and edge |
-| [`Data-Security-for-AI`](Data-Security-for-AI) | 8 | Project 14 | Privacy, poisoning, extraction |
-| [`AI-System-Design`](AI-System-Design) | 8 | Project 16 | The map, the contract, the budget |
-| [`HPC-and-Cloud`](HPC-and-Cloud) | 8 | Project 17 | Fitting a model, renting a GPU, predicting the bill |
-| [`Research-and-Review`](Research-and-Review) | 8 | Project 18 | Reading papers sceptically; reproducing; reviewing |
+| [`Optimization`](Optimization) | 15 | 5 | Cost, latency, size, local and edge |
+| [`Data-Security-for-AI`](Data-Security-for-AI) | 8 | 14 | Privacy, poisoning, extraction, adversarial |
+| [`AI-System-Design`](AI-System-Design) | 8 | 16 | The map, the contract, the budget |
+| [`HPC-and-Cloud`](HPC-and-Cloud) | 8 | 17 | Fitting a model, renting a GPU, predicting the bill |
 
 ### Optimization reading order
 
@@ -139,38 +152,36 @@ those three lessons are how you hand it over.
 14-15  somebody else's hardware: local models (Ollama), edge devices
 ```
 
-Lessons **14-15** are the local-execution and edge track: run an 8B model on a
-laptop, price it honestly, and fit a model inside a phone's budget.
-
 ---
 
 ## Block 7 — Deciding under uncertainty
 
 | Course | Lessons | Project | Take it when |
 |---|---|---|---|
-| [`Reinforcement-Learning`](Reinforcement-Learning) | 10 | Project 11 | The action changes what happens next |
+| [`Reinforcement-Learning`](Reinforcement-Learning) | 10 | 11 | The action changes what happens next |
 
-Most business problems are bandits or supervised problems with a decision
-attached. RL lesson 01 has the flowchart that tells you which you have.
+Most business problems are bandits, or supervised problems with a decision
+attached. [RL lesson 01](Reinforcement-Learning/lessons/01-what-rl-is.md) has
+the flowchart that tells you which you have.
 
 ---
 
-## Alongside everything
+## Block 8 — Professional practice (alongside everything)
 
-| Course | Lessons | Project |
-|---|---|---|
-| [`Communication-and-Documentation`](Communication-and-Documentation) | 8 | Project 15 |
+| Course | Lessons | Project | When |
+|---|---|---|---|
+| [`Communication-and-Documentation`](Communication-and-Documentation) | 8 | 15 | **Lessons 01-04 in week one**, at any level |
+| [`Research-and-Review`](Research-and-Review) | 8 | 18 | When you start reading papers, or reviewing others' work |
 
-Start lessons 01-04 in week one, at any level. Everything else in this track is
-worth less without it.
+Everything else in this track is worth less without Communication. Research
+[lesson 03](Research-and-Review/lessons/03-what-the-numbers-hide.md) is the one
+lesson every level should read, whatever else they skip.
 
 ---
 
 ## After everything — the capstones
 
-**[`Final-Projects/`](Final-Projects/)**. Three alternatives; do one. Each pulls
-from ten or more courses and is graded on scope-cutting, contact with real
-people, and a verdict where "do not ship" is available.
+**[`Final-Projects/`](Final-Projects/)**. Three alternatives; do one.
 
 | Capstone | Hard part | Pulls from |
 |---|---|---|
@@ -180,13 +191,32 @@ people, and a verdict where "do not ship" is available.
 
 ---
 
-## Shared datasets
+## Specialisations — separate repositories
 
-Six courses deliberately reuse the same two datasets — see
-[`DATASETS.md`](DATASETS.md). The `subscribers` thread is the most useful:
-Data-Science leaks it, thresholds it, monitors it and audits it for fairness;
-Data-Security then attacks the same model; AI-Agents gives an agent tools over
-the same customers.
+These are **applied tracks in the same organisation**, not part of the numbered
+progression. They assume the core curriculum and go deep on one surface.
+
+| Specialisation | Repository | Prerequisites from here | Take it when |
+|---|---|---|---|
+| **AI in UI/UX** | [`AI-in-UIUX`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-UIUX) | [Communication](Communication-and-Documentation) 01-04 | You design the surface users touch |
+| **AI in Frontend** | *(same organisation)* | [LLM](LLM-and-GenAI) 09-10, [AI-System-Design](AI-System-Design) 03 | You build LLM features in a browser |
+| **Frontend Engineering** | *(same organisation)* | none from here | You need the craft the AI work plugs into |
+
+**Why separate.** The core track makes a model correct, cheap and safe. A
+specialisation is about the *surface* it meets — a design system, a browser, a
+mobile app — with its own tools, failure modes and audience. Merging them into
+one progression would make both worse.
+
+**Where they meet:**
+[AI-System-Design lesson 03](AI-System-Design/lessons/03-interfaces.md) is
+written for the frontend and mobile teams — the ten-line contract, the response
+fields (`band`, `degraded`, `model_version`), and every UI state a consumer must
+build. That lesson is the handshake between the core track and every
+specialisation.
+
+**Branching early is allowed.** After [`Data-Science`](Data-Science) you have
+enough to be useful in a specialisation; come back for Block 6 when you ship
+something that has to survive.
 
 ---
 
@@ -194,19 +224,36 @@ the same customers.
 
 | # | Course | # | Course |
 |---|---|---|---|
-| 1 | Python Basic | 9 | Data Analysis |
-| 2 | Python Advanced | 10 | Data Science |
-| 3 | Machine Learning | 11 | Reinforcement Learning |
-| 4 | Deep Learning | 12 | LLMs and Generative AI |
-| 5 | Optimization | 13 | AI Agents |
-| 6 | NLP | 14 | Data Security for AI |
-| 7 | Computer Vision | 15 | Communication and Documentation |
-| 8 | Data Engineering | 16 | AI System Design |
-| | | 17 | HPC and Cloud |
-| | | 18 | Research and Review |
+| 1 | Python Basic | 11 | Reinforcement Learning |
+| 2 | Python Advanced | 12 | LLMs and Generative AI |
+| 3 | Machine Learning | 13 | AI Agents |
+| 4 | Deep Learning | 14 | Data Security for AI |
+| 5 | Optimization | 15 | Communication and Documentation |
+| 6 | NLP | 16 | AI System Design |
+| 7 | Computer Vision | 17 | HPC and Cloud |
+| 8 | Data Engineering | 18 | Research and Review |
+| 9 | Data Analysis | 19 | **Foundations** |
+| 10 | Data Science | 20 | **Databases and SQL** |
 
-Numbers follow the order the courses were written, not the order to do them in.
-**This page is the order to do them in.**
+Numbers follow the order the courses were written, **not** the order to do them
+in. Projects 19 and 20 belong to Block 0 and can be done first despite their
+numbers. **This page is the order to do them in.**
+
+---
+
+## Shared datasets
+
+Six courses deliberately reuse the same two datasets — see
+[`DATASETS.md`](DATASETS.md). The `subscribers` thread is the most useful:
+
+```text
+Data-Science 03    days_to_renewal leaks; AUC 0.667 → 0.946
+Data-Science 06    the 0.5 threshold earns 1,083 EGP; 0.15 earns 47,313
+Data-Science 10    a 10% holdout stays at 18.29% while the measured rate falls to 9.1%
+Data-Security 03   the SAME model leaks membership at 0.805 AUC
+Data-Security 05   10,000 random queries clone it to 91.3% agreement
+AI-Agents 05       an injected note refunds four of its customers for 1,610 EGP
+```
 
 ---
 
@@ -214,31 +261,31 @@ Numbers follow the order the courses were written, not the order to do them in.
 
 | Topic | Home | Why there |
 |---|---|---|
-| **System design, diagrams, API contracts** | [`AI-System-Design`](AI-System-Design) 01-03 | Its own course; do 01-03 before Advanced-Practical-AI |
+| **Maths foundations** | [`Foundations`](Foundations) | Its own course; do it first or per-symptom |
+| **SQL, schema design, window functions** | [`Databases-and-SQL`](Databases-and-SQL) | Its own course; before Data-Engineering |
+| **System design, diagrams, API contracts** | [`AI-System-Design`](AI-System-Design) 01-03 | Do 01-03 before Advanced-Practical-AI |
 | **Experiment tracking, model registry** | [Data-Science 11](Data-Science/lessons/11-experiment-tracking.md) | Extends lesson 07's run records to a tool |
 | **Prototyping: Gradio, Streamlit, FastAPI** | [Data-Science 12](Data-Science/lessons/12-prototypes.md) + [08](Data-Science/lessons/08-shipping-the-model.md) | 12 is the demo; 08 is the service |
 | **Local execution, Ollama** | [Optimization 14](Optimization/lessons/14-running-models-locally.md) | It is a cost and latency decision |
-| **GPU memory, distributed training, spot, cloud cost** | [`HPC-and-Cloud`](HPC-and-Cloud) | Its own course; do it when a model outgrows one machine |
-| **Reading papers, reproducing, reviewing** | [`Research-and-Review`](Research-and-Review) | Its own course; lesson 03 is the one everyone should read |
 | **Edge and on-device** | [Optimization 15](Optimization/lessons/15-edge-and-on-device.md) | Same block: fitting a budget |
 | **Swarm and derivative-free search** | [Optimization 13](Optimization/lessons/13-swarm-and-population.md) | Optimising what has no gradient |
-| **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see the table in Block 5 |
+| **GPU memory, distributed, spot, cloud cost** | [`HPC-and-Cloud`](HPC-and-Cloud) | Do it when a model outgrows one machine |
+| **Reading papers, reproducing, reviewing** | [`Research-and-Review`](Research-and-Review) | Lesson 03 is the one everyone should read |
+| **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see Block 5 |
 
 ---
 
 ## Still missing
 
-Four gaps, stated honestly, with the interim workaround until each course exists:
+Two partial areas remain. Both are honest gaps, and both have an interim route:
 
-| Gap | Matters to | Until then |
+| Gap | Status | Until then |
 |---|---|---|
-| **Maths foundations** — linear algebra, calculus, probability | Beginners | 3Blue1Brown's linear algebra series alongside Deep-Learning |
-| **SQL and warehouse modelling** | Everyone, immediately | Data-Engineering 02-03, then any SQL exercise site |
+| **Time-series forecasting** | Partial — [Data-Analysis Advanced 04](Data-Analysis/Advanced/lessons/04-time-series.md) analyses trends but does not forecast | Lag features with [Machine-Learning](Machine-Learning)'s validation rules and [Data-Science 03](Data-Science/lessons/03-the-data-you-have.md)'s time split |
+| **MLOps tooling** (Docker, Kubernetes, CI/CD for models) | Partial — the principles are in [Data-Science 08-09](Data-Science/lessons/08-shipping-the-model.md), [11](Data-Science/lessons/11-experiment-tracking.md), [HPC 08](HPC-and-Cloud/lessons/08-laptop-to-cloud.md) and this repo's own CI | Containerise one project from [HPC 08](HPC-and-Cloud/lessons/08-laptop-to-cloud.md)'s pinning checklist |
 
-Partially covered: **time-series forecasting** (Data-Analysis Advanced 04
-analyses trends but does not forecast) and **MLOps tooling** (Docker, K8s and
-CI/CD for models — Data-Science 08-09 and this repo's own CI cover the
-principles).
+Everything else named as a gap in earlier versions of this page — maths, SQL,
+HPC, research — now has a course.
 
 ---
 
@@ -249,5 +296,6 @@ principles).
 3. When the run contradicted the draft, **the prose changed, not the number.**
 4. Machine-dependent output is labelled as such.
 5. Every lesson ends with a common-mistakes table and exercises.
+6. Every claim has a number, and every number has a source.
 
 Checked on every push by [`.github/workflows/check.yml`](.github/workflows/check.yml).

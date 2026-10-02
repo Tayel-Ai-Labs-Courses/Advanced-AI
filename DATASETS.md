@@ -57,6 +57,26 @@ Six courses, one population of customers, six different ways it can go wrong.
 
 ---
 
+### `orders` / `customers` in SQL — the same shape, in a database
+
+[`Databases-and-SQL`](Databases-and-SQL) builds the **same domain** as a
+relational schema: 5,000 customers and 200,000 orders, in SQLite, with foreign
+keys and `CHECK` constraints.
+
+| Course | Uses it for | Entry point |
+|---|---|---|
+| [Databases-and-SQL](Databases-and-SQL) | Schema, queries, windows, indexes, transactions | [lesson 01](Databases-and-SQL/lessons/01-why-sql.md) |
+
+**The thread:** Data-Analysis cleans the defects *after* the fact;
+[Databases-and-SQL lesson 02](Databases-and-SQL/lessons/02-schema-design.md)
+makes four of them **impossible to insert**, and
+[lesson 07](Databases-and-SQL/lessons/07-sql-for-ml.md) builds the
+point-in-time feature table that
+[Data-Science lesson 02](Data-Science/lessons/02-framing-the-problem.md)
+describes in Python.
+
+---
+
 ## The smaller shared fixtures
 
 | File | Written by | Reused by |
@@ -68,6 +88,7 @@ Six courses, one population of customers, six different ways it can go wrong.
 | `/tmp/office_tools.py` | [AI-Agents lesson 02](AI-Agents/lessons/02-tools.md) | AI-Agents 03 |
 | `/tmp/reviews.py` | [LLM lesson 08](LLM-and-GenAI/lessons/08-prompt-rag-or-finetune.md) | Optimization 14 |
 | `/tmp/series.parquet` | Data-Engineering | Data-Analysis Advanced 04 |
+| in-memory SQLite `orders`/`customers` | [SQL lesson 01](Databases-and-SQL/lessons/01-why-sql.md) | SQL 03, 04, 05 |
 
 **Run lessons in order within a course.** A lesson that reads `/tmp/x.py` is
 reading a file an earlier lesson wrote. Each course README says which.
@@ -108,6 +129,19 @@ Three exercises that connect courses, using data you already have:
    population**, apply Data-Science lesson 06's threshold as the eligibility
    rule, and measure the harm rate when an injected note tries to refund
    everyone.
+
+4. **Build the `orders` schema from
+   [Databases-and-SQL lesson 02](Databases-and-SQL/lessons/02-schema-design.md)
+   and load the Data-Analysis `orders` fixture into it.** How many of the 175
+   defective rows do the constraints reject? That number is the difference
+   between cleaning data and preventing it.
+
+5. **Compute the effective rank
+   ([Foundations lesson 03](Foundations/lessons/03-decomposition.md)) of the
+   `subscribers` feature matrix.** Eight columns — how many independent
+   directions? Then check whether dropping to that many components changes
+   [Data-Science lesson 05](Data-Science/lessons/05-baselines-and-selection.md)'s
+   model ranking.
 
 Each takes an afternoon and teaches more about how the courses fit together
 than any amount of reading the READMEs.

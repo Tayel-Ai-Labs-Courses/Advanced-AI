@@ -8,6 +8,10 @@ now covers.
 
 ## Coverage: what the track has, and what it does not
 
+**21 courses · 20 projects · 3 capstones.** See
+[`CURRICULUM.md`](CURRICULUM.md) for the full ordering and the specialisation
+tracks.
+
 Judged against the skills an AI engineer is actually asked for in a job:
 
 | Area | Covered | Where |
@@ -28,17 +32,23 @@ Judged against the skills an AI engineer is actually asked for in a job:
 | Agents, tools, automation in Python | **yes** | AI-Agents |
 | Privacy, poisoning, extraction, adversarial, DP | **yes** | Data-Security-for-AI |
 | Writing, charts, docs, artifacts, presenting | **yes** | Communication-and-Documentation |
-| **SQL and warehouse modelling** | partial | Data-Engineering 02-03 touch it; no dedicated course |
-| **Maths foundations** (linear algebra, calculus, probability) | **no** | Assumed throughout, taught nowhere |
-| **HPC, GPUs, cloud training** | **no** | Planned |
-| **Research and review papers** | **no** | Planned |
+| **Maths foundations** (linear algebra, gradients, probability, statistics) | **yes** | Foundations |
+| **SQL, schema design, window functions, indexes** | **yes** | Databases-and-SQL |
+| **HPC, GPUs, distributed training, cloud cost** | **yes** | HPC-and-Cloud |
+| **Research, reproduction, review papers** | **yes** | Research-and-Review |
+| **System design, API contracts for AI services** | **yes** | AI-System-Design |
 | **Time-series forecasting** | partial | Data-Analysis Advanced 04 analyses; no forecasting models |
 | **MLOps tooling** (Docker, K8s, CI/CD for models) | partial | Data-Science 08-09 and CI here; no dedicated course |
 
-**Roughly 80% of what the job asks for is covered today.** The four honest gaps
-are maths foundations, HPC/cloud, research skills, and SQL — the first two
-matter most for a junior, the third for anyone going further than applying known
-methods.
+**Roughly 95% of what the job asks for is covered today.** The two remaining
+partials are time-series forecasting and MLOps tooling (Docker, Kubernetes,
+CI/CD for models) — the principles of the second are in Data-Science 08-11 and
+HPC 08, but there is no dedicated course.
+
+For the applied surfaces — **AI in UI/UX, AI in Frontend, Frontend
+Engineering** — see the Specialisations section of
+[`CURRICULUM.md`](CURRICULUM.md). Those are separate repositories in the same
+organisation, deliberately outside this progression.
 
 ---
 
@@ -47,14 +57,22 @@ methods.
 **Goal: produce one thing that works and one thing that is measured.**
 
 ```text
+0. Foundations         one lesson per symptom           optional, run it alongside
 1. Python              both tracks, Projects 1-2        the foundation, no shortcuts
-2. Machine-Learning    + Project 3                      first real model
-3. Data-Analysis       Basic track only, + Project 9    how to not fool yourself
-4. Data-Science        lessons 01-06                    what the job actually is
-5. Communication       lessons 01-04, + Project 15      make it readable
+2. Databases-and-SQL   + Project 20                     every dataset comes from one
+3. Machine-Learning    + Project 3                      first real model
+4. Data-Analysis       Basic track only, + Project 9    how to not fool yourself
+5. Data-Science        lessons 01-06                    what the job actually is
+6. Communication       lessons 01-04, + Project 15      make it readable
 ```
 
-**Skip for now:** Deep-Learning, Optimization, RL, Agents, Security.
+**Skip for now:** Deep-Learning, Optimization, RL, Agents, Security, HPC,
+System-Design, Research.
+
+**On Foundations:** do not work through all eight lessons before starting. Use
+its [lesson 01](Foundations/lessons/01-what-you-need.md) symptom table and read
+the one lesson that matches whatever you are currently doing by trial and
+error.
 
 Why this order: a beginner who starts with deep learning learns to run a
 training loop without learning whether the result means anything. Data-Analysis
@@ -73,11 +91,13 @@ say by how much with an interval, and write one page a manager can act on.
 ```text
 1. Data-Science        all 10 + Project 10              the spine of this level
 2. Deep-Learning       + Project 4                      if the domain needs it
-3. Data-Engineering    + Project 8                      the usual missing piece
-4. Data-Analysis       Advanced track + Project 9
-5. LLM-and-GenAI       + Project 12                     if the work is text
-6. Communication       all 8 + Project 15
-7. Advanced-Practical-AI                                one system, end to end
+3. Databases-and-SQL   + Project 20                     if you skipped it
+4. Data-Engineering    + Project 8                      the usual missing piece
+5. Data-Analysis       Advanced track + Project 9
+6. AI-System-Design    lessons 01-03                    before anyone integrates
+7. LLM-and-GenAI       + Project 12                     if the work is text
+8. Communication       all 8 + Project 15
+9. Advanced-Practical-AI                                one system, end to end
 ```
 
 **Then one domain course** — NLP, Computer-Vision, or Optimization — depending
@@ -98,11 +118,14 @@ holdout, and a written verdict.
 
 ```text
 1. Data-Security-for-AI  + Project 14      the gap most seniors have
-2. AI-Agents             + Project 13      if the team is building agents
-3. Optimization          + Project 5       cost and latency become yours
-4. Reinforcement-Learning + Project 11     if the problem is sequential
-5. Communication         lessons 06-08     artifacts, handover, presenting
-6. Final Projects                          the cross-course capstones
+2. Research-and-Review   lesson 03         read this one even if you skip the rest
+3. AI-System-Design      + Project 16      you now review other people's designs
+4. AI-Agents             + Project 13      if the team is building agents
+5. Optimization          + Project 5       cost and latency become yours
+6. HPC-and-Cloud         + Project 17      when models outgrow one machine
+7. Reinforcement-Learning + Project 11     if the problem is sequential
+8. Communication         lessons 06-08     artifacts, handover, presenting
+9. Final Projects                          the cross-course capstones
 ```
 
 **Read, do not work through:** the "Common mistakes" table and the
@@ -131,8 +154,8 @@ Three courses are not a stage, they are a habit:
 
 | Week | Do |
 |---|---|
-| 1 | Python Basic (skim what you know), Machine-Learning 01-06 |
-| 2 | Data-Science 01-06, Data-Analysis Basic 01-04 |
+| 1 | Python Basic (skim what you know), Databases-and-SQL 01-04 |
+| 2 | Machine-Learning 01-06, Data-Science 01-06 |
 | 3 | Communication 01-04, and start a real project |
 | 4 | Finish the project. Data-Science 07-10 while it runs |
 
@@ -146,11 +169,9 @@ most people with a year of tutorials can do.
 
 | Gap | Matters most to | Interim advice |
 |---|---|---|
-| **Maths foundations** | Beginners | Do 3Blue1Brown's linear algebra series alongside Deep-Learning |
-| **HPC and cloud training** | Intermediate, when models outgrow a laptop | Read Optimization 06 and 12; rent one GPU hour and measure |
-| **Research and review papers** | Senior, and anyone going past applied work | Read one paper a week with the Data-Science 05 comparison checklist in hand |
-| **SQL** | Everyone, immediately | Data-Engineering 02-03, then any SQL exercise site |
-| **Time-series forecasting** | Whoever is asked for a forecast | Data-Analysis Advanced 04, then lag features with Machine-Learning's validation rules |
+| **Time-series forecasting** | Whoever is asked for a forecast | Data-Analysis Advanced 04, then lag features with Machine-Learning's validation rules and Data-Science 03's time split |
+| **MLOps tooling** (Docker, K8s, CI/CD for models) | Intermediate and senior | The principles are in Data-Science 08-11 and HPC 08; containerise one project using HPC 08's pinning checklist |
 
-These four are planned as courses. Until they exist, the rows above are the
-honest workaround, not a substitute.
+Both are partial rather than absent. Everything else listed as a gap in earlier
+versions of this page — maths, SQL, HPC, research, system design — now has its
+own course.
