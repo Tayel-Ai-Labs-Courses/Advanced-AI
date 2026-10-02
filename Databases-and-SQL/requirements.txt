@@ -1,0 +1,8 @@
+# sqlite3 is in the Python standard library — lessons 01-07 need nothing else.
+pandas>=2.2
+numpy>=1.26
+
+# Lesson 08 only, and optional
+duckdb>=0.10
+
+jupyter>=1.0
