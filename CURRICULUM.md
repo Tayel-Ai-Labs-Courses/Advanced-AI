@@ -1,9 +1,10 @@
 # The Curriculum — Everything, in Order
 
-**Twenty-one courses, twenty projects, three capstones, 222 notebooks.**
+**Twenty-three courses, twenty-two projects, three capstones, 248 notebooks.**
 
 This page is the single ordering: what comes after what, where the later
-additions slot in, where the specialisations live, and what is still missing.
+additions slot in, where the applied repositories live, and what is still missing.
+The one-diagram version is in [`README.md`](README.md#the-unified-roadmap).
 
 - **New here?** [`README.md`](README.md) — the landing page
 - **Which level am I?** [`LEVELS.md`](LEVELS.md)
@@ -18,12 +19,12 @@ additions slot in, where the specialisations live, and what is still missing.
 ```mermaid
 flowchart TD
     B0["<b>0 · FOUNDATIONS</b><br/>Foundations (maths) · Python · Databases &amp; SQL"] --> B1["<b>1 · LEARNING FROM DATA</b><br/>Machine Learning → Deep Learning"]
-    B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision<br/><i>take what you need</i>"]
+    B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision · Time Series<br/><i>take what you need</i>"]
     B0 --> B3["<b>3 · REAL DATA</b><br/>Data Engineering · Data Analysis"]
     B1 --> B4["<b>4 · DECIDING &amp; SHIPPING</b><br/>Data Science → Advanced Practical AI"]
     B3 --> B4
     B4 --> B5["<b>5 · GENERATIVE</b><br/>LLMs → AI Agents"]
-    B4 --> B6["<b>6 · MAKING IT LAST</b><br/>Optimization · Security · System Design · HPC"]
+    B4 --> B6["<b>6 · MAKING IT LAST</b><br/>MLOps · System Design · Optimization<br/>Security · HPC"]
     B5 --> B6
     B4 --> B7["<b>7 · UNCERTAINTY</b><br/>Reinforcement Learning"]
     B6 --> CAP["<b>FINAL PROJECTS</b><br/>three capstones"]
@@ -31,7 +32,7 @@ flowchart TD
     B8["<b>8 · PROFESSIONAL PRACTICE</b><br/>Communication · Research<br/><i>alongside everything</i>"] -.-> B0
     B8 -.-> B4
     B8 -.-> CAP
-    CAP --> SP["<b>SPECIALISATIONS</b><br/>separate repositories<br/>AI in UI/UX · AI in Frontend · Frontend"]
+    CAP --> SP["<b>9 · APPLIED</b><br/>eight separate repositories<br/>maths · cloud · embedded · cyber<br/>prompting · frontend · UI/UX · tooling"]
     B4 -.->|"after Data-Science<br/>you may branch early"| SP
     style B0 fill:#f0f4ff
     style B4 fill:#fff4e6
@@ -74,6 +75,13 @@ Deep Learning is optional until a project needs it. Machine Learning is not.
 |---|---|---|---|
 | [`NLP`](NLP) | 12 | 6 | The data is text |
 | [`Computer-Vision`](Computer-Vision) | 12 | 7 | The data is images |
+| [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | 8 | 21 | The rows are ordered and the future is the target |
+
+**Time-Series has a prerequisite the other two do not:** read
+[lesson 02](Time-Series-and-Forecasting/lessons/02-evaluating.md) before you
+trust any forecasting result you have ever produced. A shuffled split scores
+MAE 85.3 where an honest one scores 107.7, and an 8-fold backtest turns a 9%
+win into 0.5%.
 
 ---
 
@@ -136,12 +144,31 @@ those three lessons are how you hand it over.
 
 ## Block 6 — Making it last
 
-| Course | Lessons | Project | For |
-|---|---|---|---|
-| [`Optimization`](Optimization) | 15 | 5 | Cost, latency, size, local and edge |
-| [`Data-Security-for-AI`](Data-Security-for-AI) | 8 | 14 | Privacy, poisoning, extraction, adversarial |
-| [`AI-System-Design`](AI-System-Design) | 8 | 16 | The map, the contract, the budget |
-| [`HPC-and-Cloud`](HPC-and-Cloud) | 8 | 17 | Fitting a model, renting a GPU, predicting the bill |
+| Order | Course | Lessons | Project | For |
+|---|---|---|---|---|
+| 1 | [`MLOps`](MLOps) | 8 | 22 | Packaging, pipelines, the CI gate, deployment, serving, monitoring |
+| 2 | [`AI-System-Design`](AI-System-Design) | 8 | 16 | The map, the contract, the budget |
+| 3 | [`Optimization`](Optimization) | 15 | 5 | Cost, latency, size, local and edge |
+| 4 | [`Data-Security-for-AI`](Data-Security-for-AI) | 8 | 14 | Privacy, poisoning, extraction, adversarial |
+| 5 | [`HPC-and-Cloud`](HPC-and-Cloud) | 8 | 17 | Fitting a model, renting a GPU, predicting the bill |
+
+**MLOps first in this block**, because it is the one that decides whether
+anything else in it survives. It extends
+[Data-Science 08-09](Data-Science/lessons/08-shipping-the-model.md) and
+[11](Data-Science/lessons/11-experiment-tracking.md) from "here is how" to
+"here is what each control costs and prevents" — and one of its findings is
+that the most cautious option on the list is the most expensive.
+
+### MLOps reading order
+
+```text
+01-02  what breaks, and pinning the environment
+03     the pipeline as code: content addressing, parameters in one file
+04     the CI gate, priced: no gate 90,120 EGP/month, eval gate 16,020
+05     deployment: canary, blue-green, shadow — all five priced
+06-07  serving (latency is queueing) and monitoring (skew, thresholds)
+08     model cards, review by evidence, ownership, and what it all costs
+```
 
 ### Optimization reading order
 
@@ -191,32 +218,39 @@ lesson every level should read, whatever else they skip.
 
 ---
 
-## Specialisations — separate repositories
+## Block 9 — Applied repositories
 
-These are **applied tracks in the same organisation**, not part of the numbered
-progression. They assume the core curriculum and go deep on one surface.
+Eight **separate repositories in the same organisation**
+([all of them](https://github.com/Tayel-Ai-Labs-Courses)), not part of the
+numbered progression. Each row says what to read here first and, where it
+exists, the overlap — stated plainly, so you do not study the same thing twice.
 
-| Specialisation | Repository | Prerequisites from here | Take it when |
-|---|---|---|---|
-| **AI in UI/UX** | [`AI-in-UIUX`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-UIUX) | [Communication](Communication-and-Documentation) 01-04 | You design the surface users touch |
-| **AI in Frontend** | *(same organisation)* | [LLM](LLM-and-GenAI) 09-10, [AI-System-Design](AI-System-Design) 03 | You build LLM features in a browser |
-| **Frontend Engineering** | *(same organisation)* | none from here | You need the craft the AI work plugs into |
+| Repository | Read first, from here | Overlap with this track |
+|---|---|---|
+| [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI) | nothing | **Deliberate.** [`Foundations`](Foundations) is the compressed, decision-oriented 8 lessons; this is the fuller treatment. Take **either** |
+| [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing) | [HPC-and-Cloud](HPC-and-Cloud) 05-08, [MLOps](MLOps) 02 | **Partial.** HPC covers *will it fit, what will it cost*; this is the infrastructure. MLOps stops before Kubernetes and Terraform on purpose — they are here |
+| [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI) | [Optimization](Optimization) 10-15 | **Partial.** [Optimization 15](Optimization/lessons/15-edge-and-on-device.md) measures quantisation and on-device latency; this is the hardware and toolchains |
+| [`Cyber-Ai`](https://github.com/Tayel-Ai-Labs-Courses/Cyber-Ai) | [Machine-Learning](Machine-Learning), [Data-Science](Data-Science) 06 | **None — the names mislead.** [`Data-Security-for-AI`](Data-Security-for-AI) is security **of** a model; `Cyber-Ai` is models **for** security |
+| [`Advanced-Prompt-Engineering`](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) | [LLM-and-GenAI](LLM-and-GenAI) 01-04 | **Partial.** LLM 04 measures whether a prompt change is real given sampling noise; this is the technique catalogue. Do LLM 04 first or you cannot tell a win from noise |
+| [`AI-in-Frontend`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-Frontend) | [LLM-and-GenAI](LLM-and-GenAI) 09-10, [AI-System-Design](AI-System-Design) 03 | **None** |
+| [`AI-in-UIUX`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-UIUX) | [Communication](Communication-and-Documentation) 01-04 | **None** |
+| [`Claude-Skills`](https://github.com/Tayel-Ai-Labs-Courses/Claude-Skills) | [AI-Agents](AI-Agents) 01-05 | **None.** Tooling; useful alongside anything |
 
-**Why separate.** The core track makes a model correct, cheap and safe. A
-specialisation is about the *surface* it meets — a design system, a browser, a
-mobile app — with its own tools, failure modes and audience. Merging them into
-one progression would make both worse.
+**Why separate.** The core track makes a model correct, cheap and safe. An
+applied repository is about the *surface* it meets — a design system, a browser,
+a board, a security operations centre — with its own tools, failure modes and
+audience. Merging them into one progression would make both worse.
 
 **Where they meet:**
 [AI-System-Design lesson 03](AI-System-Design/lessons/03-interfaces.md) is
 written for the frontend and mobile teams — the ten-line contract, the response
 fields (`band`, `degraded`, `model_version`), and every UI state a consumer must
-build. That lesson is the handshake between the core track and every
-specialisation.
+build. That lesson is the handshake between the core track and every applied
+repository.
 
 **Branching early is allowed.** After [`Data-Science`](Data-Science) you have
-enough to be useful in a specialisation; come back for Block 6 when you ship
-something that has to survive.
+enough to be useful in an applied repository; come back for Block 6 when you
+ship something that has to survive.
 
 ---
 
@@ -234,6 +268,8 @@ something that has to survive.
 | 8 | Data Engineering | 18 | Research and Review |
 | 9 | Data Analysis | 19 | **Foundations** |
 | 10 | Data Science | 20 | **Databases and SQL** |
+| | | 21 | **Time Series and Forecasting** |
+| | | 22 | **MLOps** |
 
 Numbers follow the order the courses were written, **not** the order to do them
 in. Projects 19 and 20 belong to Block 0 and can be done first despite their
@@ -272,20 +308,26 @@ AI-Agents 05       an injected note refunds four of its customers for 1,610 EGP
 | **GPU memory, distributed, spot, cloud cost** | [`HPC-and-Cloud`](HPC-and-Cloud) | Do it when a model outgrows one machine |
 | **Reading papers, reproducing, reviewing** | [`Research-and-Review`](Research-and-Review) | Lesson 03 is the one everyone should read |
 | **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see Block 5 |
+| **Forecasting, backtesting, horizons, intervals** | [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | Its own course; Block 2, next to NLP and CV |
+| **Docker, CI for models, canary and blue-green, serving, drift response** | [`MLOps`](MLOps) | Its own course; first in Block 6 |
 
 ---
 
 ## Still missing
 
-Two partial areas remain. Both are honest gaps, and both have an interim route:
+Nothing in the gap list has an interim route any more — **time-series
+forecasting and MLOps both became courses** (Block 2 and Block 6). The honest
+remaining gaps are all *out of scope by choice*, and each has a home:
 
-| Gap | Status | Until then |
+| Not here | Why | Where it is |
 |---|---|---|
-| **Time-series forecasting** | Partial — [Data-Analysis Advanced 04](Data-Analysis/Advanced/lessons/04-time-series.md) analyses trends but does not forecast | Lag features with [Machine-Learning](Machine-Learning)'s validation rules and [Data-Science 03](Data-Science/lessons/03-the-data-you-have.md)'s time split |
-| **MLOps tooling** (Docker, Kubernetes, CI/CD for models) | Partial — the principles are in [Data-Science 08-09](Data-Science/lessons/08-shipping-the-model.md), [11](Data-Science/lessons/11-experiment-tracking.md), [HPC 08](HPC-and-Cloud/lessons/08-laptop-to-cloud.md) and this repo's own CI | Containerise one project from [HPC 08](HPC-and-Cloud/lessons/08-laptop-to-cloud.md)'s pinning checklist |
+| Kubernetes, Terraform, cloud consoles | Tool-specific and fast-moving; the cost model is the transferable part | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing), [HPC-and-Cloud](HPC-and-Cloud) 05-08 |
+| Feature stores as products | [MLOps 07](MLOps/lessons/07-monitoring.md) covers the problem they solve; which to buy is procurement | — |
+| Hardware, boards, toolchains | A different discipline | [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI) |
+| Deeper maths (proofs, measure theory) | [`Foundations`](Foundations) is deliberately decision-oriented | [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI) |
+| Frontend craft | Not AI engineering | [`AI-in-Frontend`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-Frontend) |
 
-Everything else named as a gap in earlier versions of this page — maths, SQL,
-HPC, research — now has a course.
+If you find a gap that is not on this list, it is a real one. Say so.
 
 ---
 

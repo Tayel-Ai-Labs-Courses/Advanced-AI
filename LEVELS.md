@@ -1,6 +1,6 @@
 # Who Should Take What — Levels and Coverage
 
-Sixteen courses is not a queue. This page says where each group starts, what
+Twenty-three courses is not a queue. This page says where each group starts, what
 they can skip, and what fraction of the skills an AI engineer needs the track
 now covers.
 
@@ -8,9 +8,10 @@ now covers.
 
 ## Coverage: what the track has, and what it does not
 
-**21 courses · 20 projects · 3 capstones.** See
-[`CURRICULUM.md`](CURRICULUM.md) for the full ordering and the specialisation
-tracks.
+**23 courses · 22 projects · 3 capstones.** See
+[`CURRICULUM.md`](CURRICULUM.md) for the full ordering, and
+[the unified roadmap](README.md#the-unified-roadmap) for one diagram covering
+this repository and the eight applied repositories around it.
 
 Judged against the skills an AI engineer is actually asked for in a job:
 
@@ -37,18 +38,21 @@ Judged against the skills an AI engineer is actually asked for in a job:
 | **HPC, GPUs, distributed training, cloud cost** | **yes** | HPC-and-Cloud |
 | **Research, reproduction, review papers** | **yes** | Research-and-Review |
 | **System design, API contracts for AI services** | **yes** | AI-System-Design |
-| **Time-series forecasting** | partial | Data-Analysis Advanced 04 analyses; no forecasting models |
-| **MLOps tooling** (Docker, K8s, CI/CD for models) | partial | Data-Science 08-09 and CI here; no dedicated course |
+| **Time-series forecasting, backtesting, horizons, intervals** | **yes** | Time-Series-and-Forecasting |
+| **MLOps: packaging, CI gates, deployment, serving, monitoring** | **yes** | MLOps |
+| Kubernetes, Terraform, cloud consoles | **no, by choice** | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing), a separate repository |
 
-**Roughly 95% of what the job asks for is covered today.** The two remaining
-partials are time-series forecasting and MLOps tooling (Docker, Kubernetes,
-CI/CD for models) — the principles of the second are in Data-Science 08-11 and
-HPC 08, but there is no dedicated course.
+**Everything on that list is now covered by a course**, with one row marked
+*no, by choice*: specific cloud tooling changes faster than a curriculum can,
+and the transferable part — what a GPU-hour costs and whether the model fits —
+is in HPC-and-Cloud. The rest is in
+[`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing).
 
-For the applied surfaces — **AI in UI/UX, AI in Frontend, Frontend
-Engineering** — see the Specialisations section of
-[`CURRICULUM.md`](CURRICULUM.md). Those are separate repositories in the same
-organisation, deliberately outside this progression.
+For the applied surfaces — **maths in depth, cloud, embedded, AI for
+cybersecurity, prompting, frontend, UI/UX, tooling** — see
+[Block 9 of `CURRICULUM.md`](CURRICULUM.md#block-9--applied-repositories).
+Eight separate repositories in the same organisation, each with its prerequisite
+from here and its overlap stated plainly.
 
 ---
 
@@ -96,16 +100,22 @@ say by how much with an interval, and write one page a manager can act on.
 5. Data-Analysis       Advanced track + Project 9
 6. AI-System-Design    lessons 01-03                    before anyone integrates
 7. LLM-and-GenAI       + Project 12                     if the work is text
-8. Communication       all 8 + Project 15
-9. Advanced-Practical-AI                                one system, end to end
+8. MLOps               lessons 01-05 + Project 22       the gate is what makes it survive
+9. Communication       all 8 + Project 15
+10. Advanced-Practical-AI                               one system, end to end
 ```
 
-**Then one domain course** — NLP, Computer-Vision, or Optimization — depending
-on what they are paid to do.
+**Then one domain course** — NLP, Computer-Vision,
+**Time-Series-and-Forecasting**, or Optimization — depending on what they are
+paid to do. Take Time-Series if anyone has ever asked you for a forecast:
+[its lesson 02](Time-Series-and-Forecasting/lessons/02-evaluating.md) will
+probably invalidate a result you already believe.
 
 Why: this level's failure is a model that works in a notebook and dies in
-contact with a schedule, a new plan value, or a stakeholder. Data-Science 07-09
-and Data-Engineering are the cure.
+contact with a schedule, a new plan value, or a stakeholder. Data-Science 07-09,
+Data-Engineering and MLOps 01-05 are the cure — and
+[MLOps 07](MLOps/lessons/07-monitoring.md) is where you learn that the most
+likely cause of "it got worse in production" is not the model at all.
 
 **Done when** they have something running unattended, with monitoring, a
 holdout, and a written verdict.
@@ -123,9 +133,10 @@ holdout, and a written verdict.
 4. AI-Agents             + Project 13      if the team is building agents
 5. Optimization          + Project 5       cost and latency become yours
 6. HPC-and-Cloud         + Project 17      when models outgrow one machine
-7. Reinforcement-Learning + Project 11     if the problem is sequential
-8. Communication         lessons 06-08     artifacts, handover, presenting
-9. Final Projects                          the cross-course capstones
+7. MLOps                 all 8 + Project 22  you now price controls, not just add them
+8. Reinforcement-Learning + Project 11     if the problem is sequential
+9. Communication         lessons 06-08     artifacts, handover, presenting
+10. Final Projects                         the cross-course capstones
 ```
 
 **Read, do not work through:** the "Common mistakes" table and the
@@ -134,7 +145,11 @@ checklist for other people's work, and it is most of the value of this track for
 someone at this level.
 
 **Done when** they can look at a colleague's project and name, in ten minutes,
-which of these failures it has.
+which of these failures it has — and, on the MLOps side, say which control they
+would *not* add, with the price of adding it and the price of the risk.
+[MLOps 08](MLOps/lessons/08-team-practices.md) is explicit that more process is
+not monotonically better: the most cautious deployment strategy in
+[lesson 05](MLOps/lessons/05-deployment.md) was also the most expensive.
 
 ---
 
@@ -167,11 +182,17 @@ most people with a year of tutorials can do.
 
 ## What is still missing, and who should mind
 
-| Gap | Matters most to | Interim advice |
-|---|---|---|
-| **Time-series forecasting** | Whoever is asked for a forecast | Data-Analysis Advanced 04, then lag features with Machine-Learning's validation rules and Data-Science 03's time split |
-| **MLOps tooling** (Docker, K8s, CI/CD for models) | Intermediate and senior | The principles are in Data-Science 08-11 and HPC 08; containerise one project using HPC 08's pinning checklist |
+The two long-standing gaps — time-series forecasting and MLOps — **are now
+courses**. What remains is out of scope on purpose:
 
-Both are partial rather than absent. Everything else listed as a gap in earlier
-versions of this page — maths, SQL, HPC, research, system design — now has its
-own course.
+| Not here | Matters most to | Where it is |
+|---|---|---|
+| Kubernetes, Terraform, cloud consoles | Whoever owns the infrastructure | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing); the cost model is in HPC-and-Cloud |
+| Hardware, boards, embedded toolchains | Whoever ships to a device | [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI); the measurements are in Optimization 15 |
+| Maths beyond the decision-oriented version | Anyone going into research | [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI); Foundations is the short route |
+| Models *for* security operations | Security engineers | [`Cyber-Ai`](https://github.com/Tayel-Ai-Labs-Courses/Cyber-Ai) — not the same thing as Data-Security-for-AI, which is the security *of* a model |
+| Feature stores as products | Teams past ~20 models | [MLOps 07](MLOps/lessons/07-monitoring.md) covers the problem they solve |
+
+Everything listed as a gap in earlier versions of this page — maths, SQL, HPC,
+research, system design, forecasting, MLOps — now has its own course or a named
+repository.

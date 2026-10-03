@@ -115,7 +115,7 @@ surprises.
 
 ## Using these across courses
 
-Three exercises that connect courses, using data you already have:
+Seven exercises that connect courses, using data you already have:
 
 1. **Run Data-Security lesson 03's membership-inference attack against the
    Data-Science lesson 05 model ladder.** Which of the four models leaks most,
@@ -142,6 +142,20 @@ Three exercises that connect courses, using data you already have:
    directions? Then check whether dropping to that many components changes
    [Data-Science lesson 05](Data-Science/lessons/05-baselines-and-selection.md)'s
    model ranking.
+
+6. **Forecast the `orders` daily revenue series
+   ([Time-Series 01](Time-Series-and-Forecasting/lessons/01-baselines.md))
+   and then evaluate it the way Data-Analysis would** — with a shuffled
+   split. Compare against
+   [Time-Series 02](Time-Series-and-Forecasting/lessons/02-evaluating.md)'s
+   backtest. The gap between the two numbers is how much your previous
+   forecasting results were worth.
+
+7. **Serve the Data-Science lesson 05 model and inject each of
+   [MLOps lesson 07](MLOps/lessons/07-monitoring.md)'s six skews** into the
+   `subscribers` features at serving time. Which ones does an AUC dashboard
+   catch? Which ones only a calibration metric catches? Most people find the
+   answer is two and four.
 
 Each takes an afternoon and teaches more about how the courses fit together
 than any amount of reading the READMEs.
