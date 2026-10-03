@@ -266,6 +266,16 @@ n = 500  ->  standard error ~0.02   ->  can detect: ~5 points
 
 Build the eval set first. It is the asset; the prompt is disposable.
 
+**The craft side of this** — how to get a parseable answer at all, what to put
+in the context, what each example costs per call, and what happens when the
+text in your prompt was written by an attacker — is
+[`Prompt-Engineering`](../../Prompt-Engineering/). Its
+[lesson 02](../../Prompt-Engineering/lessons/02-the-output-contract.md) is the
+mirror of this one: free generation from three reasonable prompts produced
+**0 parseable answers out of 12**, while scoring the label words as above
+cannot produce an unparseable answer at all. That is the case for constraining
+the output, from the other direction.
+
 ---
 
 ## Common mistakes

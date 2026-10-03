@@ -1,0 +1,9 @@
+torch>=2.2
+transformers>=4.40
+numpy>=1.26
+scipy>=1.12
+
+# gpt2-medium (~1.5 GB) downloads once on first run.
+# No API keys, no accounts, no GPU.
+
+jupyter>=1.0

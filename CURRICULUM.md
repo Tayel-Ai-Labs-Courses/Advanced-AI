@@ -1,6 +1,6 @@
 # The Curriculum — Everything, in Order
 
-**Twenty-three courses, twenty-two projects, three capstones, 248 notebooks.**
+**Twenty-four courses, twenty-three projects, three capstones, 256 notebooks.**
 
 This page is the single ordering: what comes after what, where the later
 additions slot in, where the applied repositories live, and what is still missing.
@@ -23,7 +23,7 @@ flowchart TD
     B0 --> B3["<b>3 · REAL DATA</b><br/>Data Engineering · Data Analysis"]
     B1 --> B4["<b>4 · DECIDING &amp; SHIPPING</b><br/>Data Science → Advanced Practical AI"]
     B3 --> B4
-    B4 --> B5["<b>5 · GENERATIVE</b><br/>LLMs → AI Agents"]
+    B4 --> B5["<b>5 · GENERATIVE</b><br/>Prompt Engineering → LLMs → AI Agents"]
     B4 --> B6["<b>6 · MAKING IT LAST</b><br/>MLOps · System Design · Optimization<br/>Security · HPC"]
     B5 --> B6
     B4 --> B7["<b>7 · UNCERTAINTY</b><br/>Reinforcement Learning"]
@@ -126,8 +126,27 @@ those three lessons are how you hand it over.
 
 | Order | Course | Lessons | Project |
 |---|---|---|---|
-| 8 | [`LLM-and-GenAI`](LLM-and-GenAI) | 10 | 12 |
-| 9 | [`AI-Agents`](AI-Agents) | 10 | 13 |
+| 8 | [`Prompt-Engineering`](Prompt-Engineering) | 8 | 23 |
+| 9 | [`LLM-and-GenAI`](LLM-and-GenAI) | 10 | 12 |
+| 10 | [`AI-Agents`](AI-Agents) | 10 | 13 |
+
+### Prompting appears three times, on purpose
+
+| Depth | Where | What it answers |
+|---|---|---|
+| 1 | [`Prompt-Engineering`](Prompt-Engineering) | How do I **write** one? The prefix, the contract, the context, the cost |
+| 2 | [LLM 04](LLM-and-GenAI/lessons/04-prompting.md) | How do I know one is **better**? Six formats scored, and how little survives |
+| 3 | [`Advanced-Prompt-Engineering`](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) | The technique **catalogue** — a separate repository |
+
+Do them in that order. The two courses here reach the same place from opposite
+sides: Prompt-Engineering 02 shows free generation returning **0/12** usable
+answers, while LLM 04 scores the label words directly and gets 0.90 accuracy
+from the same kind of prompt. That is the argument for constraining the output,
+made twice.
+
+[`Prompt-Engineering`](Prompt-Engineering) is also the **gentler entry to this
+block** — it needs only Python, not Deep-Learning — so a beginner who is going
+to touch an LLM at work can take it early and out of order.
 
 **LLM evaluation and guardrails live here**, not in a separate course:
 
@@ -270,6 +289,7 @@ ship something that has to survive.
 | 10 | Data Science | 20 | **Databases and SQL** |
 | | | 21 | **Time Series and Forecasting** |
 | | | 22 | **MLOps** |
+| | | 23 | **Prompt Engineering** |
 
 Numbers follow the order the courses were written, **not** the order to do them
 in. Projects 19 and 20 belong to Block 0 and can be done first despite their
@@ -308,6 +328,7 @@ AI-Agents 05       an injected note refunds four of its customers for 1,610 EGP
 | **GPU memory, distributed, spot, cloud cost** | [`HPC-and-Cloud`](HPC-and-Cloud) | Do it when a model outgrows one machine |
 | **Reading papers, reproducing, reviewing** | [`Research-and-Review`](Research-and-Review) | Lesson 03 is the one everyone should read |
 | **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see Block 5 |
+| **Writing a prompt: contracts, context, cost, injection** | [`Prompt-Engineering`](Prompt-Engineering) | Its own course; first in Block 5, before LLM |
 | **Forecasting, backtesting, horizons, intervals** | [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | Its own course; Block 2, next to NLP and CV |
 | **Docker, CI for models, canary and blue-green, serving, drift response** | [`MLOps`](MLOps) | Its own course; first in Block 6 |
 
@@ -324,6 +345,7 @@ remaining gaps are all *out of scope by choice*, and each has a home:
 | Kubernetes, Terraform, cloud consoles | Tool-specific and fast-moving; the cost model is the transferable part | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing), [HPC-and-Cloud](HPC-and-Cloud) 05-08 |
 | Feature stores as products | [MLOps 07](MLOps/lessons/07-monitoring.md) covers the problem they solve; which to buy is procurement | — |
 | Hardware, boards, toolchains | A different discipline | [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI) |
+| A catalogue of prompt techniques | Only useful once you can measure; two depths of it are here | [`Advanced-Prompt-Engineering`](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) |
 | Deeper maths (proofs, measure theory) | [`Foundations`](Foundations) is deliberately decision-oriented | [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI) |
 | Frontend craft | Not AI engineering | [`AI-in-Frontend`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-Frontend) |
 

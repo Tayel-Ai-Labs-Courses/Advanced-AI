@@ -115,7 +115,7 @@ surprises.
 
 ## Using these across courses
 
-Seven exercises that connect courses, using data you already have:
+Eight exercises that connect courses, using data you already have:
 
 1. **Run Data-Security lesson 03's membership-inference attack against the
    Data-Science lesson 05 model ladder.** Which of the four models leaks most,
@@ -156,6 +156,12 @@ Seven exercises that connect courses, using data you already have:
    `subscribers` features at serving time. Which ones does an AUC dashboard
    catch? Which ones only a calibration metric catches? Most people find the
    answer is two and four.
+
+8. **Run [Prompt-Engineering 07](Prompt-Engineering/lessons/07-untrusted-text.md)'s
+   four injection payloads against the `subscribers` note field**, then feed
+   the result into [AI-Agents 05](AI-Agents/lessons/05-security.md)'s
+   `refund_order` tool. The first experiment flips a label; the second one
+   costs 1,610 EGP. Same attack, two blast radii.
 
 Each takes an afternoon and teaches more about how the courses fit together
 than any amount of reading the READMEs.

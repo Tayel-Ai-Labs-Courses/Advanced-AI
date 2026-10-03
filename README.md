@@ -4,14 +4,14 @@
 
 ### Tayel AI Labs
 
-**23 courses · 22 projects · 3 capstones · 248 notebooks · 234 lessons**
+**24 courses · 23 projects · 3 capstones · 256 notebooks · 242 lessons**
 
 *From `print("hello")` to a deployed, monitored, explainable AI system.*
 
 **No GPU. No paid API. No cloud account.**
 Every lesson runs on a laptop, and **every printed output is a real run.**
 
-[**The roadmap →**](#the-unified-roadmap) · [**Start here**](CURRICULUM.md) · [Pick your level](LEVELS.md) · [All 23 courses](#the-23-courses) · [Shared datasets](DATASETS.md) · [Capstones](Final-Projects/)
+[**The roadmap →**](#the-unified-roadmap) · [**Start here**](CURRICULUM.md) · [Pick your level](LEVELS.md) · [All 24 courses](#the-24-courses) · [Shared datasets](DATASETS.md) · [Capstones](Final-Projects/)
 
 </div>
 
@@ -124,6 +124,7 @@ flowchart TD
 
     subgraph B5["▪ 5 · GENERATIVE"]
         direction LR
+        PE["<b>Prompt Engineering</b><br/>basics<br/>8 · P23"]
         LLM["<b>LLMs &amp; GenAI</b><br/>10 · P12"]
         AG["<b>AI Agents</b><br/>10 · P13"]
     end
@@ -155,7 +156,7 @@ flowchart TD
         A2["<b>Cloud-Computing</b><br/>infra, containers, deploy"]
         A3["<b>Embedded-AI</b><br/>AI on real devices"]
         A4["<b>Cyber-Ai</b><br/>AI <i>for</i> security"]
-        A5["<b>Advanced-Prompt-Engineering</b><br/>prompt technique catalogue"]
+        A5["<b>Advanced-Prompt-Engineering</b><br/>the technique catalogue"]
         A6["<b>AI-in-Frontend</b><br/>LLM features in the browser"]
         A7["<b>AI-in-UIUX</b><br/>AI-assisted product design"]
         A8["<b>Claude-Skills</b><br/>tooling"]
@@ -181,7 +182,7 @@ flowchart TD
     B6 -.->|"HPC → infra"| A2
     B6 -.->|"Optimization 15 → devices"| A3
     B6 -.->|"security OF ai → ai FOR security"| A4
-    B5 -.->|"LLM 04 → techniques"| A5
+    B5 -.->|"Prompt-Eng + LLM 04 → techniques"| A5
     B5 -.->|"LLM 09-10 → the browser"| A6
     B4 -.->|"the model's surface"| A7
 
@@ -232,7 +233,7 @@ study the same thing twice.**
 | [**Cloud-Computing**](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing) | Cloud infrastructure, containerization, deployment | [HPC-and-Cloud](HPC-and-Cloud/) 05-08, [MLOps](MLOps/) 02 | **Partial.** HPC-and-Cloud covers *will it fit and what will it cost*; this covers the infrastructure itself. MLOps deliberately stops before Kubernetes and Terraform — they are here. |
 | [**Embedded-AI**](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI) | AI on embedded systems and edge devices | [Optimization](Optimization/) 10-15 | **Partial.** [Optimization 15](Optimization/lessons/15-edge-and-on-device.md) measures quantisation, pruning and on-device latency. This repository is the hardware, the toolchains and the boards. |
 | [**Cyber-Ai**](https://github.com/Tayel-Ai-Labs-Courses/Cyber-Ai) | AI *for* cybersecurity — threat detection, network analysis | [Machine-Learning](Machine-Learning/), [Data-Science](Data-Science/) 06 | **None — and the names mislead.** [`Data-Security-for-AI/`](Data-Security-for-AI/) is the security **of** a model (poisoning, extraction, membership inference). `Cyber-Ai` is using models **for** security. Different subject, both worth doing. |
-| [**Advanced-Prompt-Engineering**](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) | Prompt techniques and templates | [LLM-and-GenAI](LLM-and-GenAI/) 01-04 | **Partial.** LLM 04 measures *whether a prompt change is real* given sampling noise. This repository is the catalogue of techniques. Do LLM 04 first or you cannot tell a win from noise. |
+| [**Advanced-Prompt-Engineering**](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) | Prompt techniques and templates | [Prompt-Engineering](Prompt-Engineering/), [LLM-and-GenAI](LLM-and-GenAI/) 04 | **Deliberate, three depths.** [`Prompt-Engineering/`](Prompt-Engineering/) is how to *write* one, [LLM 04](LLM-and-GenAI/lessons/04-prompting.md) is how to know one is *better*, and this repository is the catalogue. Do them in that order — the catalogue is only useful once you can tell a win from noise. |
 | [**AI-in-Frontend**](https://github.com/Tayel-Ai-Labs-Courses/AI-in-Frontend) | AI in frontend development — streaming, state, cost | [LLM-and-GenAI](LLM-and-GenAI/) 09-10, [AI-System-Design](AI-System-Design/) 03 | **None.** The handshake is the response contract in [AI-System-Design 03](AI-System-Design/lessons/03-interfaces.md). |
 | [**AI-in-UIUX**](https://github.com/Tayel-Ai-Labs-Courses/AI-in-UIUX) | AI for UX and UI design | [Communication](Communication-and-Documentation/) 01-04 | **None.** Communication 01-04 is how to present a model's output to a human; this is how to design around it. |
 | [**Claude-Skills**](https://github.com/Tayel-Ai-Labs-Courses/Claude-Skills) | Guide to Claude AI skills | [AI-Agents](AI-Agents/) 01-05 | **None.** Tooling. Useful alongside anything. |
@@ -246,7 +247,7 @@ into one progression would make both worse, which is why the roadmap above
 
 ---
 
-## The 23 courses
+## The 24 courses
 
 Every course is equivalent in structure: lessons as `.md` + generated `.ipynb`,
 a `requirements.txt`, a common-mistakes table and exercises per lesson, and one
@@ -267,16 +268,17 @@ project that is the assessment.
 | 11 | [`Data-Science/`](Data-Science/) | 12 | [10](Data-Science/Project-10/) | Turn a business problem into a shipped, monitored decision |
 | 12 | [`Advanced-Practical-AI/`](Advanced-Practical-AI/) | 5 sessions | the system | Build one reliable, explainable system end to end |
 | 13 | [`Reinforcement-Learning/`](Reinforcement-Learning/) | 10 | [11](Reinforcement-Learning/Project-11/) | Decide under uncertainty, and know when not to |
-| 14 | [`LLM-and-GenAI/`](LLM-and-GenAI/) | 10 | [12](LLM-and-GenAI/Project-12/) | Build, evaluate and ship an LLM feature that pays for itself |
-| 15 | [`AI-Agents/`](AI-Agents/) | 10 | [13](AI-Agents/Project-13/) | Build an agent whose guarantees do not depend on the model |
-| 16 | [`MLOps/`](MLOps/) | 8 | [22](MLOps/Project-22/) | Package, gate, deploy, serve and monitor a model — priced |
-| 17 | [`AI-System-Design/`](AI-System-Design/) | 8 | [16](AI-System-Design/Project-16/) | Draw the system and prove the latency before building |
-| 18 | [`Optimization/`](Optimization/) | 15 | [5](Optimization/Project-5/) | Make a model smaller, faster, cheaper — local and on-device |
-| 19 | [`Data-Security-for-AI/`](Data-Security-for-AI/) | 8 | [14](Data-Security-for-AI/Project-14/) | Attack a model, measure what leaks, and fix it |
-| 20 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | [17](HPC-and-Cloud/Project-17/) | Fit the model, rent the right GPU, predict the bill |
-| 21 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | [15](Communication-and-Documentation/Project-15/) | Make the work readable, runnable and actionable |
-| 22 | [`Research-and-Review/`](Research-and-Review/) | 8 | [18](Research-and-Review/Project-18/) | Read papers sceptically, reproduce, review |
-| 23 | [`Final-Projects/`](Final-Projects/) | 3 capstones | one of them | Cut scope, survive a real user, and say "do not ship" |
+| 14 | [`Prompt-Engineering/`](Prompt-Engineering/) | 8 | [23](Prompt-Engineering/Project-23/) | Write a prompt that parses, costs what you expect, and survives hostile text |
+| 15 | [`LLM-and-GenAI/`](LLM-and-GenAI/) | 10 | [12](LLM-and-GenAI/Project-12/) | Build, evaluate and ship an LLM feature that pays for itself |
+| 16 | [`AI-Agents/`](AI-Agents/) | 10 | [13](AI-Agents/Project-13/) | Build an agent whose guarantees do not depend on the model |
+| 17 | [`MLOps/`](MLOps/) | 8 | [22](MLOps/Project-22/) | Package, gate, deploy, serve and monitor a model — priced |
+| 18 | [`AI-System-Design/`](AI-System-Design/) | 8 | [16](AI-System-Design/Project-16/) | Draw the system and prove the latency before building |
+| 19 | [`Optimization/`](Optimization/) | 15 | [5](Optimization/Project-5/) | Make a model smaller, faster, cheaper — local and on-device |
+| 20 | [`Data-Security-for-AI/`](Data-Security-for-AI/) | 8 | [14](Data-Security-for-AI/Project-14/) | Attack a model, measure what leaks, and fix it |
+| 21 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | [17](HPC-and-Cloud/Project-17/) | Fit the model, rent the right GPU, predict the bill |
+| 22 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | [15](Communication-and-Documentation/Project-15/) | Make the work readable, runnable and actionable |
+| 23 | [`Research-and-Review/`](Research-and-Review/) | 8 | [18](Research-and-Review/Project-18/) | Read papers sceptically, reproduce, review |
+| 24 | [`Final-Projects/`](Final-Projects/) | 3 capstones | one of them | Cut scope, survive a real user, and say "do not ship" |
 
 The **course number** is the recommended reading order. The **project number**
 is historical — it is the order the projects were written, and it is kept stable
@@ -315,11 +317,11 @@ whether your verdict honestly allows **"do not ship this"**.
 
 **Read the markdown, run the notebook.** The `.md` is the source; the `.ipynb`
 is generated from it. **The exercises are the course** — a student who reads
-twenty-three courses and does no exercises has watched, not learned.
+twenty-four courses and does no exercises has watched, not learned.
 
 ---
 
-## Nine results this curriculum argues from
+## Ten results this curriculum argues from
 
 Each one is reproducible by opening the notebook and running it.
 
@@ -342,15 +344,18 @@ Each one is reproducible by opening the notebook and running it.
 6. **The safest deployment strategy — shadow for a week — is the most
    expensive option at 201,600 EGP.** Caution has a price too.
    ([MLOps 05](MLOps/lessons/05-deployment.md))
-7. **Poisoning 1% of training rows gives an attacker 98.2% control, and costs
+7. **Three reasonable-looking prompts returned 0 parseable answers out of 12;
+   one worked example returned 12 of 12.** Show the format, do not describe it.
+   ([Prompt-Engineering 02](Prompt-Engineering/lessons/02-the-output-contract.md))
+8. **Poisoning 1% of training rows gives an attacker 98.2% control, and costs
    0.003 accuracy.** The dangerous failure is invisible in every metric.
    ([Data-Security 04](Data-Security-for-AI/lessons/04-poisoning.md))
-8. **EfficientNet-B0 has a fifth of ResNet-50's parameters and is four times
+9. **EfficientNet-B0 has a fifth of ResNet-50's parameters and is four times
    slower.** Benchmarks do not transfer across hardware.
    ([Optimization 15](Optimization/lessons/15-edge-and-on-device.md))
-9. **Identical code across 20 seeds scored between 37 and 346.** One run is
+10. **Identical code across 20 seeds scored between 37 and 346.** One run is
    never a result.
-   ([RL 09](Reinforcement-Learning/lessons/09-evaluating-agents.md))
+    ([RL 09](Reinforcement-Learning/lessons/09-evaluating-agents.md))
 
 The through-line: **the measurement is the work.**
 
@@ -373,7 +378,7 @@ jupyter lab
 | Python 3.11+ | Everything |
 | Nothing else | Databases-and-SQL, Foundations, Reinforcement-Learning 01-06 |
 | pandas, NumPy, scikit-learn | Python, ML, Data-Engineering, Analysis, Science, Security, Time-Series, MLOps |
-| PyTorch | Deep-Learning, Optimization, NLP, CV, LLM, HPC, RL 07-08 |
+| PyTorch | Deep-Learning, Optimization, NLP, CV, Prompt-Engineering, LLM, HPC, RL 07-08 |
 
 ---
 

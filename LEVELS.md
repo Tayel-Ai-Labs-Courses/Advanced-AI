@@ -1,6 +1,6 @@
 # Who Should Take What — Levels and Coverage
 
-Twenty-three courses is not a queue. This page says where each group starts, what
+Twenty-four courses is not a queue. This page says where each group starts, what
 they can skip, and what fraction of the skills an AI engineer needs the track
 now covers.
 
@@ -8,7 +8,7 @@ now covers.
 
 ## Coverage: what the track has, and what it does not
 
-**23 courses · 22 projects · 3 capstones.** See
+**24 courses · 23 projects · 3 capstones.** See
 [`CURRICULUM.md`](CURRICULUM.md) for the full ordering, and
 [the unified roadmap](README.md#the-unified-roadmap) for one diagram covering
 this repository and the eight applied repositories around it.
@@ -29,6 +29,7 @@ Judged against the skills an AI engineer is actually asked for in a job:
 | Problem framing, thresholds, shipping, monitoring | **yes** | Data-Science |
 | One full reliable system end to end | **yes** | Advanced-Practical-AI |
 | Sequential decisions, bandits, RL | **yes** | Reinforcement-Learning |
+| **Writing prompts: contracts, context, cost, injection** | **yes** | Prompt-Engineering |
 | LLMs, prompting, RAG, evals, fine-tune vs prompt | **yes** | LLM-and-GenAI |
 | Agents, tools, automation in Python | **yes** | AI-Agents |
 | Privacy, poisoning, extraction, adversarial, DP | **yes** | Data-Security-for-AI |
@@ -68,10 +69,17 @@ from here and its overlap stated plainly.
 4. Data-Analysis       Basic track only, + Project 9    how to not fool yourself
 5. Data-Science        lessons 01-06                    what the job actually is
 6. Communication       lessons 01-04, + Project 15      make it readable
+7. Prompt-Engineering  + Project 23                     if an LLM is in the job
 ```
 
 **Skip for now:** Deep-Learning, Optimization, RL, Agents, Security, HPC,
 System-Design, Research.
+
+**On Prompt-Engineering:** it is in Block 5 but needs only Python, so a
+beginner already being asked to "use AI" at work can take it now. Its
+[lesson 06](Prompt-Engineering/lessons/06-the-iteration-loop.md) is the one
+that matters — a 16-point improvement is still noise on 50 examples, which is
+the regime nearly all prompting happens in.
 
 **On Foundations:** do not work through all eight lessons before starting. Use
 its [lesson 01](Foundations/lessons/01-what-you-need.md) symptom table and read
@@ -99,10 +107,11 @@ say by how much with an interval, and write one page a manager can act on.
 4. Data-Engineering    + Project 8                      the usual missing piece
 5. Data-Analysis       Advanced track + Project 9
 6. AI-System-Design    lessons 01-03                    before anyone integrates
-7. LLM-and-GenAI       + Project 12                     if the work is text
-8. MLOps               lessons 01-05 + Project 22       the gate is what makes it survive
-9. Communication       all 8 + Project 15
-10. Advanced-Practical-AI                               one system, end to end
+7. Prompt-Engineering  + Project 23                     before LLM, if the work is text
+8. LLM-and-GenAI       + Project 12                     if the work is text
+9. MLOps               lessons 01-05 + Project 22       the gate is what makes it survive
+10. Communication      all 8 + Project 15
+11. Advanced-Practical-AI                               one system, end to end
 ```
 
 **Then one domain course** — NLP, Computer-Vision,
@@ -171,7 +180,7 @@ Three courses are not a stage, they are a habit:
 |---|---|
 | 1 | Python Basic (skim what you know), Databases-and-SQL 01-04 |
 | 2 | Machine-Learning 01-06, Data-Science 01-06 |
-| 3 | Communication 01-04, and start a real project |
+| 3 | Communication 01-04, Prompt-Engineering 01-02 if you will use an LLM, and start a real project |
 | 4 | Finish the project. Data-Science 07-10 while it runs |
 
 Four weeks does not make an AI engineer. It makes someone who can frame a
@@ -189,6 +198,7 @@ courses**. What remains is out of scope on purpose:
 |---|---|---|
 | Kubernetes, Terraform, cloud consoles | Whoever owns the infrastructure | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing); the cost model is in HPC-and-Cloud |
 | Hardware, boards, embedded toolchains | Whoever ships to a device | [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI); the measurements are in Optimization 15 |
+| A catalogue of prompt techniques | Anyone doing heavy LLM work | [`Advanced-Prompt-Engineering`](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering); the two depths before it are Prompt-Engineering and LLM 04 |
 | Maths beyond the decision-oriented version | Anyone going into research | [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI); Foundations is the short route |
 | Models *for* security operations | Security engineers | [`Cyber-Ai`](https://github.com/Tayel-Ai-Labs-Courses/Cyber-Ai) — not the same thing as Data-Security-for-AI, which is the security *of* a model |
 | Feature stores as products | Teams past ~20 models | [MLOps 07](MLOps/lessons/07-monitoring.md) covers the problem they solve |

@@ -12,6 +12,12 @@ know whether it worked, and what does it cost**.
 - [`../NLP`](../NLP) — lessons 08 and 10 there are the background for this one
 - [`../Data-Science`](../Data-Science) — evaluation, thresholds and monitoring
   carry over directly
+- [`../Prompt-Engineering`](../Prompt-Engineering) — **optional but
+  recommended before lesson 04.** It is the craft layer: the output contract,
+  what goes in the context, what a prompt costs, and injection. Lesson 04 here
+  is the measurement layer, and the two reach the same conclusion from opposite
+  sides — there, free generation returns 0/12 usable answers; here, scoring the
+  label words directly gets 0.90 from the same kind of prompt.
 
 **No API keys, no accounts, no bills.** Everything runs on a laptop CPU with
 `gpt2-medium` (355M), `all-MiniLM-L6-v2` and `bert-tiny`. The ideas are the same
