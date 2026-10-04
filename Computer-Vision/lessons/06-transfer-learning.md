@@ -265,3 +265,7 @@ something and a large step destroys it. One optimiser, two groups.
 2. Print `weights.transforms()` and build your pipeline from it.
 3. Reproduce the three-way comparison on your own images.
 4. Fine-tune the body at 1e-3 and at 1e-5; show catastrophic forgetting.
+
+---
+
+**Next:** [Lesson 07 — Augmentation](07-augmentation.md)

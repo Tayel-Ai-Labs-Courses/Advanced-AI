@@ -271,3 +271,7 @@ Use it for genuine folds. For sums and maxima, `sum()` and `max()` are clearer.
 3. Add `lru_cache` to a slow recursive function and measure the difference.
 4. Write `@retry` with exponential backoff and use it on a function that fails
    twice before succeeding.
+
+---
+
+**Next:** [Lesson 02 — Iterators and Generators](02-iterators-and-generators.md)

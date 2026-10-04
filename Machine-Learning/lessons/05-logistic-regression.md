@@ -306,3 +306,7 @@ probability per class, still summing to 1. You change nothing in your code.
 3. Sweep the threshold from 0.05 to 0.95 and plot precision and recall.
    Choose a threshold and justify it in one sentence.
 4. Exponentiate the coefficients and explain the top three in plain words.
+
+---
+
+**Next:** [Lesson 06 — Evaluation Metrics](06-evaluation-metrics.md)

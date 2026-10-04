@@ -315,3 +315,7 @@ reached the noise floor, and further searching is fitting it.
 3. Re-run your top three configurations with three seeds each. Do the ranges
    overlap?
 4. Add median pruning to a search and measure the compute saved.
+
+---
+
+**Next:** [Lesson 06 — Training Speed and Memory](06-training-speed-and-memory.md)

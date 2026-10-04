@@ -297,3 +297,7 @@ poorly for exactly this reason — lesson 12.
 3. Show that token accuracy and entity F1 disagree on a real prediction.
 4. Align word labels to subwords for a sentence where a word splits into four
    pieces.
+
+---
+
+**Next:** [Lesson 08 — Transformers for NLP](08-transformers-for-nlp.md)

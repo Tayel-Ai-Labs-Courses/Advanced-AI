@@ -300,3 +300,7 @@ The last four lines are what separates an evaluation from a number.
 2. Build the confidence/accuracy table; is your model calibrated?
 3. Display your 20 most confident errors and categorise the causes.
 4. Run six perturbations and report the accuracy drop for each.
+
+---
+
+**Next:** [Lesson 12 — Deploying Vision](12-deploying-vision.md)

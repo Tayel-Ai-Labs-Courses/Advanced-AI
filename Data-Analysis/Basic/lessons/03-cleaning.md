@@ -321,3 +321,7 @@ differ by a factor of two and neither can explain why.
 2. Check whether your nulls are random — compare the groups.
 3. Find a column derivable from others and recover its nulls exactly.
 4. Write a business rule that identifies impossible values, and count them.
+
+---
+
+**Next:** [Lesson 04 — Aggregation](04-aggregation.md)

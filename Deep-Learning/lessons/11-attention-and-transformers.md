@@ -335,3 +335,7 @@ that square.
    What happens, and why?
 4. Measure attention memory at sequence lengths 128, 256 and 512, and confirm
    the quadratic growth.
+
+---
+
+**Next:** [Lesson 12 — Fine-Tuning a Language Model](12-finetuning-a-language-model.md)

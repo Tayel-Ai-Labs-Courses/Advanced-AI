@@ -282,3 +282,7 @@ you will use.
 2. Chain three generators: read, parse, filter. Verify memory stays flat.
 3. Compare `sys.getsizeof` for a list comprehension and a generator expression.
 4. Write `batched(iterable, size)` without `itertools`, then with it.
+
+---
+
+**Next:** [Lesson 03 — Complexity and Big-O](03-complexity-and-big-o.md)

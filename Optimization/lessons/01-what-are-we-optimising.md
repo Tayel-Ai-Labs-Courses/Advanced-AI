@@ -231,3 +231,7 @@ whether you are loading it per request is a mistake people make every week.
 3. Collect 500 timings and report mean, p50, p95, p99. How big is the tail?
 4. For a service you know, estimate what share of the total latency is the
    model. What is the best possible speedup from optimising it?
+
+---
+
+**Next:** [Lesson 02 — Measuring Properly](02-measuring-properly.md)

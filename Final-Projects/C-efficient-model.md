@@ -74,14 +74,27 @@ everything you tried helped, you did not try enough.
 - Memory measured, not computed
 - The parameter-count-is-not-latency check: does your ordering match FLOPs?
 
-### 6. Deploy it somewhere real
+### 6. Serve it, and find out where the latency actually is
+- p50, **p95 and p99** under load — not an average
+- Your **utilisation**, and how much of p95 is queueing rather than the model
+  ([MLOps 06](../MLOps/lessons/06-serving.md): a 40 ms model answers in 598 ms
+  at 95% utilisation)
+- Throughput at **batch 1, 8, 32, 128**, and where the curve flattens
+- `max_batch_size` and `max_wait_ms` chosen from your **real arrival rate**
+- A **fallback** that answers when the model is down, tested by killing it
+
+If most of your p95 turns out to be queueing, **say so and report what one more
+replica would do** — that is a more valuable finding than another 5% off the
+model, and it is the one teams miss.
+
+### 7. Deploy it somewhere real
 One of:
 - **Local**: an Ollama or llama.cpp deployment, with tokens/sec and the capacity
   ceiling (Optimization lesson 14)
 - **Edge**: on a phone, a Pi or a Jetson, with the four budgets
 - **Served**: an endpoint with a latency budget and a route table
 
-### 7. The trade curve
+### 8. The trade curve
 The deliverable that makes this a capstone rather than a tuning exercise:
 
 ```text
@@ -90,6 +103,19 @@ one point per configuration you measured
 the accuracy floor drawn as a line
 the chosen point marked, with the reason
 ```
+
+---
+
+## Ship it like MLOps says
+
+Three requirements, shared with the other two capstones:
+
+- Environment **pinned**, and the exported artefact's hash recorded
+  ([MLOps 02](../MLOps/lessons/02-packaging.md))
+- An **eval gate in CI** that fails a change breaching the accuracy floor —
+  and also one breaching the **latency** budget, since this capstone is about
+  latency ([MLOps 04](../MLOps/lessons/04-ci-gate.md))
+- **Rollback to the unoptimised model**, timed, by someone else
 
 ---
 
@@ -119,6 +145,8 @@ capstone-c/
 | Two of the eight ladder techniques | The technique that did not work |
 | Deploying to three targets | The trade curve |
 | The 5-seed baseline, down to 3 | Latency measured on the **target**, not your laptop |
+| The batch-size sweep | p95, and how much of it is queueing |
+| The fallback's failover test | The fallback existing at all |
 
 The one thing that cannot be cut is **accuracy measured through the exported
 artefact on the target device**. An optimisation verified only in PyTorch on a

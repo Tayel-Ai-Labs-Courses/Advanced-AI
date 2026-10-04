@@ -203,3 +203,14 @@ an incident.
 
 **Done with the lessons.** Next: [Project 20](../Project-20/) — design and
 query a real schema, and prove it.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-20/) | It is the assessment, and it is not optional |
+| [Data-Engineering](../../Data-Engineering/) | Pipelines around the database |
+| [Data-Analysis](../../Data-Analysis/) | Answer questions with what you can now query |
+| [MLOps 03](../../MLOps/lessons/03-pipeline-as-code.md) | The snapshot is an input to the model |

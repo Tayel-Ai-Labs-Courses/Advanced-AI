@@ -320,3 +320,7 @@ handles the cases you have not thought of.
 2. Write `has_path(graph, a, b)` and `connected_components(graph)`.
 3. Run Dijkstra on a weighted graph and return the path, not only the cost.
 4. Topologically sort your Project 1 pipeline steps.
+
+---
+
+**Next:** [Lesson 09 — Data Structures for AI Engineers](09-structures-for-ai.md)

@@ -237,3 +237,7 @@ is about nothing else.
    happens to the accuracy and why.
 4. Remove `stratify=y`, run it five times with different `random_state`, and
    describe the variation.
+
+---
+
+**Next:** [Lesson 02 — Data Preparation](02-data-preparation.md)

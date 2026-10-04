@@ -249,3 +249,14 @@ everything that has ever gone wrong.
 2. Build the health report against 30 days of your real run history.
 3. Find your most expensive query; what is it scanning that it does not need?
 4. Take a past incident and write the check that would have caught it.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-8/) | It is the assessment, and it is not optional |
+| [Data-Analysis](../../Data-Analysis/) | Use the data you can now move |
+| [Data-Science](../../Data-Science/) | The spine of the track |
+| [MLOps 03](../../MLOps/lessons/03-pipeline-as-code.md) | The same discipline, for models |

@@ -241,3 +241,7 @@ Two questions before adopting a distributed system:
 2. Aggregate a file bigger than memory with chunking.
 3. Run the same query in pandas and DuckDB; compare.
 4. Find a skewed key in your data and compute the max/median ratio.
+
+---
+
+**Next:** [Lesson 11 — Streaming](11-streaming.md)

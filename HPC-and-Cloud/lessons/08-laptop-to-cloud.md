@@ -179,3 +179,14 @@ silently ignored and the job trains on nothing for eight hours.
 
 **Done with the lessons.** Next: [Project 17](../Project-17/) — run one real
 training job on rented hardware, within a budget you set in advance.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-17/) | It is the assessment, and it is not optional |
+| [MLOps 02](../../MLOps/lessons/02-packaging.md) | Pinning what you just rented |
+| [Optimization](../../Optimization/) | Needing less hardware in the first place |
+| [Cloud-Computing](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing) | The infrastructure itself, a separate repository |

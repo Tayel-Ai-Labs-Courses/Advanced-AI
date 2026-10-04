@@ -318,3 +318,7 @@ the sample size, and **what it does and does not establish**.
 2. Simulate power for the effect size you care about; how large must n be?
 3. Run 20 tests on identical data and count the false positives.
 4. Rewrite a past "significant" claim using the six-element format above.
+
+---
+
+**Next:** [Lesson 03 — A/B Testing](03-ab-testing.md)

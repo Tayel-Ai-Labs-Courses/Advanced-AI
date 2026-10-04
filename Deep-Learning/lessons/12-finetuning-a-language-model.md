@@ -313,3 +313,7 @@ your dataset.
    accuracy.
 4. Compare frozen embeddings + logistic regression against full fine-tuning on
    the same data. Which wins, and at what cost?
+
+---
+
+**Next:** [Lesson 13 — Deploying a Network](13-deploying-a-network.md)

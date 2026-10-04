@@ -321,3 +321,7 @@ Pick the structure from the operation you perform most, not from habit.
 2. Use a stack to check balanced brackets, including quotes.
 3. Time `list.pop(0)` against `deque.popleft()` at n = 100,000.
 4. Extend `HashTable` with `delete`, `keys()` and `__contains__`.
+
+---
+
+**Next:** [Lesson 07 — Trees and Heaps](07-trees-and-heaps.md)

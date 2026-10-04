@@ -266,3 +266,7 @@ Transformers fixed both problems. That is lesson 11.
    accuracy ceiling move?
 4. Change the label rule to depend on the **last** token and explain what
    happens to mean pooling.
+
+---
+
+**Next:** [Lesson 11 — Attention and Transformers](11-attention-and-transformers.md)

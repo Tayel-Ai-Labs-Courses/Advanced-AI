@@ -323,3 +323,7 @@ Two things to get right:
 3. Build a trie over a word list and implement autocomplete for a prefix.
 4. Write an `LRUCache`, then compare against `functools.lru_cache` on a slow
    function.
+
+---
+
+**Next:** [Lesson 10 — Concurrency and Performance](10-concurrency-and-performance.md)

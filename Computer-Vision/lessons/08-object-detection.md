@@ -311,3 +311,7 @@ agree at IoU 0.7, no model will score above that against either of them.
 2. Implement NMS and run it on a cluster of five overlapping boxes.
 3. Compute precision and recall at IoU 0.5 and 0.75 for the same predictions.
 4. Convert a YOLO-format label file to `xyxy` pixels and verify by drawing.
+
+---
+
+**Next:** [Lesson 09 — Segmentation](09-segmentation.md)

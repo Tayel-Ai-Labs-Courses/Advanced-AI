@@ -318,3 +318,7 @@ for SQL over streams.
 2. Show a late event landing in the wrong window under processing time.
 3. Choose an allowed-lateness value for a stream you know, and justify it.
 4. Deduplicate an at-least-once stream and confirm the totals.
+
+---
+
+**Next:** [Lesson 12 — Production and Cost](12-production-and-cost.md)

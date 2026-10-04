@@ -294,3 +294,7 @@ yesterday and today?" — all set questions.
 2. Count the letters in a word using the `.get()` pattern, then with `Counter`.
 3. Given two lists of student names, print who is in both and who is in only one.
 4. Invert a dictionary so values become keys. What breaks if values repeat?
+
+---
+
+**Next:** [Lesson 09 — Functions](09-functions.md)

@@ -277,3 +277,14 @@ turn "it got worse last Tuesday and nobody knows why" into a diff.
 
 **Done with the lessons.** Next: [Project 12](../Project-12/) — ship one LLM
 feature, with its evaluation and its bill.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-12/) | It is the assessment, and it is not optional |
+| [AI-Agents](../../AI-Agents/) | What happens when a prompt gets powers |
+| [MLOps](../../MLOps/) | Versioning, gates and monitoring |
+| [Advanced-Prompt-Engineering](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) | The technique catalogue, a separate repository |

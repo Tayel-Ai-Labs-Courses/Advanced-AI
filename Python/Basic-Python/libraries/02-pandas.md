@@ -304,3 +304,7 @@ df.pivot_table(index="branch", columns="item", values="amount", aggfunc="sum")
 2. Add a computed column, then filter to the top 10 rows by it.
 3. Group by a category column and produce total, count, and mean in one `agg`.
 4. Merge two tables with `how="left"`; count how many rows failed to match.
+
+---
+
+**Next:** [Matplotlib and Seaborn](03-visualisation.md)

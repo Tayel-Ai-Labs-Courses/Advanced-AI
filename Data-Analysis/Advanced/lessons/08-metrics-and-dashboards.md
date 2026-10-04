@@ -304,3 +304,14 @@ you were paid to**, and then add the guardrail that would catch you.
 2. Name one north star, three inputs and three guardrails for your team.
 3. Describe how you would game your main metric, and what would catch it.
 4. Open your busiest dashboard: which tiles have no decision attached?
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../../Project-9/) | It is the assessment, and it is not optional |
+| [Data-Science](../../../Data-Science/) | From an answer to a decision |
+| [Time-Series-and-Forecasting](../../../Time-Series-and-Forecasting/) | From analysing a trend to forecasting it |
+| [Communication-and-Documentation](../../../Communication-and-Documentation/) | Make the answer land |

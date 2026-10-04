@@ -170,3 +170,7 @@ Fewer than four ticks and you should not be using a neural network.
 3. Find a pretrained model on huggingface.co for a task you care about. Read
    its model card: what data, what licence, what languages?
 4. Run the checklist above against a project you want to build.
+
+---
+
+**Next:** [Lesson 02 — Tensors and Autograd](02-tensors-and-autograd.md)

@@ -265,3 +265,7 @@ large model at int4, on both quality and latency.
 2. Apply `quantize_dynamic` to a model and report size, latency and accuracy.
 3. Add a single outlier weight of 100 and re-measure the quantisation error.
 4. Compare a small fp32 model against a larger int8 one at equal latency.
+
+---
+
+**Next:** [Lesson 09 — Pruning and Sparsity](09-pruning-and-sparsity.md)

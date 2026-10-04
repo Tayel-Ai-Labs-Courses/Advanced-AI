@@ -221,3 +221,7 @@ more error handling and a scheduler around it.
 2. Rewrite an injection-prone query with bound parameters.
 3. Save a DataFrame as CSV and Parquet; compare file size and load time.
 4. Write an `etl()` that is safe to run twice without duplicating rows.
+
+---
+
+**Next:** [PySpark](07-pyspark.md)

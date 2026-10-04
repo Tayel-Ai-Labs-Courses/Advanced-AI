@@ -262,3 +262,7 @@ denominator, always.
 2. Add a per-unit metric beside every total; does the ranking change?
 3. Make a pivot table and its row percentages; which is more informative?
 4. Find an "average of averages" in a report you have seen and correct it.
+
+---
+
+**Next:** [Lesson 05 — Comparing Groups](05-comparing-groups.md)

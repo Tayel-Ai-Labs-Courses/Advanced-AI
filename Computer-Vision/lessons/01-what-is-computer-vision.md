@@ -160,3 +160,7 @@ committing to a labelling budget.
 3. Find a vision problem in your work that classical CV would solve.
 4. Photograph the same object ten times in different conditions. Which
    variations would break a model trained on studio images?
+
+---
+
+**Next:** [Lesson 02 — Images as Data](02-images-as-data.md)

@@ -192,3 +192,7 @@ and documented meaning — not from clever code.
 3. Name three ways your current pipeline could double-count a row.
 4. For one "real-time" requirement you have heard, ask what a 15-minute delay
    would cost.
+
+---
+
+**Next:** [Lesson 02 — Data Modelling](02-data-modelling.md)

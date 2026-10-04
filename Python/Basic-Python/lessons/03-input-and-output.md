@@ -159,3 +159,7 @@ Loading...
    right-aligned in a width of 10.
 3. Ask for a name and print it centred inside 30 dashes.
 4. Ask for a mark out of 50 and print it as a percentage with one decimal.
+
+---
+
+**Next:** [Lesson 04 — Operators](04-operators.md)

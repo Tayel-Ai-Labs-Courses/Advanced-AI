@@ -272,3 +272,7 @@ competition, rarely worth the latency in a service.
 2. Reproduce the one-at-a-time table on your own data.
 3. Train the same augmentation for 10 and 40 epochs; compare.
 4. Implement MixUp and verify the soft labels sum to 1.
+
+---
+
+**Next:** [Lesson 08 — Object Detection](08-object-detection.md)

@@ -336,3 +336,7 @@ documentation and is illustrative. Everything above it was run.)*
 2. Apply it to a small transformer; report the trainable percentage.
 3. Train at ranks 2, 8 and 32 on the same task and compare final loss.
 4. Merge the adapter and benchmark inference latency before and after.
+
+---
+
+**Next:** [Lesson 08 — Quantisation](08-quantisation.md)

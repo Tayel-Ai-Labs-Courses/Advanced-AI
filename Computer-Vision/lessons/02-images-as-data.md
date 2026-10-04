@@ -297,3 +297,7 @@ and plot a grid of twenty images before you write a model.
 3. Write `describe()` and run it over 100 images from a real dataset.
 4. Take a segmentation mask, resize it bilinearly, and count the class values
    that appear.
+
+---
+
+**Next:** [Lesson 03 — Classical Computer Vision](03-classical-cv.md)

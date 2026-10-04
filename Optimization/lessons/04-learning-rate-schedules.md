@@ -301,3 +301,7 @@ is for: finding *your* edge, not copying someone else's.)
 2. Train with and without cosine on a dataset of yours and compare.
 3. Implement warmup + cosine with `LambdaLR` and plot the result.
 4. Run the learning-rate sweep on your own model and pick a value.
+
+---
+
+**Next:** [Lesson 05 — Hyperparameter Optimisation](05-hyperparameter-optimisation.md)

@@ -232,3 +232,7 @@ so.
    confounder.
 3. Print group sizes beside every rate in one of your analyses.
 4. Simulate a 5% rate at n = 25 a thousand times; how often does it exceed 10%?
+
+---
+
+**Next:** [Lesson 06 — Trends Over Time](06-trends.md)

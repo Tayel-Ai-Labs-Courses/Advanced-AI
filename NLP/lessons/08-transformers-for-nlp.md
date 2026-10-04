@@ -254,3 +254,7 @@ arithmetic that follows from this table.
 2. Compare `[CLS]`, masked mean and naive mean vectors on a padded batch.
 3. Look up three Arabic checkpoints and read their model cards.
 4. Estimate the memory for your task at fp32, fp16 and int8.
+
+---
+
+**Next:** [Lesson 09 — Fine-Tuning](09-fine-tuning.md)

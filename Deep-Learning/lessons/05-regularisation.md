@@ -317,3 +317,7 @@ network, the network is the problem.
    underfit?
 3. Compare `Adam` and `AdamW` at `weight_decay=0.1`.
 4. Implement early stopping with patience 5 and report the epoch it keeps.
+
+---
+
+**Next:** [Lesson 06 — Data Loading](06-data-loading.md)

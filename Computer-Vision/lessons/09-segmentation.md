@@ -270,3 +270,7 @@ random seed to each.
 2. Show that pixel accuracy fails on a 1%-object image.
 3. Compare BCE, Dice and BCE+Dice loss on a synthetic small object.
 4. Flip an image without flipping its mask, and visualise the damage.
+
+---
+
+**Next:** [Lesson 10 — Vision Transformers and CLIP](10-vit-and-clip.md)

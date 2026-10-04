@@ -303,3 +303,7 @@ better model" and "we need better images".
    fail.
 3. Train for 15 epochs and plot train and test curves on one chart.
 4. Print the per-class report and name the two classes most confused.
+
+---
+
+**Next:** [Lesson 06 — Transfer Learning](06-transfer-learning.md)

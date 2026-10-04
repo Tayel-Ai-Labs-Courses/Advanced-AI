@@ -320,3 +320,7 @@ Six files, and they run in seconds on every commit.
 2. Write the five standard tests for that transformation.
 3. Add a row-count assertion to every join in one pipeline.
 4. Write the idempotency test, and make it pass.
+
+---
+
+**Next:** [Lesson 09 — Orchestration](09-orchestration.md)

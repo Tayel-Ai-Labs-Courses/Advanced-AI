@@ -304,3 +304,7 @@ environment cannot be reproduced, and cannot be argued with either.
 3. Profile a model and name the three most expensive operations.
 4. Compute the training memory of a model you have, then compare with the
    measured peak.
+
+---
+
+**Next:** [Lesson 03 — Optimisers](03-optimisers.md)

@@ -252,3 +252,7 @@ save a hundred questions:
 3. Show the line-level/order-level double-count on your own data.
 4. Model one dimension as SCD2 and write the query for "at the time of the
    order".
+
+---
+
+**Next:** [Lesson 03 — Storage and File Formats](03-storage-and-formats.md)

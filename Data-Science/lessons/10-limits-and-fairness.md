@@ -451,3 +451,7 @@ that point is whether the boundary was written down.
 
 **Done with the lessons.** Next: [Project 10](../Project-10/) — one problem, end
 to end.
+
+---
+
+**Next:** [Lesson 11 — Experiment Tracking and the Model Registry](11-experiment-tracking.md)

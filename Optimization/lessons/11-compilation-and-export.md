@@ -290,3 +290,7 @@ and the predictions are subtly wrong.
 3. Export to ONNX with dynamic axes and check the outputs match.
 4. Work out how many requests it takes to repay the compile time in your
    service.
+
+---
+
+**Next:** [Lesson 12 — Serving and Cost](12-serving-and-cost.md)

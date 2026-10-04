@@ -145,3 +145,7 @@ is not worth a week — here is a two-hour version".
 3. Classify three of your recent analyses as descriptive, diagnostic,
    predictive or prescriptive.
 4. Compute the value at stake and your cost for one open question.
+
+---
+
+**Next:** [Lesson 02 — Exploring a Dataset](02-exploring.md)

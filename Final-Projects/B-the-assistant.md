@@ -46,7 +46,25 @@ Its git commit must predate your first prompt commit.
 
 **Report the step at which you stopped improving, and stop there.**
 
-### 3. Retrieval done properly
+### 3. The prompt, built properly
+- **Parse rate reported separately from accuracy** — three reasonable prompts
+  scored 0/12 parseable in
+  [Prompt-Engineering 02](../Prompt-Engineering/lessons/02-the-output-contract.md)
+- A **contract with an escape hatch** (`unclear` / "I don't know") that your
+  code handles as a real branch, not an error
+- **At least four prompt versions**, one change each, each with an **n and a
+  p-value** in a changelog
+  ([Prompt-Engineering 06](../Prompt-Engineering/lessons/06-the-iteration-loop.md):
+  a 16-point gain is still noise at 50 examples)
+- **Error analysis on 20 failures**, grouped and counted, with the change you
+  made aimed at the biggest group
+- **Tokens per call measured**, with what the few-shot examples specifically
+  cost at your monthly volume
+  ([Prompt-Engineering 05](../Prompt-Engineering/lessons/05-what-a-prompt-costs.md))
+- The prompt is a **file with a version**, and that version is in every log
+  line ([Prompt-Engineering 08](../Prompt-Engineering/lessons/08-prompts-in-production.md))
+
+### 4. Retrieval done properly
 - **At least three chunking strategies compared**, with ctx@k for each
 - The ctx@k curve, and **k chosen at the knee**, with its token cost
 - Citations: every answer names its chunk, and you **verify the cited chunk
@@ -54,7 +72,7 @@ Its git commit must predate your first prompt commit.
 - The "retrieved nothing" path: no chunk above threshold means **do not call the
   model**
 
-### 4. Guardrails
+### 5. Guardrails
 - Constrained or schema-validated output. Free-text parsing is not acceptable
 - Schema validation **and two business rules the schema cannot express**
 - A bounded retry loop, with the retry rate measured
@@ -62,19 +80,28 @@ Its git commit must predate your first prompt commit.
   tool's return value — with the result of each
 - A written statement of what an attacker who controls the input can do
 
-### 5. Cost and latency at real volume
+### 6. Cost and latency at real volume
 - Tokens in and out, **with the correct tokeniser**
 - If your users write Arabic, **the Arabic multiplier on your own text**
 - Cache hit rate from your **real traffic shape**, not assumed
 - p50 and p95, and the latency budget with owners
 - The route table: what fraction of requests avoid the expensive path
 
-### 6. If it takes actions
+### 7. If it takes actions
 Only if your assistant does anything beyond answering:
 - The model returns a **decision**; your code maps it to the action
 - Permissions scoped per step and per argument
 - Idempotency keys on every write, with a retry-storm test
 - Harm rate measured, not just success rate
+
+### 8. Ship it like MLOps says
+- Prompt and model version in **every logged response**
+- The eval set runs **in CI**; a PR that worsens it fails
+  ([MLOps 04](../MLOps/lessons/04-ci-gate.md))
+- **Parse rate monitored in production**, with a threshold from
+  `sqrt(p(1-p)/n)` ([MLOps 07](../MLOps/lessons/07-monitoring.md))
+- Rollback to the previous prompt version is **one file**, and someone else has
+  done it, timed
 
 ---
 
@@ -84,12 +111,13 @@ Only if your assistant does anything beyond answering:
 capstone-b/
 ├── eval/              dev, test, unanswerable, regressions — committed first
 ├── retrieval/         chunking comparison, ctx@k curve, the chosen k
-├── prompts/           versioned, hashed, referenced in every log line
+├── prompts/           versioned files + CHANGELOG.md with n and p per version
 ├── guardrails/        schema, business rules, retry, injection tests
 ├── reports/
 │   ├── steps.md       each step with its number
 │   ├── errors.md      the 20 outputs read by hand
-│   └── cost.md        tokens, Arabic multiplier, cache, monthly bill
+│   ├── cost.md        tokens, Arabic multiplier, cache, monthly bill
+│   └── ops.md         CI gate, parse-rate threshold, rollback drill
 └── tests/
     ├── test_guardrails.py
     └── test_injection.py
@@ -106,6 +134,8 @@ capstone-b/
 | The route table | The unanswerable subset and its refusal rate |
 | Streaming | Constrained output |
 | The semantic cache | The injection tests |
+| Two of the four prompt versions | The changelog's n and p on the ones you keep |
+| The production parse-rate monitor | The parse rate measured at all |
 
 The two things that cannot be cut are the **eval set committed before the first
 prompt** and the **unanswerable subset**. Without them there is no evidence the

@@ -292,3 +292,7 @@ worth it in a service with a latency budget.
    sampling, reporting rare-class recall.
 4. Deliberately apply a label-breaking transform (vertical flip on digits) and
    measure the damage.
+
+---
+
+**Next:** [Lesson 10 — Sequences and Embeddings](10-sequences-and-embeddings.md)

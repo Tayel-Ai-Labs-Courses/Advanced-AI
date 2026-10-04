@@ -323,3 +323,7 @@ For text, the same idea and the same rules live in
 3. Fine-tune the body at 1e-3 and at 1e-5. Show catastrophic forgetting.
 4. Swap `resnet18` for `efficientnet_b0` — note that its head is called
    `classifier`, not `fc`.
+
+---
+
+**Next:** [Lesson 09 — Augmentation and Imbalance](09-augmentation-and-imbalance.md)

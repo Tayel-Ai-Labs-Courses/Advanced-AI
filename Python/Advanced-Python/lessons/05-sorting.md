@@ -297,3 +297,7 @@ makes it work.
 3. Use `heapq.nlargest` and `sorted()[:5]` on a million values; compare times.
 4. Demonstrate stability: sort by one field, then another, and explain the
    final order.
+
+---
+
+**Next:** [Lesson 06 — Core Data Structures](06-core-data-structures.md)

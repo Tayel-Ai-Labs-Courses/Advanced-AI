@@ -255,3 +255,7 @@ That last line is **unpacking**, and it works for any sequence.
 2. Use a comprehension to get the squares of the even numbers in `range(20)`.
 3. Reverse a list two ways: with a slice and with a loop.
 4. Given a list with duplicates, produce a list of unique values keeping order.
+
+---
+
+**Next:** [Lesson 08 — Dictionaries and Sets](08-dictionaries-and-sets.md)

@@ -264,3 +264,7 @@ least.
 2. Compare unstructured and structured pruning at the same sparsity.
 3. Fine-tune with the mask kept in place; confirm the sparsity survives.
 4. Compress a dense and a 90%-sparse checkpoint with gzip. Compare the sizes.
+
+---
+
+**Next:** [Lesson 10 — Knowledge Distillation](10-knowledge-distillation.md)

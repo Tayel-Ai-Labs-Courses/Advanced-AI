@@ -317,3 +317,14 @@ this was worth doing.
 
 **Done with the lessons.** Next: [Project 11](../Project-11/) — an agent, and
 the honest case for or against deploying it.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-11/) | It is the assessment, and it is not optional |
+| [Data-Science 06](../../Data-Science/lessons/06-evaluating-the-decision.md) | Pricing a decision |
+| [MLOps 05](../../MLOps/lessons/05-deployment.md) | Rolling out a policy carefully |
+| [Research-and-Review](../../Research-and-Review/) | RL papers need the most scepticism |

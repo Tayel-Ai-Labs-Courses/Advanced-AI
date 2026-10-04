@@ -159,3 +159,14 @@ surface in the answer.
 
 **Done with the lessons.** Next: [Project 16](../Project-16/) — design a system
 before building it, and have it reviewed.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-16/) | It is the assessment, and it is not optional |
+| [MLOps](../../MLOps/) | Running what you designed |
+| [HPC-and-Cloud](../../HPC-and-Cloud/) | What the design costs |
+| [AI-in-Frontend](https://github.com/Tayel-Ai-Labs-Courses/AI-in-Frontend) | The consumer side, a separate repository |

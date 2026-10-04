@@ -167,3 +167,14 @@ already thought of and hoped nobody would raise.
 
 **Done with the lessons.** Next: [Project 18](../Project-18/) — a review and a
 reproduction, on a question you actually have.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-18/) | It is the assessment, and it is not optional |
+| [Final-Projects](../../Final-Projects/) | Apply the scepticism to your own work |
+| [Communication-and-Documentation](../../Communication-and-Documentation/) | Writing it up |
+| [Mathematics-for-AI](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI) | Deeper maths, a separate repository |

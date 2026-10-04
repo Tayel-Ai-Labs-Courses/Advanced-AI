@@ -322,3 +322,7 @@ from crashing the service at 3am.
    again fitted on train only. Report both numbers.
 4. Build a `ColumnTransformer` for a table with numeric, ordinal and nominal
    columns.
+
+---
+
+**Next:** [Lesson 03 — Splitting and Overfitting](03-splitting-and-overfitting.md)

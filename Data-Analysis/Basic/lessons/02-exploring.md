@@ -306,3 +306,7 @@ make sense.
 2. Print percentiles for your main measure; how far is the max from the 99th?
 3. Plot rows per month; are there collection gaps?
 4. Sort by your main measure and read the top and bottom twenty rows.
+
+---
+
+**Next:** [Lesson 03 — Cleaning](03-cleaning.md)

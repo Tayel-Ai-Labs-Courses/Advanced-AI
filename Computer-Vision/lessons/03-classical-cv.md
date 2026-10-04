@@ -266,3 +266,7 @@ whole frame.
 2. Add noise to an image and compare three denoising filters by error.
 3. Threshold a photograph, find contours, and measure the largest object.
 4. Find a problem at your work that `matchTemplate` or contours would solve.
+
+---
+
+**Next:** [Lesson 04 — CNNs for Vision](04-cnns-for-vision.md)

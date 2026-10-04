@@ -273,3 +273,7 @@ four lines, and the chart stops competing with the data
 2. Draw the same bar chart with a truncated and a zero axis; compare.
 3. Plot the distribution of your main measure; is the mean representative?
 4. Remove every element from one chart that is not carrying information.
+
+---
+
+**Next:** [Lesson 08 — Reporting](08-reporting.md)

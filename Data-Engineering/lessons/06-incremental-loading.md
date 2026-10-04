@@ -280,3 +280,7 @@ start: parameterise the job by partition, and never let "today" be implicit.
 2. Implement delete-insert and prove idempotency by running it three times.
 3. Deduplicate an append-only table with a window function.
 4. Write a backfill that processes one partition at a time and can resume.
+
+---
+
+**Next:** [Lesson 07 — Data Quality](07-data-quality.md)

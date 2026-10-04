@@ -215,3 +215,7 @@ questions.
    (Divisible by 4, except centuries, unless divisible by 400.)
 3. Rewrite exercise 2 using guard clauses, with no `else`.
 4. Ask for a day number 1–7 and print the day name using `match`.
+
+---
+
+**Next:** [Lesson 06 — Loops](06-loops.md)

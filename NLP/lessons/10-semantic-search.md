@@ -366,3 +366,7 @@ Expensive per pair, and applied to only 50 pairs.
 2. Label 20 queries and report recall@1, recall@5 and MRR for both.
 3. Tune `alpha` in the hybrid search. Where is the best value?
 4. Compare chunk sizes 100, 300 and 500 on the same corpus and queries.
+
+---
+
+**Next:** [Lesson 11 — LLMs, Prompting and RAG](11-llms-prompting-rag.md)

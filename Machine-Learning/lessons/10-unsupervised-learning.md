@@ -274,3 +274,7 @@ they distort distances, so never feed their output into a model.)
 3. Run DBSCAN over five `eps` values and report clusters and noise for each.
 4. Reduce a dataset to 2 components and scatter-plot it, coloured by a label
    you did not use.
+
+---
+
+**Next:** [Lesson 11 — Pipelines and Tuning](11-pipelines-and-tuning.md)

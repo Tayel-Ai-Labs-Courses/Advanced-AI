@@ -297,3 +297,7 @@ without reading logs.
 2. Add exponential backoff with jitter to one job.
 3. Parameterise a job by execution date and run it for three past dates.
 4. Define SLAs for three tables, and write the check.
+
+---
+
+**Next:** [Lesson 10 — Scale](10-scale.md)

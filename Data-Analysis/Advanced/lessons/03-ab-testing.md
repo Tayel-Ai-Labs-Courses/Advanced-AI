@@ -307,3 +307,7 @@ weeks because it is new, and reverts. Run long enough to see it.
 3. Run an A/A check on a past experiment's pre-period attributes.
 4. Re-analyse a past "win" and report the confidence interval. Does the bottom
    still justify it?
+
+---
+
+**Next:** [Lesson 04 — Time Series](04-time-series.md)

@@ -295,3 +295,14 @@ commit.
 2. Write five pytest tests for a cleaning function, including two edge cases.
 3. Restructure a project into `src/`, `tests/`, `notebooks/`.
 4. Replace every `print` in a script with logging at the right levels.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-2/) | It is the assessment, and it is not optional |
+| [Machine-Learning](../../../Machine-Learning/) | The first real model |
+| [Databases-and-SQL](../../../Databases-and-SQL/) | Where the data actually lives |
+| [Data-Engineering](../../../Data-Engineering/) | Code that runs unattended |

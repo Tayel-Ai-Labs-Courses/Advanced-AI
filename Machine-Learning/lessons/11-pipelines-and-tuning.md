@@ -307,3 +307,7 @@ why people do it first.
 2. Grid-search two parameters; report best params, cv score and test score.
 3. Convert that to `RandomizedSearchCV` with `n_iter=20` and compare the cost.
 4. Tune an imputer strategy together with a model parameter in one search.
+
+---
+
+**Next:** [Lesson 12 — Neural Networks, the Idea](12-neural-networks-intro.md)

@@ -203,3 +203,7 @@ Guessing at the bottleneck is wrong more often than it is right.
 2. Give the Big-O of three functions from your Project 1 code.
 3. Build a string of 100,000 pieces with `+=` and with `join`. Time both.
 4. Profile any script of yours and name its top three costs.
+
+---
+
+**Next:** [Lesson 04 — Searching](04-searching.md)

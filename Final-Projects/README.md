@@ -1,16 +1,16 @@
 # Final Projects
 
-Three capstones. Each one requires work from **most of the nineteen courses**,
-which is the point: the eighteen numbered projects each test one course, and
-these test whether you can hold the whole thing together at once.
+Three capstones. Each one requires work from **most of the twenty-three
+courses**, which is the point: the twenty-three numbered projects each test one
+course, and these test whether you can hold the whole thing together at once.
 
 Do **one**. They are alternatives, not a sequence.
 
 | Capstone | For | Pulls from |
 |---|---|---|
-| **[A — The Decision System](A-decision-system.md)** | Anyone doing applied ML at a company | 12 courses |
-| **[B — The Assistant](B-the-assistant.md)** | Anyone building with LLMs | 11 courses |
-| **[C — The Efficient Model](C-efficient-model.md)** | Anyone who cares about cost, latency or devices | 10 courses |
+| **[A — The Decision System](A-decision-system.md)** | Anyone doing applied ML at a company | 15 courses |
+| **[B — The Assistant](B-the-assistant.md)** | Anyone building with LLMs | 14 courses |
+| **[C — The Efficient Model](C-efficient-model.md)** | Anyone who cares about cost, latency or devices | 12 courses |
 
 ---
 
@@ -42,6 +42,14 @@ Communication lesson 03, and it is graded in all three capstones.
 
 **Every artifact in one repository**, not a wiki or a drive
 (Communication lesson 06).
+
+**One MLOps requirement, in all three.** Whatever you build, it must have the
+[MLOps](../MLOps/) minimum: a pinned environment, a pipeline that re-runs from
+scratch, an eval gate that fails a worsening change, and a rollback someone
+else has performed with a stopwatch. A capstone that works only on your laptop
+on the day you submit it is not finished — and
+[MLOps 04](../MLOps/lessons/04-ci-gate.md) prices exactly what the missing gate
+costs.
 
 **The handover test at the end.** A colleague who has never seen the project
 gets the repository for one day. Every question they must ask you is a gap, and

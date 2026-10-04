@@ -298,3 +298,7 @@ Steps 1–4 are free of accuracy cost. Steps 5–7 are not. Work in that order.
 2. Prove gradient accumulation matches a large batch, as above.
 3. Time training with and without checkpointing; report the slowdown.
 4. Fix a deliberate out-of-memory error using the ordered list.
+
+---
+
+**Next:** [Lesson 07 — Parameter-Efficient Fine-Tuning](07-parameter-efficient-finetuning.md)

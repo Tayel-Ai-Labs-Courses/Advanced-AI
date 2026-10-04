@@ -371,3 +371,7 @@ weights** rather than keeping whatever the final epoch produced.
    damage.
 4. Add early stopping to a loop of yours and confirm it restores the best
    weights.
+
+---
+
+**Next:** [Lesson 05 — Overfitting and Regularisation](05-regularisation.md)

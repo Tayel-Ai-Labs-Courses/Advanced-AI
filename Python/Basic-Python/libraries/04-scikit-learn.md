@@ -248,3 +248,7 @@ Save the whole pipeline, not the bare model. The scaler is part of the model.
 2. Wrap the scaler and the model in a `Pipeline`; confirm the score is stable.
 3. Print a `classification_report` and say which class the model is worst at.
 4. Grid-search two hyperparameters and compare against the baseline.
+
+---
+
+**Next:** [requests — Getting Data from APIs](05-apis-and-requests.md)

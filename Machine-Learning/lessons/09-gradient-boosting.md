@@ -272,3 +272,7 @@ For everything else tabular, this is your default.
 3. Show overfitting: plot train and validation score against `max_iter`.
 4. Run `RandomizedSearchCV` over five parameters with `n_iter=20` and compare
    with the defaults.
+
+---
+
+**Next:** [Lesson 10 — Unsupervised Learning](10-unsupervised-learning.md)

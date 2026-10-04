@@ -306,3 +306,7 @@ something structural.
 2. Fit a linear model on California housing and report MAE, RMSE and R².
 3. Plot residuals against predictions. Is there a pattern?
 4. Tune Ridge's `alpha` over `[0.01, 0.1, 1, 10, 100]` and plot R² against it.
+
+---
+
+**Next:** [Lesson 05 — Logistic Regression](05-logistic-regression.md)

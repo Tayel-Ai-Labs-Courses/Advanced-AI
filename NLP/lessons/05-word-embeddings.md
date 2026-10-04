@@ -303,3 +303,7 @@ documents towards zero — the bug from Deep Learning lesson 10.
 2. Train the toy word2vec on a corpus of yours and inspect the neighbours.
 3. Find a polysemous word and compare its contextual vectors in two sentences.
 4. Compare TF-IDF against frozen embeddings as features on the same task.
+
+---
+
+**Next:** [Lesson 06 — Text Classification](06-text-classification.md)

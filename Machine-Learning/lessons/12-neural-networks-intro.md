@@ -229,3 +229,7 @@ Do those two after this lesson, in that order.
 3. Benchmark an MLP against `HistGradientBoosting` on any tabular dataset —
    score and training time.
 4. In three sentences: for your own problem, would a network be worth it?
+
+---
+
+**Next:** [Lesson 13 — From Model to Product](13-from-model-to-product.md)

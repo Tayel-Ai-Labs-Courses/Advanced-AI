@@ -290,3 +290,7 @@ they contain. Lesson 08 uses exactly that.
 3. Replace the flatten with `AdaptiveAvgPool2d((1, 1))` and confirm the model
    still trains.
 4. Train on the full 60,000 images for 10 epochs and report the accuracy.
+
+---
+
+**Next:** [Lesson 08 — Transfer Learning](08-transfer-learning.md)

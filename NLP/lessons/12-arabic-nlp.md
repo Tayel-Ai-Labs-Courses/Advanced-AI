@@ -246,3 +246,14 @@ bag of words surprisingly informative once normalised.
 2. Compare characters per token across three tokenisers on your own text.
 3. Collect ten dialect sentences and ten MSA; test a model on both.
 4. Build an Arabic TF-IDF baseline and compare it with AraBERT.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-6/) | It is the assessment, and it is not optional |
+| [Prompt-Engineering](../../Prompt-Engineering/) | The craft layer before LLMs |
+| [LLM-and-GenAI](../../LLM-and-GenAI/) | Where text work goes next |
+| [Data-Science](../../Data-Science/) | Turn the model into a decision |

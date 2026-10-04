@@ -264,3 +264,7 @@ Lesson 06 replaces that head.
 3. Reproduce the gradient comparison with 30 plain layers.
 4. Print the stem, body and head of `efficientnet_b0`. What is the head
    called?
+
+---
+
+**Next:** [Lesson 05 — Training an Image Classifier](05-training-a-classifier.md)

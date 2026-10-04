@@ -270,3 +270,7 @@ percentage.
 2. Plot a 7-day and 28-day moving average; which reveals the trend?
 3. Compute compound growth and the naive average; how far apart are they?
 4. Check the day-of-week pattern in your data before your next comparison.
+
+---
+
+**Next:** [Lesson 07 — Visualising](07-visualising.md)

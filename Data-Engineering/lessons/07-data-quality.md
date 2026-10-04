@@ -293,3 +293,7 @@ on_failure: hold publish, alert #data-alerts
 2. Find a real quality issue in your data; which dimension is it?
 3. Add quarantine routing to a pipeline and check the reason column.
 4. Build a row-count anomaly check on 30 days of history.
+
+---
+
+**Next:** [Lesson 08 — Testing Pipelines](08-testing-pipelines.md)

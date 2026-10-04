@@ -310,3 +310,7 @@ Measure this before building anything on top of your segments.
 2. Compute RFM scores; is the value gradient monotonic?
 3. Run K-Means for k = 2…8 and report the silhouette. Does structure exist?
 4. Measure segment stability month to month.
+
+---
+
+**Next:** [Lesson 07 — Correlation and Causation](07-causation.md)

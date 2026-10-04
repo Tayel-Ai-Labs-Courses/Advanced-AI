@@ -235,3 +235,7 @@ already has them tuned.
    second of training?
 3. Sweep the learning rate over four values and plot accuracy.
 4. Plot training and validation loss per epoch; find where overfitting starts.
+
+---
+
+**Next:** [Lesson 10 — Semantic Search](10-semantic-search.md)

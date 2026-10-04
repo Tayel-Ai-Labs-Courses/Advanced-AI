@@ -212,3 +212,7 @@ print(total)
 3. Write one condition that is true for a valid exam mark: a number from 0
    to 100 inclusive.
 4. Predict the value of `2 ** 3 ** 2`, then check. Why is it not 64?
+
+---
+
+**Next:** [Lesson 05 — Conditionals](05-conditionals.md)

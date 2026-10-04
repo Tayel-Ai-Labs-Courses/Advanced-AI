@@ -249,3 +249,7 @@ Parquet.
 2. Read two columns from each and time it.
 3. Partition by month and measure a filtered read against a flat file.
 4. Count the files in a partitioned dataset of yours. Any under 10 MB?
+
+---
+
+**Next:** [Lesson 04 — Ingestion](04-ingestion.md)

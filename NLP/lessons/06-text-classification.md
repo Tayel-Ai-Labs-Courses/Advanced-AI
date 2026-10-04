@@ -331,3 +331,7 @@ worth labelling next. It only works on probabilities you have checked.
 2. Print the confusion matrix and name the two classes most confused.
 3. Read the ten most confident wrong predictions. How many are label errors?
 4. Add an abstain rule and report coverage, accuracy and human workload.
+
+---
+
+**Next:** [Lesson 07 — Sequence Labelling and NER](07-sequence-labelling.md)

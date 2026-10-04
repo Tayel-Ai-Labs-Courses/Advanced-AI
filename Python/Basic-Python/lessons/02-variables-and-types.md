@@ -167,3 +167,7 @@ silently produces nonsense.
 2. Ask yourself what `int(9.99)` returns, then check. Is it rounding?
 3. Fix this so it prints `The total is 15`: `print("The total is " + 15)`
 4. Write a comparison of `0.1 + 0.2` and `0.3` that is correctly `True`.
+
+---
+
+**Next:** [Lesson 03 — Input and Output](03-input-and-output.md)

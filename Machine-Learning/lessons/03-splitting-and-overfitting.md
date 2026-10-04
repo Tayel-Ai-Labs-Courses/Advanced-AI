@@ -262,3 +262,7 @@ which is usually an expensive question.
 3. Run 5-fold cross-validation and report mean ± std. Change `random_state`
    and see how much moves.
 4. Plot a learning curve and answer, with evidence: would more data help?
+
+---
+
+**Next:** [Lesson 04 — Linear Regression](04-linear-regression.md)

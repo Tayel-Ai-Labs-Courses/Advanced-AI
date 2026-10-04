@@ -275,3 +275,7 @@ Three calls, one execution. The fastest code is the code that does not run.
 3. Convert a Python loop over a million values to NumPy; measure both.
 4. Take a CPU-heavy function and parallelise it with `ProcessPoolExecutor`.
    At what input size does it start to win?
+
+---
+
+**Next:** [Lesson 11 — Typing, Testing, Packaging](11-typing-testing-packaging.md)

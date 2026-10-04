@@ -190,3 +190,14 @@ you should be depending on.
 
 **Done with the lessons.** Next: [Project 13](../Project-13/) — one agent, from
 shadow mode to a narrow slice of production.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-13/) | It is the assessment, and it is not optional |
+| [Data-Security-for-AI](../../Data-Security-for-AI/) | The full threat model |
+| [AI-System-Design](../../AI-System-Design/) | The architecture around it |
+| [MLOps](../../MLOps/) | Ship it and watch it |

@@ -321,3 +321,7 @@ They cost one line and they tell you whether the problem is even hard.
    recall matters more, and why? Two sentences each.
 3. Compare ROC-AUC and average precision on data with 1% positives.
 4. Add a `DummyClassifier` to any project you have and report both scores.
+
+---
+
+**Next:** [Lesson 07 — KNN and SVM](07-knn-and-svm.md)

@@ -254,3 +254,7 @@ pipe = pipeline("sentiment-analysis",
    expected score highest?
 4. Take embeddings from a frozen model, train `LogisticRegression` on them, and
    compare against the zero-shot result.
+
+---
+
+**Next:** [Libraries](README.md)

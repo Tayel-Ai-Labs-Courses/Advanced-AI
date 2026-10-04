@@ -280,3 +280,7 @@ Never use a list, dict, or set as a default value. Use `None`.
 3. Write `summarise(values)` returning count, mean, min, max as a dict.
 4. Write `clean_name(name)` that strips spaces and title-cases it. Add a
    docstring and three test calls proving it works.
+
+---
+
+**Next:** [Lesson 10 — Files and Errors](10-files-and-errors.md)

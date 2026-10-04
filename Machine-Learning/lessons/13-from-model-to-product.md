@@ -332,3 +332,14 @@ what stops someone using your call-list ranker to decide who gets credit.
    wrong-shape input.
 3. Run the FastAPI service and call `/predict` with `curl`.
 4. Write the model card for your Project 3 model — including the limits.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-3/) | It is the assessment, and it is not optional |
+| [Deep-Learning](../../Deep-Learning/) | When the table is not enough |
+| [Data-Science](../../Data-Science/) | What the model is actually worth |
+| [Time-Series-and-Forecasting](../../Time-Series-and-Forecasting/) | If the rows are ordered |

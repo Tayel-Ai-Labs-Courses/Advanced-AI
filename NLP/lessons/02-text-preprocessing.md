@@ -324,3 +324,7 @@ own data.
 3. Find a Unicode issue in a real corpus — normalisation or invisible
    characters.
 4. Measure four preprocessing settings, as above. Which wins on your data?
+
+---
+
+**Next:** [Lesson 03 — Tokenisation](03-tokenisation.md)

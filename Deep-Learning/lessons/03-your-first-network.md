@@ -284,3 +284,7 @@ flowchart LR
 3. Add a third hidden layer. Does the test score improve?
 4. Overfit a single batch of four samples deliberately, then explain why that
    is a *good* result in this one case.
+
+---
+
+**Next:** [Lesson 04 — The Training Loop](04-the-training-loop.md)

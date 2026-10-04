@@ -299,3 +299,7 @@ especially text after TF-IDF.
    where one column is multiplied by 1,000.
 3. On `make_circles`, compare linear and RBF kernels and explain the gap.
 4. Grid-search `C` and `gamma` together; report the best pair and its score.
+
+---
+
+**Next:** [Lesson 08 — Decision Trees and Random Forests](08-trees-and-forests.md)

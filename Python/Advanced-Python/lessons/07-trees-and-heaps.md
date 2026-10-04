@@ -332,3 +332,7 @@ beam search in text generation.
 3. Find the 10 largest values in a million-element list with `heapq` and with
    `sorted()`. Time both.
 4. Build a priority queue and simulate a task scheduler with equal priorities.
+
+---
+
+**Next:** [Lesson 08 — Graphs](08-graphs.md)

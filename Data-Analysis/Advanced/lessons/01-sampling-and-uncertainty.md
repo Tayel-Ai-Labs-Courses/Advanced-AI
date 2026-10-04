@@ -267,3 +267,7 @@ That one habit prevents most of the bad decisions made from dashboards.
 2. Bootstrap the median and the 90th percentile of the same metric.
 3. Work out the sample size for a 2-point margin on your conversion rate.
 4. Find a claim in a dashboard where the intervals would overlap.
+
+---
+
+**Next:** [Lesson 02 — Hypothesis Testing](02-hypothesis-testing.md)

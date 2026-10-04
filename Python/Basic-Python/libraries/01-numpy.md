@@ -272,3 +272,7 @@ of them must be 1.
 2. Replace every value below the mean with 0 using `np.where`.
 3. Normalise a 2-D array to mean 0 and standard deviation 1, per column.
 4. Time a sum over one million values as a Python loop and as `.sum()`.
+
+---
+
+**Next:** [pandas](02-pandas.md)

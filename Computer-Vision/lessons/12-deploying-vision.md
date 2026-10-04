@@ -289,3 +289,14 @@ way to answer "was it wrong, or was the label wrong?" three months from now.
 2. Benchmark your model at batch 1, 8 and 32; find the knee.
 3. Export to TorchScript and verify the outputs match.
 4. Write the monitoring list for a camera that might be moved by a cleaner.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-7/) | It is the assessment, and it is not optional |
+| [Optimization 08-15](../../Optimization/) | Vision models are where cost bites |
+| [MLOps](../../MLOps/) | Serving, monitoring and rollback |
+| [Data-Science](../../Data-Science/) | Turn the model into a decision |

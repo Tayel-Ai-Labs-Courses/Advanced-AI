@@ -308,3 +308,7 @@ Three rules for LTV:
 2. Plot the retention curve; where is the largest drop, and does it flatten?
 3. Compute retained-users-per-month; is it still rising?
 4. Compute LTV at 36 months and infinite horizon; how far apart are they?
+
+---
+
+**Next:** [Lesson 06 — Segmentation](06-segmentation.md)

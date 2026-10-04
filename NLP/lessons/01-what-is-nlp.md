@@ -186,3 +186,7 @@ user, thread or document, split by that group — not by row.
 3. Check your dataset for duplicates. How many, and what do they do to your
    split?
 4. Find three examples where word order alone changes the label.
+
+---
+
+**Next:** [Lesson 02 — Text Preprocessing](02-text-preprocessing.md)

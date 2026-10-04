@@ -286,3 +286,14 @@ model produced a bad answer, and rollback becomes guesswork.
 2. Benchmark one-at-a-time against batched inference at batch sizes 1, 8, 64.
 3. Export to TorchScript and ONNX; confirm both give the same outputs.
 4. Write the deployment checklist for your Project 4 model.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-4/) | It is the assessment, and it is not optional |
+| [NLP](../../NLP/) | If the data is text |
+| [Computer-Vision](../../Computer-Vision/) | If the data is images |
+| [Optimization](../../Optimization/) | Make it smaller, faster, cheaper |

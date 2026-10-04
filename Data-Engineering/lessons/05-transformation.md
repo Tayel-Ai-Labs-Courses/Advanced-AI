@@ -261,3 +261,7 @@ your transformations are SQL in a warehouse, dbt is the default tool in 2026.
 2. Move a metric definition from two dashboards into one intermediate table.
 3. Make a write idempotent and prove it by running it twice.
 4. Rewrite one Python aggregation as SQL and compare the runtime.
+
+---
+
+**Next:** [Lesson 06 — Incremental Loading](06-incremental-loading.md)

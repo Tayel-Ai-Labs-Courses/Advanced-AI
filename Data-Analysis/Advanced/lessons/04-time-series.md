@@ -313,3 +313,7 @@ saturation, and a forecast without an interval is a wish.
 2. Adjust for the weekday effect and re-read the last week's change.
 3. Beat the seasonal naive baseline — or report that you could not.
 4. Backtest over eight folds and report the mean and spread of the error.
+
+---
+
+**Next:** [Lesson 05 — Cohorts and Retention](05-cohorts-and-retention.md)

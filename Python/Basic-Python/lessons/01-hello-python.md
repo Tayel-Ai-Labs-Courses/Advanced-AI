@@ -147,3 +147,7 @@ Beginners panic at errors; engineers read them.
 2. Print `10 + 5` and `"10 + 5"`. Explain, out loud, why they differ.
 3. Make Python print exactly: `Tayel|AI|Labs` using `sep`.
 4. Cause a `SyntaxError` on purpose, then read the message and fix it.
+
+---
+
+**Next:** [Lesson 02 — Variables and Types](02-variables-and-types.md)

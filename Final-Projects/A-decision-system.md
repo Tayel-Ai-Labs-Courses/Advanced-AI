@@ -63,7 +63,33 @@ flowchart TD
   base rate, flagged count
 - **Three failures injected**, with which monitor caught each and which missed
 
-### 6. Attack it
+### 6. If the data is a time series
+Only if your rows are ordered in time — and check, because most business data
+is, and most people split it wrong anyway:
+- **The split is time-based**, and you report what a shuffled split would have
+  scored beside it ([Time-Series 02](../Time-Series-and-Forecasting/lessons/02-evaluating.md)
+  measured MAE 85.3 against 107.7 for exactly this)
+- A **backtest over at least 5 folds**, not one holdout, with the fold-by-fold
+  win rate against the baseline
+- If you forecast more than one step ahead, **direct and recursive compared**
+  (73.1 against 124.9 at h=28 in that course)
+
+### 7. Ship it like MLOps says
+- Environment pinned, image built twice a week apart, **same model hash**
+  ([MLOps 02](../MLOps/lessons/02-packaging.md))
+- The pipeline **re-runs from scratch** in an empty directory
+  ([MLOps 03](../MLOps/lessons/03-pipeline-as-code.md))
+- An **eval gate in CI** with a tolerance, that fails a PR making the model
+  worse, **including on a subgroup** ([MLOps 04](../MLOps/lessons/04-ci-gate.md))
+- All five deployment strategies **priced on your traffic**; say which you chose
+  and why ([MLOps 05](../MLOps/lessons/05-deployment.md))
+- **Rollback timed with a stopwatch, by someone who did not build it**
+- Alert thresholds from `sqrt(p(1-p)/n)`, not chosen by eye
+  ([MLOps 07](../MLOps/lessons/07-monitoring.md))
+- **Three of lesson 07's six serving skews injected.** Which does your
+  monitoring catch? Most people find it catches two.
+
+### 8. Attack it
 - Membership inference AUC, beside the train/test gap
 - A backdoor installed at 1%, and your attempt to detect it
 - Extraction measured under three output policies
@@ -82,6 +108,7 @@ capstone-a/
 ├── models/            the ladder, the paired interval
 ├── decision/          cost matrix, profit curve, calibration, gains
 ├── runs/              four runs, monitoring rows, the holdout
+├── ops/               lockfile, Dockerfile, CI gate, rollback drill, thresholds
 └── security/          attacks, findings, fixes with after-numbers
 ```
 
@@ -99,6 +126,8 @@ cut**:
 | The extraction measurement | The membership-inference number |
 | Simulated runs instead of real ones | The cost matrix and the threshold derivation |
 | The seasonal adjustment | The cleaning log's effect on the headline number |
+| Pricing all five deployment strategies | The eval gate in CI, and the timed rollback |
+| The direct-vs-recursive comparison | The time-based split, if your data is ordered |
 
 A capstone that does six things properly beats one that does twelve badly, and
 the cut list is part of the submission.

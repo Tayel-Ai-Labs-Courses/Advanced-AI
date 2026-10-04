@@ -247,3 +247,7 @@ Rough guidance by language:
    find?
 3. Compare token counts for the same paragraph in English and Arabic.
 4. Measure your corpus's truncation rate at `max_length` 128, 256 and 512.
+
+---
+
+**Next:** [Lesson 04 — Bag of Words and TF-IDF](04-bow-and-tfidf.md)

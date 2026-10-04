@@ -207,3 +207,7 @@ code comes from, and lesson 03 of the advanced track explains how to measure it.
 2. Sum the numbers 1 to 100 with a loop, then check against `n*(n+1)/2`.
 3. Ask repeatedly for a password with `while` until the user types `open`.
 4. Given `names` and `marks`, print each student with their grade, numbered.
+
+---
+
+**Next:** [Lesson 07 — Lists and Tuples](07-lists-and-tuples.md)

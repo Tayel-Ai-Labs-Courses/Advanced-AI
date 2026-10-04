@@ -172,3 +172,14 @@ model stops beating it, you will have the evidence rather than a suspicion.
 
 **Done with the lessons.** Next: [Project 21](../Project-21/) — a forecast that
 survives eight backtest folds and a month in production.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-21/) | It is the assessment, and it is not optional |
+| [MLOps](../../MLOps/) | Forecasts decay faster than most models |
+| [Data-Science 09](../../Data-Science/lessons/09-monitoring-and-drift.md) | Measuring the decay |
+| [Data-Analysis Advanced 04](../../Data-Analysis/Advanced/lessons/04-time-series.md) | The analysis side |

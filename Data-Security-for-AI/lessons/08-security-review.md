@@ -173,3 +173,14 @@ the Head of Data on 2026-10-01"* has recorded a decision someone can revisit.
 
 **Done with the lessons.** Next: [Project 14](../Project-14/) — attack a system,
 then fix it.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-14/) | It is the assessment, and it is not optional |
+| [MLOps 07](../../MLOps/lessons/07-monitoring.md) | Detecting it in production |
+| [AI-System-Design](../../AI-System-Design/) | Designing the boundary in |
+| [Cyber-Ai](https://github.com/Tayel-Ai-Labs-Courses/Cyber-Ai) | AI *for* security — the other direction |

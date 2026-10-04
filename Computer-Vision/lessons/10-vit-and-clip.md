@@ -224,3 +224,7 @@ excellent for retrieval and clustering without any labels at all.
 3. Run zero-shot CLIP on 20 of your images with four class prompts.
 4. Compare three prompt wordings for the same classes and measure the
    difference.
+
+---
+
+**Next:** [Lesson 11 — Evaluation and Error Analysis](11-evaluation-and-errors.md)

@@ -259,3 +259,7 @@ a handful of requests, it is noticeably faster.
 2. Handle a 404 without crashing, printing a clear message.
 3. Write a paginated fetch with a page cap and turn the result into a DataFrame.
 4. Add exponential backoff and prove it works by pointing it at a 500 endpoint.
+
+---
+
+**Next:** [SQL and Storage — SQLAlchemy, SQLite, Parquet](06-sql-and-storage.md)

@@ -177,3 +177,14 @@ averaging does not cure a bias every member has.
 
 **Done with the lessons.** Next: [Project 19](../Project-19/) — prove you can
 use this, on a model you already have.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-19/) | It is the assessment, and it is not optional |
+| [Python](../../Python/) | Build something with the maths behind you |
+| [Machine-Learning](../../Machine-Learning/) | Where every idea here gets used |
+| [Optimization 01-07](../../Optimization/) | Gradients, conditioning and schedules, applied |

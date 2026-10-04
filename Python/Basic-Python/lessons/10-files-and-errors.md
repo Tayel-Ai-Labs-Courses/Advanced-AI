@@ -275,3 +275,7 @@ you will debug the wrong step.
 3. Write `safe_divide(a, b)` returning `None` on division by zero.
 4. Read a JSON file that does not exist, and print a clear message instead of
    a traceback.
+
+---
+
+**Next:** [Lesson 11 — Classes and Objects](11-classes-and-objects.md)

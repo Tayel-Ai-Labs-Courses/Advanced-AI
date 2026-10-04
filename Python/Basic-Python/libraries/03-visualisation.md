@@ -210,3 +210,7 @@ stops the labels being cut off.
 2. Draw a grouped bar chart of a metric by two categories with `hue`.
 3. Build a correlation heatmap and name the two strongest relationships.
 4. Take any chart you made and rewrite the title so it states the finding.
+
+---
+
+**Next:** [scikit-learn](04-scikit-learn.md)

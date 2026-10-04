@@ -270,3 +270,7 @@ Optimiser: use `Adam` with `lr=1e-3` and only look further if it fails.
    with autograd. Compare.
 3. Train the loop above for 20 epochs and plot the loss.
 4. Add `model.eval()` and `no_grad()` evaluation; report accuracy.
+
+---
+
+**Next:** [transformers (Hugging Face)](09-transformers.md)

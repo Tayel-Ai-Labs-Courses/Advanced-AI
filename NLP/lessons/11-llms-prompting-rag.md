@@ -326,3 +326,7 @@ ship. A system that answers every question is a system that invents answers.
 3. Build a RAG prompt over ten of your own documents, with citations.
 4. Write 20 evaluation questions, five of them unanswerable, and measure the
    refusal rate.
+
+---
+
+**Next:** [Lesson 12 — Arabic NLP](12-arabic-nlp.md)

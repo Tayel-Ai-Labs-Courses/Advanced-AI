@@ -176,3 +176,14 @@ thing that makes technical writing worth reading.
 
 **Done with the lessons.** Next: [Project 15](../Project-15/) — document and
 present a piece of work you have already done.
+
+---
+
+## Where to go next
+
+| Next | Why |
+|---|---|
+| [This course's project](../Project-15/) | It is the assessment, and it is not optional |
+| [Final-Projects](../../Final-Projects/) | Where the writing is graded |
+| [Research-and-Review](../../Research-and-Review/) | Reading and reviewing other people's |
+| [AI-in-UIUX](https://github.com/Tayel-Ai-Labs-Courses/AI-in-UIUX) | Designing the surface, a separate repository |

@@ -259,3 +259,7 @@ are distilled from larger ones.
    that keeps the teacher's accuracy.
 4. Distil, then quantise the student to int8. Report size and accuracy at each
    step.
+
+---
+
+**Next:** [Lesson 11 — Compilation and Export](11-compilation-and-export.md)

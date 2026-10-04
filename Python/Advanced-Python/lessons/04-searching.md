@@ -222,3 +222,7 @@ a thousandfold speedup. Lesson 09 covers them, and Project 2 has you build one.
 2. Count comparisons for linear vs binary search on a sorted list of 1,000,000.
 3. Use `bisect` to find all values in a range without scanning.
 4. Take a slow `x in list` lookup from your own code and convert it to a set.
+
+---
+
+**Next:** [Lesson 05 — Sorting](05-sorting.md)

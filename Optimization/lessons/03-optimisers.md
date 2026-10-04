@@ -308,3 +308,7 @@ optimiser.step()
 2. Sweep momentum over `[0, 0.5, 0.9, 0.95, 0.99]` and find where it breaks.
 3. Measure the optimiser state of SGD, momentum and Adam on one model.
 4. Train without clipping on deliberately huge inputs, then with it.
+
+---
+
+**Next:** [Lesson 04 — Learning Rate Schedules](04-learning-rate-schedules.md)

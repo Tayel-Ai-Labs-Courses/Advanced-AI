@@ -207,3 +207,7 @@ a harder debugging session, today.
 3. Write a `groupBy().agg()` producing total, count, and average per category.
 4. Join a large and a small DataFrame, then again with `broadcast`. Compare
    the run time.
+
+---
+
+**Next:** [PyTorch](08-pytorch.md)

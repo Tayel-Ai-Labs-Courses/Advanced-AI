@@ -312,3 +312,7 @@ incident.
 3. Write a `validate()` for a source you use, and test it against four broken
    inputs.
 4. Extract from a database with `chunksize` and a watermark.
+
+---
+
+**Next:** [Lesson 05 — Transformation](05-transformation.md)

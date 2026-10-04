@@ -296,3 +296,7 @@ merely simpler, it is the only one of the two that can be right.
 3. Compare a single tree, a 10-tree forest and a 300-tree forest.
 4. Compare `feature_importances_` with `permutation_importance` and explain any
    disagreement.
+
+---
+
+**Next:** [Lesson 09 — Gradient Boosting](09-gradient-boosting.md)

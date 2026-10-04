@@ -274,3 +274,7 @@ it.** If the design is "we looked at the data", the verb is "associated with".
    within a selected subgroup.
 3. Apply difference-in-differences to a change rolled out to some units.
 4. Rewrite three claims from a recent report with the correct verb.
+
+---
+
+**Next:** [Lesson 08 — Metrics and Dashboards](08-metrics-and-dashboards.md)

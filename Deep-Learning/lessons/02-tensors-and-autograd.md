@@ -312,3 +312,7 @@ pass `dtype=torch.float32` unless you meant otherwise.
    and `(8, 32, 32, 3)`.
 3. Show gradient accumulation, then fix it with `zero_()`.
 4. Time an evaluation loop with and without `torch.no_grad()`.
+
+---
+
+**Next:** [Lesson 03 — Your First Network](03-your-first-network.md)

@@ -277,3 +277,7 @@ found a shortcut rather than the signal.
    vocabulary size.
 3. Print the top ten features per class and read them. Any leakage?
 4. Inspect ten misclassified documents. What do they have in common?
+
+---
+
+**Next:** [Lesson 05 — Word Embeddings](05-word-embeddings.md)

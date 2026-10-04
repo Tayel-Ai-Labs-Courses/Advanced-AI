@@ -300,3 +300,7 @@ weights first — they do not distort your epoch size.
    deterministic across two runs.
 4. Use `WeightedRandomSampler` on an imbalanced set and print the class balance
    of five batches.
+
+---
+
+**Next:** [Lesson 07 — Convolutional Networks](07-cnns.md)
