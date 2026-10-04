@@ -1,7 +1,7 @@
 # Final Projects
 
-Three capstones. Each one requires work from **most of the twenty-four
-courses**, which is the point: the twenty-four numbered projects each test one
+Three capstones. Each one requires work from **most of the twenty-six
+courses**, which is the point: the twenty-six numbered projects each test one
 course, and these test whether you can hold the whole thing together at once.
 
 Do **one**. They are alternatives, not a sequence.
@@ -50,6 +50,15 @@ else has performed with a stopwatch. A capstone that works only on your laptop
 on the day you submit it is not finished — and
 [MLOps 04](../MLOps/lessons/04-ci-gate.md) prices exactly what the missing gate
 costs.
+
+**One governance requirement, in all three.** Classify the system's risk tier
+([AI-Governance 02](../AI-Governance/lessons/02-classifying-risk.md)), and for
+anything above minimal produce the record, the subgroup numbers, and a named
+owner. If your system decides about people, also compute the four-fifths ratio
+at your chosen threshold and state which fairness definition you used and which
+you rejected — [lesson 04](../AI-Governance/lessons/04-fairness-obligations.md)
+showed a system passing that rule at every threshold while wrongly rejecting
+1,143 qualified people.
 
 **The handover test at the end.** A colleague who has never seen the project
 gets the repository for one day. Every question they must ask you is a gap, and

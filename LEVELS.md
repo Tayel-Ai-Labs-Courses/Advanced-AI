@@ -1,6 +1,6 @@
 # Who Should Take What — Levels and Coverage
 
-Twenty-five courses is not a queue. This page says where each group starts, what
+Twenty-seven courses is not a queue. This page says where each group starts, what
 they can skip, and what fraction of the skills an AI engineer needs the track
 now covers.
 
@@ -8,7 +8,7 @@ now covers.
 
 ## Coverage: what the track has, and what it does not
 
-**25 courses · 24 projects · 3 capstones.** See
+**27 courses · 26 projects · 3 capstones.** See
 [`CURRICULUM.md`](CURRICULUM.md) for the full ordering, and
 [the unified roadmap](README.md#the-unified-roadmap) for one diagram covering
 this repository and the eight applied repositories around it.
@@ -30,6 +30,8 @@ Judged against the skills an AI engineer is actually asked for in a job:
 | One full reliable system end to end | **yes** | Advanced-Practical-AI |
 | Sequential decisions, bandits, RL | **yes** | Reinforcement-Learning |
 | **Recommenders: ranking, cold start, exposure, feedback loops** | **yes** | Recommender-Systems |
+| **Speech and audio: sampling, spectrograms, VAD, ASR evaluation** | **yes** | Speech-and-Audio |
+| **Governance: risk tiers, oversight, consent, retention, audits** | **yes** | AI-Governance |
 | **Writing prompts: contracts, context, cost, injection** | **yes** | Prompt-Engineering |
 | LLMs, prompting, RAG, evals, fine-tune vs prompt | **yes** | LLM-and-GenAI |
 | Agents, tools, automation in Python | **yes** | AI-Agents |
@@ -116,7 +118,8 @@ say by how much with an interval, and write one page a manager can act on.
 ```
 
 **Then one domain course** — NLP, Computer-Vision,
-**Time-Series-and-Forecasting**, **Recommender-Systems**, or Optimization — depending on what they are
+**Time-Series-and-Forecasting**, **Recommender-Systems**,
+**Speech-and-Audio**, or Optimization — depending on what they are
 paid to do. Take Time-Series if anyone has ever asked you for a forecast:
 [its lesson 02](Time-Series-and-Forecasting/lessons/02-evaluating.md) will
 probably invalidate a result you already believe.
@@ -137,16 +140,17 @@ holdout, and a written verdict.
 **Goal: judgement, and the things that go wrong at scale.**
 
 ```text
-1. Data-Security-for-AI  + Project 14      the gap most seniors have
-2. Research-and-Review   lesson 03         read this one even if you skip the rest
-3. AI-System-Design      + Project 16      you now review other people's designs
-4. AI-Agents             + Project 13      if the team is building agents
-5. Optimization          + Project 5       cost and latency become yours
-6. HPC-and-Cloud         + Project 17      when models outgrow one machine
-7. MLOps                 all 8 + Project 22  you now price controls, not just add them
-8. Reinforcement-Learning + Project 11     if the problem is sequential
-9. Communication         lessons 06-08     artifacts, handover, presenting
-10. Final Projects                         the cross-course capstones
+1. AI-Governance         + Project 26      you now sign off other people's systems
+2. Data-Security-for-AI  + Project 14      the gap most seniors have
+3. Research-and-Review   lesson 03         read this one even if you skip the rest
+4. AI-System-Design      + Project 16      you now review other people's designs
+5. AI-Agents             + Project 13      if the team is building agents
+6. Optimization          + Project 5       cost and latency become yours
+7. HPC-and-Cloud         + Project 17      when models outgrow one machine
+8. MLOps                 all 8 + Project 22  you now price controls, not just add them
+9. Reinforcement-Learning + Project 11     if the problem is sequential
+10. Communication        lessons 06-08     artifacts, handover, presenting
+11. Final Projects                         the cross-course capstones
 ```
 
 **Read, do not work through:** the "Common mistakes" table and the
@@ -200,6 +204,7 @@ courses**. What remains is out of scope on purpose:
 | Kubernetes, Terraform, cloud consoles | Whoever owns the infrastructure | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing); the cost model is in HPC-and-Cloud |
 | Hardware, boards, embedded toolchains | Whoever ships to a device | [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI); the measurements are in Optimization 15 |
 | A catalogue of prompt techniques | Anyone doing heavy LLM work | [`Advanced-Prompt-Engineering`](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering); the two depths before it are Prompt-Engineering and LLM 04 |
+| Graph machine learning | Anyone with relational data | Nothing here — a genuine, niche gap |
 | Maths beyond the decision-oriented version | Anyone going into research | [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI); Foundations is the short route |
 | Models *for* security operations | Security engineers | [`Cyber-Ai`](https://github.com/Tayel-Ai-Labs-Courses/Cyber-Ai) — not the same thing as Data-Security-for-AI, which is the security *of* a model |
 | Feature stores as products | Teams past ~20 models | [MLOps 07](MLOps/lessons/07-monitoring.md) covers the problem they solve |

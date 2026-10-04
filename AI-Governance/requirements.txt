@@ -1,0 +1,7 @@
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5
+
+# No external data: every example is generated in the lessons.
+
+jupyter>=1.0

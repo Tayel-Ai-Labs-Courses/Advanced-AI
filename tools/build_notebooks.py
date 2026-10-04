@@ -26,6 +26,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 # Directories whose markdown files become notebooks, per course.
 LESSON_DIRS = [
+    REPO_ROOT / "AI-Governance" / "lessons",
+    REPO_ROOT / "Speech-and-Audio" / "lessons",
     REPO_ROOT / "Recommender-Systems" / "lessons",
     REPO_ROOT / "Prompt-Engineering" / "lessons",
     REPO_ROOT / "MLOps" / "lessons",

@@ -99,7 +99,21 @@ Only if your system ranks or selects from a catalogue:
 - **Three of lesson 07's six serving skews injected.** Which does your
   monitoring catch? Most people find it catches two.
 
-### 9. Attack it
+### 9. What it owes
+- Risk tier, with the seven questions answered
+  ([AI-Governance 02](../AI-Governance/lessons/02-classifying-risk.md))
+- The four-fifths ratio at **five** thresholds, plus one other fairness
+  definition, and which you chose
+  ([lesson 04](../AI-Governance/lessons/04-fairness-obligations.md))
+- The **four oversight numbers** if a human reviews anything: override rate,
+  override accuracy, time per review, outcome delta
+  ([lesson 05](../AI-Governance/lessons/05-human-oversight.md))
+- **Explanation fidelity** as a number, and whether it agrees with the model's
+  own feature importance ([lesson 06](../AI-Governance/lessons/06-transparency.md))
+- **k** for your quasi-identifiers, and the retention policy
+  ([lesson 07](../AI-Governance/lessons/07-data-obligations.md))
+
+### 10. Attack it
 - Membership inference AUC, beside the train/test gap
 - A backdoor installed at 1%, and your attempt to detect it
 - Extraction measured under three output policies

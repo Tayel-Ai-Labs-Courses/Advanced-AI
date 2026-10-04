@@ -1,6 +1,6 @@
 # The Curriculum — Everything, in Order
 
-**Twenty-five courses, twenty-four projects, three capstones, 264 notebooks.**
+**Twenty-seven courses, twenty-six projects, three capstones, 280 notebooks.**
 
 This page is the single ordering: what comes after what, where the later
 additions slot in, where the applied repositories live, and what is still missing.
@@ -19,7 +19,7 @@ The one-diagram version is in [`README.md`](README.md#the-unified-roadmap).
 ```mermaid
 flowchart TD
     B0["<b>0 · FOUNDATIONS</b><br/>Foundations (maths) · Python · Databases &amp; SQL"] --> B1["<b>1 · LEARNING FROM DATA</b><br/>Machine Learning → Deep Learning"]
-    B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision<br/>Time Series · Recommenders<br/><i>take what you need</i>"]
+    B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision · Speech &amp; Audio<br/>Time Series · Recommenders<br/><i>take what you need</i>"]
     B0 --> B3["<b>3 · REAL DATA</b><br/>Data Engineering · Data Analysis"]
     B1 --> B4["<b>4 · DECIDING &amp; SHIPPING</b><br/>Data Science → Advanced Practical AI"]
     B3 --> B4
@@ -29,7 +29,7 @@ flowchart TD
     B4 --> B7["<b>7 · UNCERTAINTY</b><br/>Reinforcement Learning"]
     B6 --> CAP["<b>FINAL PROJECTS</b><br/>three capstones"]
     B7 --> CAP
-    B8["<b>8 · PROFESSIONAL PRACTICE</b><br/>Communication · Research<br/><i>alongside everything</i>"] -.-> B0
+    B8["<b>8 · PROFESSIONAL PRACTICE</b><br/>Communication · Research · Governance<br/><i>alongside everything</i>"] -.-> B0
     B8 -.-> B4
     B8 -.-> CAP
     CAP --> SP["<b>9 · APPLIED</b><br/>eight separate repositories<br/>maths · cloud · embedded · cyber<br/>prompting · frontend · UI/UX · tooling"]
@@ -77,6 +77,7 @@ Deep Learning is optional until a project needs it. Machine Learning is not.
 | [`Computer-Vision`](Computer-Vision) | 12 | 7 | The data is images |
 | [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | 8 | 21 | The rows are ordered and the future is the target |
 | [`Recommender-Systems`](Recommender-Systems) | 8 | 24 | You must choose *which* items to show, out of many |
+| [`Speech-and-Audio`](Speech-and-Audio) | 8 | 25 | The input is sound — speech, events, voice |
 
 **Time-Series has a prerequisite the other two do not:** read
 [lesson 02](Time-Series-and-Forecasting/lessons/02-evaluating.md) before you
@@ -90,6 +91,14 @@ customers a collaborative model cannot serve were **49.1% of the orders** in
 the test period — and that every standard evaluation silently drops them. Take
 it when your product has to pick which items a user sees; it needs no
 Deep-Learning, and its best model is four lines of linear algebra.
+
+**Speech-and-Audio is the odd one in this block**: five of its eight lessons
+are about everything *upstream* of the model, because that is where audio
+projects fail. Its
+[lesson 05](Speech-and-Audio/lessons/05-finding-the-speech.md) shows an energy
+VAD dropping **66.2% of the speech** at -5 dB — before any recogniser runs.
+It needs no Deep-Learning and no audio libraries; every sound is synthesised in
+the lessons.
 
 ---
 
@@ -226,10 +235,26 @@ the flowchart that tells you which you have.
 |---|---|---|---|
 | [`Communication-and-Documentation`](Communication-and-Documentation) | 8 | 15 | **Lessons 01-04 in week one**, at any level |
 | [`Research-and-Review`](Research-and-Review) | 8 | 18 | When you start reading papers, or reviewing others' work |
+| [`AI-Governance`](AI-Governance) | 8 | 26 | **Before** a system that decides about people ships |
 
 Everything else in this track is worth less without Communication. Research
 [lesson 03](Research-and-Review/lessons/03-what-the-numbers-hide.md) is the one
 lesson every level should read, whatever else they skip.
+
+**AI-Governance is here rather than in Block 6 on purpose.** It is not a
+deployment stage you reach at the end; its
+[lesson 02](AI-Governance/lessons/02-classifying-risk.md) classification has to
+happen before you design, because the high tier is two weeks of design and not
+a document. Four of its eight lessons measure the same uncomfortable shape —
+**the standard test passes and the harm is still there**: a system clearing the
+four-fifths rule at every threshold while wrongly rejecting 1,143 qualified
+people, a reviewer catching 60% of errors who still makes things worse, an
+explanation with 0.35 fidelity naming the wrong feature, and a table with no
+identifiers in which 88.8% of people are unique.
+
+It pairs with
+[Data-Science 10](Data-Science/lessons/10-limits-and-fairness.md), which is how
+to *measure* fairness; this is what you *owe*.
 
 ---
 
@@ -299,6 +324,8 @@ ship something that has to survive.
 | | | 22 | **MLOps** |
 | | | 23 | **Prompt Engineering** |
 | | | 24 | **Recommender Systems** |
+| | | 25 | **Speech and Audio** |
+| | | 26 | **AI Governance** |
 
 Numbers follow the order the courses were written, **not** the order to do them
 in. Projects 19 and 20 belong to Block 0 and can be done first despite their
@@ -338,6 +365,8 @@ AI-Agents 05       an injected note refunds four of its customers for 1,610 EGP
 | **Reading papers, reproducing, reviewing** | [`Research-and-Review`](Research-and-Review) | Lesson 03 is the one everyone should read |
 | **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see Block 5 |
 | **Writing a prompt: contracts, context, cost, injection** | [`Prompt-Engineering`](Prompt-Engineering) | Its own course; first in Block 5, before LLM |
+| **Audio, spectrograms, VAD, ASR evaluation, TTS** | [`Speech-and-Audio`](Speech-and-Audio) | Its own course; Block 2 |
+| **Risk tiers, records, oversight, consent, retention, audits** | [`AI-Governance`](AI-Governance) | Its own course; Block 8, before you design |
 | **Ranking, collaborative filtering, cold start, exposure** | [`Recommender-Systems`](Recommender-Systems) | Its own course; Block 2 |
 | **Forecasting, backtesting, horizons, intervals** | [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | Its own course; Block 2, next to NLP and CV |
 | **Docker, CI for models, canary and blue-green, serving, drift response** | [`MLOps`](MLOps) | Its own course; first in Block 6 |
@@ -355,6 +384,9 @@ remaining gaps are all *out of scope by choice*, and each has a home:
 | Kubernetes, Terraform, cloud consoles | Tool-specific and fast-moving; the cost model is the transferable part | [`Cloud-Computing`](https://github.com/Tayel-Ai-Labs-Courses/Cloud-Computing), [HPC-and-Cloud](HPC-and-Cloud) 05-08 |
 | Feature stores as products | [MLOps 07](MLOps/lessons/07-monitoring.md) covers the problem they solve; which to buy is procurement | — |
 | Hardware, boards, toolchains | A different discipline | [`Embedded-AI`](https://github.com/Tayel-Ai-Labs-Courses/Embedded-AI) |
+| Training an ASR or TTS model from scratch | Thousands of GPU-hours and labelled hours; using, evaluating and deploying one is the job | [`Speech-and-Audio`](Speech-and-Audio) covers that half |
+| The statutes themselves | Jurisdiction-specific and changing | [`AI-Governance`](AI-Governance) covers the engineering half |
+| Graph machine learning | Genuinely a gap, and a niche one | — |
 | A catalogue of prompt techniques | Only useful once you can measure; two depths of it are here | [`Advanced-Prompt-Engineering`](https://github.com/Tayel-Ai-Labs-Courses/Advanced-Prompt-Engineering) |
 | Deeper maths (proofs, measure theory) | [`Foundations`](Foundations) is deliberately decision-oriented | [`Mathematics-for-AI`](https://github.com/Tayel-Ai-Labs-Courses/Mathematics-for-AI) |
 | Frontend craft | Not AI engineering | [`AI-in-Frontend`](https://github.com/Tayel-Ai-Labs-Courses/AI-in-Frontend) |

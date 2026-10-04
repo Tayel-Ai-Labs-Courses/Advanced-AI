@@ -115,7 +115,7 @@ surprises.
 
 ## Using these across courses
 
-Nine exercises that connect courses, using data you already have:
+Eleven exercises that connect courses, using data you already have:
 
 1. **Run Data-Security lesson 03's membership-inference attack against the
    Data-Science lesson 05 model ladder.** Which of the four models leaks most,
@@ -169,6 +169,21 @@ Nine exercises that connect courses, using data you already have:
    Then compute, for the real `orders` data, the share of customers in the last
    30 days who have no earlier history. That number decides what you should
    build — and in the course's generated data it was 49.1% of the orders.
+
+10. **Compute k for the `subscribers` table's quasi-identifiers**
+    ([AI-Governance 07](AI-Governance/lessons/07-data-obligations.md)). Eight
+    columns, no names — what fraction of the population is unique? Then run
+    [Data-Security 03](Data-Security-for-AI/lessons/03-memorisation.md)'s
+    attack against the model trained on it. One measures what the table
+    leaks; the other measures what the weights leak.
+
+11. **Run [AI-Governance 04](AI-Governance/lessons/04-fairness-obligations.md)'s
+    four-fifths sweep on the `subscribers` model from
+    [Data-Science 05](Data-Science/lessons/05-baselines-and-selection.md)**, at
+    the threshold that
+    [lesson 06](Data-Science/lessons/06-evaluating-the-decision.md) chose for
+    profit (0.15). Does the profit-optimal threshold pass? How many qualified
+    people in the smaller group does it reject?
 
 Each takes an afternoon and teaches more about how the courses fit together
 than any amount of reading the READMEs.
