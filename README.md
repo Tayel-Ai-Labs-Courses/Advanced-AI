@@ -4,7 +4,7 @@
 
 ### Tayel AI Labs
 
-**25 courses · 24 projects · 3 capstones · 264 notebooks · 250 lessons**
+**25 courses · 24 projects · 3 capstones · 264 notebooks · 245 lessons + 5 workshop sessions**
 
 *From `print("hello")` to a deployed, monitored, explainable AI system.*
 
