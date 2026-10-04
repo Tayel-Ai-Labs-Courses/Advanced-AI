@@ -4,14 +4,14 @@
 
 ### Tayel AI Labs
 
-**24 courses · 23 projects · 3 capstones · 256 notebooks · 242 lessons**
+**25 courses · 24 projects · 3 capstones · 264 notebooks · 250 lessons**
 
 *From `print("hello")` to a deployed, monitored, explainable AI system.*
 
 **No GPU. No paid API. No cloud account.**
 Every lesson runs on a laptop, and **every printed output is a real run.**
 
-[**The roadmap →**](#the-unified-roadmap) · [**Start here**](CURRICULUM.md) · [Pick your level](LEVELS.md) · [All 24 courses](#the-24-courses) · [Shared datasets](DATASETS.md) · [Capstones](Final-Projects/)
+[**The roadmap →**](#the-unified-roadmap) · [**Start here**](CURRICULUM.md) · [Pick your level](LEVELS.md) · [All 25 courses](#the-25-courses) · [Shared datasets](DATASETS.md) · [Capstones](Final-Projects/)
 
 </div>
 
@@ -108,6 +108,7 @@ flowchart TD
         NLP["<b>NLP</b><br/>12 · P6"]
         CV["<b>Computer Vision</b><br/>12 · P7"]
         TS["<b>Time Series<br/>&amp; Forecasting</b><br/>8 · P21"]
+        REC["<b>Recommender<br/>Systems</b><br/>8 · P24"]
     end
 
     subgraph B3["▪ 3 · REAL DATA"]
@@ -247,7 +248,7 @@ into one progression would make both worse, which is why the roadmap above
 
 ---
 
-## The 24 courses
+## The 25 courses
 
 Every course is equivalent in structure: lessons as `.md` + generated `.ipynb`,
 a `requirements.txt`, a common-mistakes table and exercises per lesson, and one
@@ -263,22 +264,23 @@ project that is the assessment.
 | 6 | [`NLP/`](NLP/) | 12 | [6](NLP/Project-6/) | Text from TF-IDF to transformers, including Arabic |
 | 7 | [`Computer-Vision/`](Computer-Vision/) | 12 | [7](Computer-Vision/Project-7/) | Classical CV, CNNs, detection, segmentation |
 | 8 | [`Time-Series-and-Forecasting/`](Time-Series-and-Forecasting/) | 8 | [21](Time-Series-and-Forecasting/Project-21/) | Forecast without lying to yourself about the split |
-| 9 | [`Data-Engineering/`](Data-Engineering/) | 12 | [8](Data-Engineering/Project-8/) | Build pipelines that run unattended and fail loudly |
-| 10 | [`Data-Analysis/`](Data-Analysis/) | 16 | [9](Data-Analysis/Project-9/) | Answer a question defensibly, and know when you cannot |
-| 11 | [`Data-Science/`](Data-Science/) | 12 | [10](Data-Science/Project-10/) | Turn a business problem into a shipped, monitored decision |
-| 12 | [`Advanced-Practical-AI/`](Advanced-Practical-AI/) | 5 sessions | the system | Build one reliable, explainable system end to end |
-| 13 | [`Reinforcement-Learning/`](Reinforcement-Learning/) | 10 | [11](Reinforcement-Learning/Project-11/) | Decide under uncertainty, and know when not to |
-| 14 | [`Prompt-Engineering/`](Prompt-Engineering/) | 8 | [23](Prompt-Engineering/Project-23/) | Write a prompt that parses, costs what you expect, and survives hostile text |
-| 15 | [`LLM-and-GenAI/`](LLM-and-GenAI/) | 10 | [12](LLM-and-GenAI/Project-12/) | Build, evaluate and ship an LLM feature that pays for itself |
-| 16 | [`AI-Agents/`](AI-Agents/) | 10 | [13](AI-Agents/Project-13/) | Build an agent whose guarantees do not depend on the model |
-| 17 | [`MLOps/`](MLOps/) | 8 | [22](MLOps/Project-22/) | Package, gate, deploy, serve and monitor a model — priced |
-| 18 | [`AI-System-Design/`](AI-System-Design/) | 8 | [16](AI-System-Design/Project-16/) | Draw the system and prove the latency before building |
-| 19 | [`Optimization/`](Optimization/) | 15 | [5](Optimization/Project-5/) | Make a model smaller, faster, cheaper — local and on-device |
-| 20 | [`Data-Security-for-AI/`](Data-Security-for-AI/) | 8 | [14](Data-Security-for-AI/Project-14/) | Attack a model, measure what leaks, and fix it |
-| 21 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | [17](HPC-and-Cloud/Project-17/) | Fit the model, rent the right GPU, predict the bill |
-| 22 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | [15](Communication-and-Documentation/Project-15/) | Make the work readable, runnable and actionable |
-| 23 | [`Research-and-Review/`](Research-and-Review/) | 8 | [18](Research-and-Review/Project-18/) | Read papers sceptically, reproduce, review |
-| 24 | [`Final-Projects/`](Final-Projects/) | 3 capstones | one of them | Cut scope, survive a real user, and say "do not ship" |
+| 9 | [`Recommender-Systems/`](Recommender-Systems/) | 8 | [24](Recommender-Systems/Project-24/) | Choose ten items, and know what that does to your catalogue |
+| 10 | [`Data-Engineering/`](Data-Engineering/) | 12 | [8](Data-Engineering/Project-8/) | Build pipelines that run unattended and fail loudly |
+| 11 | [`Data-Analysis/`](Data-Analysis/) | 16 | [9](Data-Analysis/Project-9/) | Answer a question defensibly, and know when you cannot |
+| 12 | [`Data-Science/`](Data-Science/) | 12 | [10](Data-Science/Project-10/) | Turn a business problem into a shipped, monitored decision |
+| 13 | [`Advanced-Practical-AI/`](Advanced-Practical-AI/) | 5 sessions | the system | Build one reliable, explainable system end to end |
+| 14 | [`Reinforcement-Learning/`](Reinforcement-Learning/) | 10 | [11](Reinforcement-Learning/Project-11/) | Decide under uncertainty, and know when not to |
+| 15 | [`Prompt-Engineering/`](Prompt-Engineering/) | 8 | [23](Prompt-Engineering/Project-23/) | Write a prompt that parses, costs what you expect, and survives hostile text |
+| 16 | [`LLM-and-GenAI/`](LLM-and-GenAI/) | 10 | [12](LLM-and-GenAI/Project-12/) | Build, evaluate and ship an LLM feature that pays for itself |
+| 17 | [`AI-Agents/`](AI-Agents/) | 10 | [13](AI-Agents/Project-13/) | Build an agent whose guarantees do not depend on the model |
+| 18 | [`MLOps/`](MLOps/) | 8 | [22](MLOps/Project-22/) | Package, gate, deploy, serve and monitor a model — priced |
+| 19 | [`AI-System-Design/`](AI-System-Design/) | 8 | [16](AI-System-Design/Project-16/) | Draw the system and prove the latency before building |
+| 20 | [`Optimization/`](Optimization/) | 15 | [5](Optimization/Project-5/) | Make a model smaller, faster, cheaper — local and on-device |
+| 21 | [`Data-Security-for-AI/`](Data-Security-for-AI/) | 8 | [14](Data-Security-for-AI/Project-14/) | Attack a model, measure what leaks, and fix it |
+| 22 | [`HPC-and-Cloud/`](HPC-and-Cloud/) | 8 | [17](HPC-and-Cloud/Project-17/) | Fit the model, rent the right GPU, predict the bill |
+| 23 | [`Communication-and-Documentation/`](Communication-and-Documentation/) | 8 | [15](Communication-and-Documentation/Project-15/) | Make the work readable, runnable and actionable |
+| 24 | [`Research-and-Review/`](Research-and-Review/) | 8 | [18](Research-and-Review/Project-18/) | Read papers sceptically, reproduce, review |
+| 25 | [`Final-Projects/`](Final-Projects/) | 3 capstones | one of them | Cut scope, survive a real user, and say "do not ship" |
 
 The **course number** is the recommended reading order. The **project number**
 is historical — it is the order the projects were written, and it is kept stable
@@ -317,11 +319,11 @@ whether your verdict honestly allows **"do not ship this"**.
 
 **Read the markdown, run the notebook.** The `.md` is the source; the `.ipynb`
 is generated from it. **The exercises are the course** — a student who reads
-twenty-four courses and does no exercises has watched, not learned.
+twenty-five courses and does no exercises has watched, not learned.
 
 ---
 
-## Ten results this curriculum argues from
+## Eleven results this curriculum argues from
 
 Each one is reproducible by opening the notebook and running it.
 
@@ -350,10 +352,14 @@ Each one is reproducible by opening the notebook and running it.
 8. **Poisoning 1% of training rows gives an attacker 98.2% control, and costs
    0.003 accuracy.** The dangerous failure is invisible in every metric.
    ([Data-Security 04](Data-Security-for-AI/lessons/04-poisoning.md))
-9. **EfficientNet-B0 has a fifth of ResNet-50's parameters and is four times
+9. **22.4% of customers in the test period have no history — and they are
+   49.1% of the orders.** Every recommender metric computed before that is
+   about half the traffic.
+   ([Recommender-Systems 05](Recommender-Systems/lessons/05-cold-start.md))
+10. **EfficientNet-B0 has a fifth of ResNet-50's parameters and is four times
    slower.** Benchmarks do not transfer across hardware.
    ([Optimization 15](Optimization/lessons/15-edge-and-on-device.md))
-10. **Identical code across 20 seeds scored between 37 and 346.** One run is
+11. **Identical code across 20 seeds scored between 37 and 346.** One run is
    never a result.
     ([RL 09](Reinforcement-Learning/lessons/09-evaluating-agents.md))
 
@@ -377,7 +383,7 @@ jupyter lab
 |---|---|
 | Python 3.11+ | Everything |
 | Nothing else | Databases-and-SQL, Foundations, Reinforcement-Learning 01-06 |
-| pandas, NumPy, scikit-learn | Python, ML, Data-Engineering, Analysis, Science, Security, Time-Series, MLOps |
+| pandas, NumPy, scikit-learn, SciPy | Python, ML, Data-Engineering, Analysis, Science, Security, Time-Series, MLOps, Recommender-Systems |
 | PyTorch | Deep-Learning, Optimization, NLP, CV, Prompt-Engineering, LLM, HPC, RL 07-08 |
 
 ---

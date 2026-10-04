@@ -115,7 +115,7 @@ surprises.
 
 ## Using these across courses
 
-Eight exercises that connect courses, using data you already have:
+Nine exercises that connect courses, using data you already have:
 
 1. **Run Data-Security lesson 03's membership-inference attack against the
    Data-Science lesson 05 model ladder.** Which of the four models leaks most,
@@ -162,6 +162,13 @@ Eight exercises that connect courses, using data you already have:
    the result into [AI-Agents 05](AI-Agents/lessons/05-security.md)'s
    `refund_order` tool. The first experiment flips a label; the second one
    costs 1,610 EGP. Same attack, two blast radii.
+
+9. **Take the `orders` fixture into
+   [Recommender-Systems](Recommender-Systems/lessons/01-what-a-recommender-is.md)**
+   as a (customer, product, day) table and build the popularity baseline on it.
+   Then compute, for the real `orders` data, the share of customers in the last
+   30 days who have no earlier history. That number decides what you should
+   build — and in the course's generated data it was 49.1% of the orders.
 
 Each takes an afternoon and teaches more about how the courses fit together
 than any amount of reading the READMEs.

@@ -1,7 +1,7 @@
 # Final Projects
 
-Three capstones. Each one requires work from **most of the twenty-three
-courses**, which is the point: the twenty-three numbered projects each test one
+Three capstones. Each one requires work from **most of the twenty-four
+courses**, which is the point: the twenty-four numbered projects each test one
 course, and these test whether you can hold the whole thing together at once.
 
 Do **one**. They are alternatives, not a sequence.

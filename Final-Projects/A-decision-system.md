@@ -74,7 +74,17 @@ is, and most people split it wrong anyway:
 - If you forecast more than one step ahead, **direct and recursive compared**
   (73.1 against 124.9 at h=28 in that course)
 
-### 7. Ship it like MLOps says
+### 7. If the decision is "which items to show"
+Only if your system ranks or selects from a catalogue:
+- The **popularity baseline**, reported first
+  ([Recommender-Systems 01](../Recommender-Systems/lessons/01-what-a-recommender-is.md): 0.2324 for free)
+- Recall@k, NDCG@k **and coverage** in one table
+- **The cold share**: what fraction of users *and of events* your model cannot
+  serve, and what each fallback branch scores separately
+  ([Recommender-Systems 05](../Recommender-Systems/lessons/05-cold-start.md))
+- The three **exposure bands**, and the tail's share of recommendations
+
+### 8. Ship it like MLOps says
 - Environment pinned, image built twice a week apart, **same model hash**
   ([MLOps 02](../MLOps/lessons/02-packaging.md))
 - The pipeline **re-runs from scratch** in an empty directory
@@ -89,7 +99,7 @@ is, and most people split it wrong anyway:
 - **Three of lesson 07's six serving skews injected.** Which does your
   monitoring catch? Most people find it catches two.
 
-### 8. Attack it
+### 9. Attack it
 - Membership inference AUC, beside the train/test gap
 - A backdoor installed at 1%, and your attempt to detect it
 - Extraction measured under three output policies

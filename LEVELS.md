@@ -1,6 +1,6 @@
 # Who Should Take What — Levels and Coverage
 
-Twenty-four courses is not a queue. This page says where each group starts, what
+Twenty-five courses is not a queue. This page says where each group starts, what
 they can skip, and what fraction of the skills an AI engineer needs the track
 now covers.
 
@@ -8,7 +8,7 @@ now covers.
 
 ## Coverage: what the track has, and what it does not
 
-**24 courses · 23 projects · 3 capstones.** See
+**25 courses · 24 projects · 3 capstones.** See
 [`CURRICULUM.md`](CURRICULUM.md) for the full ordering, and
 [the unified roadmap](README.md#the-unified-roadmap) for one diagram covering
 this repository and the eight applied repositories around it.
@@ -29,6 +29,7 @@ Judged against the skills an AI engineer is actually asked for in a job:
 | Problem framing, thresholds, shipping, monitoring | **yes** | Data-Science |
 | One full reliable system end to end | **yes** | Advanced-Practical-AI |
 | Sequential decisions, bandits, RL | **yes** | Reinforcement-Learning |
+| **Recommenders: ranking, cold start, exposure, feedback loops** | **yes** | Recommender-Systems |
 | **Writing prompts: contracts, context, cost, injection** | **yes** | Prompt-Engineering |
 | LLMs, prompting, RAG, evals, fine-tune vs prompt | **yes** | LLM-and-GenAI |
 | Agents, tools, automation in Python | **yes** | AI-Agents |
@@ -115,7 +116,7 @@ say by how much with an interval, and write one page a manager can act on.
 ```
 
 **Then one domain course** — NLP, Computer-Vision,
-**Time-Series-and-Forecasting**, or Optimization — depending on what they are
+**Time-Series-and-Forecasting**, **Recommender-Systems**, or Optimization — depending on what they are
 paid to do. Take Time-Series if anyone has ever asked you for a forecast:
 [its lesson 02](Time-Series-and-Forecasting/lessons/02-evaluating.md) will
 probably invalidate a result you already believe.

@@ -1,6 +1,6 @@
 # The Curriculum — Everything, in Order
 
-**Twenty-four courses, twenty-three projects, three capstones, 256 notebooks.**
+**Twenty-five courses, twenty-four projects, three capstones, 264 notebooks.**
 
 This page is the single ordering: what comes after what, where the later
 additions slot in, where the applied repositories live, and what is still missing.
@@ -19,7 +19,7 @@ The one-diagram version is in [`README.md`](README.md#the-unified-roadmap).
 ```mermaid
 flowchart TD
     B0["<b>0 · FOUNDATIONS</b><br/>Foundations (maths) · Python · Databases &amp; SQL"] --> B1["<b>1 · LEARNING FROM DATA</b><br/>Machine Learning → Deep Learning"]
-    B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision · Time Series<br/><i>take what you need</i>"]
+    B1 --> B2["<b>2 · DOMAINS</b><br/>NLP · Computer Vision<br/>Time Series · Recommenders<br/><i>take what you need</i>"]
     B0 --> B3["<b>3 · REAL DATA</b><br/>Data Engineering · Data Analysis"]
     B1 --> B4["<b>4 · DECIDING &amp; SHIPPING</b><br/>Data Science → Advanced Practical AI"]
     B3 --> B4
@@ -76,12 +76,20 @@ Deep Learning is optional until a project needs it. Machine Learning is not.
 | [`NLP`](NLP) | 12 | 6 | The data is text |
 | [`Computer-Vision`](Computer-Vision) | 12 | 7 | The data is images |
 | [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | 8 | 21 | The rows are ordered and the future is the target |
+| [`Recommender-Systems`](Recommender-Systems) | 8 | 24 | You must choose *which* items to show, out of many |
 
 **Time-Series has a prerequisite the other two do not:** read
 [lesson 02](Time-Series-and-Forecasting/lessons/02-evaluating.md) before you
 trust any forecasting result you have ever produced. A shuffled split scores
 MAE 85.3 where an honest one scores 107.7, and an 8-fold backtest turns a 9%
 win into 0.5%.
+
+**Recommender-Systems shares that lesson and adds a harder one.** Its
+[lesson 05](Recommender-Systems/lessons/05-cold-start.md) shows that the
+customers a collaborative model cannot serve were **49.1% of the orders** in
+the test period — and that every standard evaluation silently drops them. Take
+it when your product has to pick which items a user sees; it needs no
+Deep-Learning, and its best model is four lines of linear algebra.
 
 ---
 
@@ -290,6 +298,7 @@ ship something that has to survive.
 | | | 21 | **Time Series and Forecasting** |
 | | | 22 | **MLOps** |
 | | | 23 | **Prompt Engineering** |
+| | | 24 | **Recommender Systems** |
 
 Numbers follow the order the courses were written, **not** the order to do them
 in. Projects 19 and 20 belong to Block 0 and can be done first despite their
@@ -329,6 +338,7 @@ AI-Agents 05       an injected note refunds four of its customers for 1,610 EGP
 | **Reading papers, reproducing, reviewing** | [`Research-and-Review`](Research-and-Review) | Lesson 03 is the one everyone should read |
 | **LLM evaluation and guardrails** | LLM 06, 07, 09 + AI-Agents 02, 05 | Already covered — see Block 5 |
 | **Writing a prompt: contracts, context, cost, injection** | [`Prompt-Engineering`](Prompt-Engineering) | Its own course; first in Block 5, before LLM |
+| **Ranking, collaborative filtering, cold start, exposure** | [`Recommender-Systems`](Recommender-Systems) | Its own course; Block 2 |
 | **Forecasting, backtesting, horizons, intervals** | [`Time-Series-and-Forecasting`](Time-Series-and-Forecasting) | Its own course; Block 2, next to NLP and CV |
 | **Docker, CI for models, canary and blue-green, serving, drift response** | [`MLOps`](MLOps) | Its own course; first in Block 6 |
 
